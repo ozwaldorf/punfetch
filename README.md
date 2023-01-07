@@ -2,11 +2,7 @@
 
 A simple sysinfo fetcher designed to follow [onefetch's](https://github.com/o2sh/onefetch) formatting.
 
-## Screenshots
-
-Images:![image](https://user-images.githubusercontent.com/8976745/211174284-29620dbd-9c17-4951-b0c3-624831c0d7ac.png)
-
-Text-only:![image](https://user-images.githubusercontent.com/8976745/211174332-2248bd5c-4194-40eb-9c9b-95420a9c43d4.png)
+![image](https://user-images.githubusercontent.com/8976745/211174522-41719ef6-0d91-4fbb-bb43-82a48b144cc8.png)
 
 ## Getting Started
 
