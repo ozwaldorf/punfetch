@@ -1,6 +1,6 @@
 [package]
 name = "punfetch"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
 license = "MIT"
@@ -12,8 +12,6 @@ authors = ["ossian <self@ossian.dev>"]
 [[bin]]
 name = "punfetch"
 path = "src/main.rs"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 byte-unit = "4.0.18"
