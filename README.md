@@ -1,6 +1,14 @@
 # punfetch
 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/rust.yml?label=CI&style=for-the-badge)](https://github.com/ozwaldorf/punfetch/actions/workflows/rust.yml)
+[![crate](https://img.shields.io/crates/v/punfetch?style=for-the-badge)](https://crates.io/crates/onefetch)
+[![downloads](https://img.shields.io/crates/d/punfetch?style=for-the-badge)](https://crates.io/crates/punfetch)
+[![license](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](./LICENSE)
+[![issues](https://img.shields.io/github/issues-raw/ozwaldorf/punfetch?style=for-the-badge)](https://github.com/ozwaldorf/punfetch/issues)
+
 A blazingly fast sysinfo fetcher designed to match [onefetch](https://github.com/o2sh/onefetch)'s formatting.
+
+---
 
 ![image](https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png)
 
@@ -39,3 +47,5 @@ Options:
 ## Contributing
 
 This project follows [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+[![contrib.rocks](https://contrib.rocks/image?repo=ozwaldorf/punfetch)](https://github.com/ozwaldorf/punfetch/graphs/contributors)

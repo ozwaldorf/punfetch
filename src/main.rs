@@ -35,11 +35,13 @@ fn main() {
         .about("")
         .get_matches();
 
-    let show_logo = match args.get_one::<String>("show-logo").unwrap_or(&"always".to_string()).as_str() {
+    let show_logo = match args
+        .get_one::<String>("show-logo")
+        .unwrap_or(&"always".to_string())
+        .as_str()
+    {
         "always" => true,
-        "auto" => {
-            dimensions().unwrap_or((0, 0)).0 >= 95
-        }
+        "auto" => dimensions().unwrap_or((0, 0)).0 >= 95,
         "never" => false,
         _ => panic!("Invalid value for --show-logo. Valid values are: always, never, auto"),
     };
@@ -47,10 +49,16 @@ fn main() {
     let mut sys = System::new_all();
     sys.refresh_all();
 
-    let info = vec![user_info(), os_info(&sys), disk_info(&sys, 30), sys_info(&sys), colors()]
-        .into_iter()
-        .flatten()
-        .collect();
+    let info = vec![
+        user_info(),
+        os_info(&sys),
+        disk_info(&sys, 30),
+        sys_info(&sys),
+        colors(),
+    ]
+    .into_iter()
+    .flatten()
+    .collect();
 
     let mut buf = String::new();
 
