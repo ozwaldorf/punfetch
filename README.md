@@ -1,4 +1,4 @@
-# punfetch
+<img src="https://user-images.githubusercontent.com/8976745/211187132-1a5e959b-d3a4-4c84-84c1-f8bd5463a30e.png" height="300px">
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/rust.yml?label=CI&style=for-the-badge)](https://github.com/ozwaldorf/punfetch/actions/workflows/rust.yml)
 [![crate](https://img.shields.io/crates/v/punfetch?style=for-the-badge)](https://crates.io/crates/onefetch)
@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](./LICENSE)
 [![issues](https://img.shields.io/github/issues-raw/ozwaldorf/punfetch?style=for-the-badge)](https://github.com/ozwaldorf/punfetch/issues)
 
-A blazingly fast sysinfo fetcher designed to match [onefetch](https://github.com/o2sh/onefetch)'s formatting.
+A blazingly fast sysinfo fetcher designed to match [onefetch's](https://github.com/o2sh/onefetch) formatting.
 
 ---
 
