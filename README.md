@@ -44,6 +44,14 @@ Options:
   -V, --version           Print version information
 ```
 
+## Todo
+
+- Distribution ascii logos
+- templating (see [this](https://github.com/o2sh/onefetch/blob/main/build.rs))
+- GPU info
+- Smart colors from image
+- Full onefetch formatting feature parity
+
 ## Contributing
 
 This project follows [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
