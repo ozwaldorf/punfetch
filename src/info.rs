@@ -2,6 +2,7 @@ use byte_unit::Byte;
 use colored::*;
 use humantime::format_duration;
 use std::collections::HashSet;
+use std::env;
 use std::fmt::Display;
 use std::string::ToString;
 use std::time::Duration;
@@ -27,15 +28,9 @@ pub fn user_info() -> Vec<String> {
         .get_user_by_id(uid)
         .expect("Failed to get current user")
         .name();
-    let uptime = format_duration(Duration::from_secs(sys.uptime())).to_string();
-    let len = user.len() + host.len() + uptime.len() + 9;
+    let len = user.len() + host.len() + 5;
     vec![
-        format!(
-            "{} ~ {} ({})",
-            user.bold().green(),
-            host.bold().green(),
-            format!("up {uptime}").green()
-        ),
+        format!("{} ~ {}", user.bold().green(), host.bold().green(),),
         format!("{}", "-".repeat(len)),
     ]
 }
@@ -50,6 +45,10 @@ pub fn os_info(sys: &System) -> Vec<String> {
             "Kernel".green().bold(),
             sys.kernel_version().unwrap_or_else(|| "Unknown".into()),
         ),
+        (
+            "Terminal".green().bold(),
+            env::var("TERM").expect("error fetching TERM info"),
+        ),
     ])
 }
 
@@ -59,7 +58,14 @@ pub fn sys_info(sys: &System) -> Vec<String> {
     let total_mem = sys.total_memory() as u128;
     fmt(vec![
         ("CPU".green().bold(), cpus[0].brand().to_string()),
-        ("Load".green().bold(), format!("~{} % ({} cores)", sys.load_average().fifteen, cpus.len())),
+        (
+            "Uptime".green().bold(),
+            format!("{}", format_duration(Duration::from_secs(sys.uptime()))),
+        ),
+        (
+            "Load".green().bold(),
+            format!("~{}% ({} cores)", sys.load_average().fifteen, cpus.len()),
+        ),
         (
             "RAM".green().bold(),
             format!(
@@ -85,15 +91,14 @@ pub fn disk_info(sys: &System, size: usize) -> Vec<String> {
 
     let mut seen = HashSet::new();
     let mut total = 0.0;
-    let mut info: Vec<(String, f64, f64, Color)> = vec![];
+    let mut disk_info: Vec<(String, f64, f64, Color)> = vec![];
     for disk in sys.disks().iter() {
         if seen.insert(disk.name().to_str().unwrap()) {
             let disk_total = disk.total_space() as f64;
             total += disk_total;
-            // skip if total space of a partition is less than 1GB
             let used = disk_total - disk.available_space() as f64;
             let color = color_palette[seen.len() - 1 % color_palette.len()];
-            info.push((
+            disk_info.push((
                 disk.mount_point().to_str().unwrap().to_string(),
                 used / disk_total,
                 disk_total,
@@ -106,9 +111,10 @@ pub fn disk_info(sys: &System, size: usize) -> Vec<String> {
     let mut lines = Vec::new();
     let mut remainder = size;
 
-    for line in info.chunks(2) {
-        let mut info_line = "       ".to_string();
-        for (mount, percent, disk_total, color) in line {
+    // build bar and lines 2 at a time
+    for info in disk_info.chunks(2) {
+        let mut line = "       ".to_string();
+        for (mount, percent, disk_total, color) in info {
             let max_width = disk_total / total * size as f64;
             let mut width = (percent * max_width) as usize;
             if width == 0 {
@@ -117,15 +123,14 @@ pub fn disk_info(sys: &System, size: usize) -> Vec<String> {
 
             remainder -= width;
             bar.push_str(&format!("{:>width$}", "".on_color(*color),));
-            info_line.push_str(&format!(
+            line.push_str(&format!(
                 "{} {mount} ({:.1} %) ",
                 "●".color(*color),
                 percent * 100.0
             ));
         }
-        lines.push(info_line);
+        lines.push(line);
     }
-
     // fill the remainder of the bar
     bar.push_str(&format!("{:>remainder$}", "".on_black(),));
 
