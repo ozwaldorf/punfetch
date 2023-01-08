@@ -20,3 +20,5 @@ install:
 
 uninstall:
 	cargo remove --path .
+
+precommit: format build lint
