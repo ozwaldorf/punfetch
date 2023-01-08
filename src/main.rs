@@ -1,4 +1,3 @@
-use std::fmt::format;
 use clap::{arg, command};
 use image::open;
 use onefetch_image::get_best_backend;
