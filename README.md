@@ -1,18 +1,26 @@
-<img src="https://user-images.githubusercontent.com/8976745/211187132-1a5e959b-d3a4-4c84-84c1-f8bd5463a30e.png" height="300px">
-
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/rust.yml?label=CI&style=for-the-badge)](https://github.com/ozwaldorf/punfetch/actions/workflows/rust.yml)
-[![crate](https://img.shields.io/crates/v/punfetch?style=for-the-badge)](https://crates.io/crates/punfetch)
-[![downloads](https://img.shields.io/crates/d/punfetch?style=for-the-badge)](https://crates.io/crates/punfetch)
-[![license](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](./LICENSE)
-[![issues](https://img.shields.io/github/issues-raw/ozwaldorf/punfetch?style=for-the-badge)](https://github.com/ozwaldorf/punfetch/issues)
-
-A blazingly fast sysinfo fetcher designed to match [onefetch's](https://github.com/o2sh/onefetch) formatting.
+<header>
+    <p align="center">
+        <img alt="logo" src="https://user-images.githubusercontent.com/8976745/211187132-1a5e959b-d3a4-4c84-84c1-f8bd5463a30e.png" width="50%"/>
+    </p>
+    <p align="center">
+        <a href="https://crates.io/crates/punfetch"><img alt="crate" src="https://img.shields.io/crates/v/punfetch?style=for-the-badge" /></a>
+        <a href="https://crates.io/crates/punfetch"><img alt="downloads" src="https://img.shields.io/crates/d/punfetch?style=for-the-badge" /></a>
+        <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" /></a>
+        <a href="https://github.com/ozwaldorf/punfetch/actions/workflows/rust.yml"><img alt="ci" src="https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/rust.yml?label=CI&style=for-the-badge" /></a>
+        <a href="https://github.com/ozwaldorf/punfetch/actions/workflows/publish.yml"><img alt="publish" src="https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/publish.yml?label=Publish&style=for-the-badge" /></a>
+    </p>
+    <p align="center">
+        A blazingly fast sysinfo fetcher designed to match <a href="https://github.com/o2sh/onefetch">onefetch's</a> formatting.
+    </p>
+    <hr>
+    <p align="center" style="margin: 5%">
+        <img alt="preview" src="https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png"/> 
+    </p>
+</header>
 
 ---
 
-![image](https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png)
-
-## Installation
+# Installation
 
 ### Prerequisites
 
@@ -32,7 +40,7 @@ cd punfetch
 make install
 ```
 
-## Usage
+# Usage
 
 ```man
 Usage: punfetch [OPTIONS]
@@ -44,7 +52,7 @@ Options:
   -V, --version           Print version information
 ```
 
-## Todo
+# Todo
 
 - Distribution ascii logos
 - templating (see [this](https://github.com/o2sh/onefetch/blob/main/build.rs))
@@ -52,8 +60,14 @@ Options:
 - Smart colors from image
 - Full onefetch formatting feature parity
 
-## Contributing
+&nbsp;
 
-This project follows [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+---
 
-[![contrib.rocks](https://contrib.rocks/image?repo=ozwaldorf/punfetch)](https://github.com/ozwaldorf/punfetch/graphs/contributors)
+<footer>
+    <h2 align="center">Contributing ❤️</h2>
+    <p align="center">This project follows <a>Conventional Commits</a>.</p>
+    <p align="center">
+        <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
+    </p>
+</footer>
