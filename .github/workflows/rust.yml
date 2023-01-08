@@ -87,20 +87,3 @@ jobs:
         with:
           command: clippy
           args: -- -D warnings
-          
-  publish:
-    name: Publish
-    runs-on: ubuntu-latest
-    needs: [build]
-    if: github.event_name == 'release' && github.event.action == 'published'
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions-rs/toolchain@v1
-      with:
-          toolchain: stable
-          override: true
-    - uses: katyo/publish-crates@v1
-      with:
-          registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-#          dry-run: true
-#          ignore-unpublished-changes: true
