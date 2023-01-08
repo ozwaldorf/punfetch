@@ -2,6 +2,7 @@ use clap::{arg, command};
 use image::open;
 use info::*;
 use onefetch_image::get_best_backend;
+use sysinfo::{System, SystemExt};
 
 mod info;
 
@@ -11,7 +12,10 @@ fn main() {
         .about("")
         .get_matches();
 
-    let info = vec![user_info(), sys_info(), colors()]
+    let mut sys = System::new_all();
+    sys.refresh_all();
+
+    let info = vec![user_info(), os_info(&sys), disk_info(&sys, 30), sys_info(&sys), colors()]
         .into_iter()
         .flatten()
         .collect();
