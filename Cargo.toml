@@ -1,11 +1,13 @@
 [package]
 name = "punfetch"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
 license = "MIT"
+homepage = "https://github.com/ozwaldorf/punfetch"
 repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
+authors = ["ossian <self@ossian.dev>"]
 
 [[bin]]
 name = "punfetch"
@@ -14,11 +16,11 @@ path = "src/main.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-sysinfo = "0.27.2"
-colored = "2.0.0"
 byte-unit = "4.0.18"
-onefetch-image = "2.14.2"
-image = "0.24.5"
-color-thief = "0.2.2"
-humantime = "2.1.0"
 clap = { version = "4.0.32", features=["cargo"] }
+colored = "2.0.0"
+humantime = "2.1.0"
+image = "0.24.5"
+onefetch-image = "2.14.2"
+sysinfo = "0.27.2"
+term_size = "0.3.2"
