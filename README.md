@@ -1,8 +1,8 @@
 # punfetch
 
-A blazingly fast sysinfo fetcher designed to follow [onefetch's](https://github.com/o2sh/onefetch) formatting.
+A blazingly fast sysinfo fetcher designed to match [onefetch](https://github.com/o2sh/onefetch)'s formatting.
 
-![image](https://user-images.githubusercontent.com/8976745/211174522-41719ef6-0d91-4fbb-bb43-82a48b144cc8.png)
+![image](https://user-images.githubusercontent.com/8976745/211180781-95616e7b-fb79-45d7-a6a4-a4a2190f7b8a.png)
 
 ## Getting Started
 
