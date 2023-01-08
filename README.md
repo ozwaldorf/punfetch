@@ -2,7 +2,7 @@
 
 A blazingly fast sysinfo fetcher designed to match [onefetch](https://github.com/o2sh/onefetch)'s formatting.
 
-![image](https://user-images.githubusercontent.com/8976745/211180781-95616e7b-fb79-45d7-a6a4-a4a2190f7b8a.png)
+![image](https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png)
 
 ## Getting Started
 
