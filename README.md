@@ -4,36 +4,36 @@ A blazingly fast sysinfo fetcher designed to match [onefetch](https://github.com
 
 ![image](https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png)
 
-## Getting Started
+## Installation
 
 ### Prerequisites
 
 - Rust
 
-### (optional) Clone from git
-
-```bash
-git clone https://github.com/ozwaldorf/punfetch.git && cd punfetch
-```
-
-### Installing
+### Install from crates.io
 
 ```bash
 cargo install punfetch
 ```
 
-### Usage
-
-Default mode with no image:
+### Build from source
 
 ```bash
-punfetch
+git clone https://github.com/ozwaldorf/punfetch.git
+cd punfetch
+make install
 ```
 
-Image mode:
+## Usage
 
-```bash
-punfetch -i <path to image>
+```man
+Usage: punfetch [OPTIONS]
+
+Options:
+  -i, --image <PATH>      Image to use
+      --show-logo <WHEN>  Show logo [always|auto|never]
+  -h, --help              Print help information
+  -V, --version           Print version information
 ```
 
 ## Contributing

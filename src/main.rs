@@ -30,7 +30,7 @@ fn main() {
     let args = command!()
         .args(vec![
             arg!(-i --image <PATH> "Image to use"),
-            arg!(--"show-logo" <WHEN> "Show logo (always, never, auto). If set to auto: the logo will be hidden if the terminal's width < 95"),
+            arg!(--"show-logo" <WHEN> "Show logo [always|auto|never]"),
         ])
         .about("")
         .get_matches();
