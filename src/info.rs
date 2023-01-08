@@ -117,7 +117,8 @@ pub fn disk_info(sys: &System, size: usize) -> Vec<String> {
         for (mount, percent, disk_total, color) in info {
             let max_width = disk_total / total * size as f64;
             let mut width = (percent * max_width) as usize;
-            if width == 0 {
+            if width == 0 && *percent > 0.01 {
+                // make sure we can see something for disks with more than 1% usage
                 width += 1;
             }
 
