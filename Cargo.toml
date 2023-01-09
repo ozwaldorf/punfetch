@@ -9,10 +9,6 @@ repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
 
-[[bin]]
-name = "punfetch"
-path = "src/main.rs"
-
 [dependencies]
 byte-unit = "4.0.18"
 clap = { version = "4.0.32", features=["cargo"] }
@@ -22,6 +18,17 @@ image = "0.24.5"
 onefetch-image = "2.14.2"
 sysinfo = "0.27.2"
 term_size = "0.3.2"
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bin]]
+name = "punfetch"
+path = "src/main.rs"
+
+[[bench]]
+name = "main"
+harness = false
 
 [profile.release]
 lto = true
