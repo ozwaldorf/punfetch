@@ -6,18 +6,9 @@ use std::env;
 use std::fmt::Display;
 use std::string::ToString;
 use std::time::Duration;
-use sysinfo::{
-    CpuExt, DiskExt, Pid, PidExt, ProcessExt, ProcessRefreshKind, RefreshKind, System, SystemExt,
-    UserExt,
-};
+use sysinfo::{CpuExt, DiskExt, Pid, PidExt, ProcessExt, System, SystemExt, UserExt};
 
-pub fn user_info() -> Vec<String> {
-    let mut sys = System::new_with_specifics(
-        RefreshKind::new()
-            .with_processes(ProcessRefreshKind::everything())
-            .with_users_list(),
-    );
-    sys.refresh_all();
+pub fn user_info(sys: &System) -> Vec<String> {
     let host = sys.host_name().unwrap_or_default();
     let uid = sys
         .process(Pid::from_u32(std::process::id()))
@@ -171,15 +162,15 @@ mod tests {
 
     #[test]
     fn test_user_info() {
-        for line in user_info() {
+        let sys = System::new_all();
+        for line in user_info(&sys) {
             println!("{}", line);
         }
     }
 
     #[test]
     fn test_os_info() {
-        let mut sys = System::new_all();
-        sys.refresh_all();
+        let sys = System::new_all();
         for line in os_info(&sys) {
             println!("{}", line);
         }
@@ -187,8 +178,7 @@ mod tests {
 
     #[test]
     fn test_disks() {
-        let mut sys = System::new_all();
-        sys.refresh_all();
+        let sys = System::new_all();
         for line in disk_info(&sys, 32) {
             println!("{}", line);
         }
@@ -196,8 +186,7 @@ mod tests {
 
     #[test]
     fn test_sys_info() {
-        let mut sys = System::new_all();
-        sys.refresh_all();
+        let sys = System::new_all();
         for line in sys_info(&sys) {
             println!("{}", line);
         }

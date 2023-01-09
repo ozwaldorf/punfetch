@@ -1,7 +1,7 @@
 use clap::{arg, command};
 use image::open;
 use onefetch_image::get_best_backend;
-use sysinfo::{System, SystemExt};
+use sysinfo::{ProcessRefreshKind, RefreshKind, System, SystemExt};
 use term_size::dimensions;
 
 use info::*;
@@ -46,11 +46,16 @@ fn main() {
         _ => panic!("Invalid value for --show-logo. Valid values are: always, never, auto"),
     };
 
-    let mut sys = System::new_all();
-    sys.refresh_all();
+    let sys = System::new_with_specifics(
+        RefreshKind::new()
+            .with_users_list()
+            .with_processes(ProcessRefreshKind::new().with_user().with_cpu())
+            .with_disks_list()
+            .with_memory(),
+    );
 
     let info = vec![
-        user_info(),
+        user_info(&sys),
         os_info(&sys),
         disk_info(&sys, 30),
         sys_info(&sys),
