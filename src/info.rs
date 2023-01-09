@@ -1,22 +1,22 @@
 use byte_unit::Byte;
+use colored::{Color, Colorize};
 use humantime::format_duration;
 use std::collections::HashSet;
+use std::env;
 use std::fmt::Display;
 use std::process::id;
 use std::string::ToString;
 use std::time::Duration;
-use std::{env, vec};
-use colored::{Color, Colorize};
 use sysinfo::{CpuExt, DiskExt, Pid, PidExt, ProcessExt, System, SystemExt, UserExt};
 
 pub fn user_info(sys: &System) -> Vec<String> {
     let host = sys.host_name().unwrap_or("localhost".to_string());
     let mut len = host.len();
     let mut line = String::new();
-    if let Some(user) = sys
-        .process(Pid::from_u32(id()))
-        .and_then(|p| p.user_id().and_then(|u| sys.get_user_by_id(u).map(|u| u.name())))
-    {
+    if let Some(user) = sys.process(Pid::from_u32(id())).and_then(|p| {
+        p.user_id()
+            .and_then(|u| sys.get_user_by_id(u).map(|u| u.name()))
+    }) {
         len += user.len() + 3;
         line.push_str(&format!("{} ~ ", user.bold().green()))
     }
