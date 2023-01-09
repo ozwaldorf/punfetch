@@ -1,7 +1,7 @@
 use clap::{arg, command};
 use image::open;
 use onefetch_image::get_best_backend;
-use sysinfo::{ProcessRefreshKind, RefreshKind, System, SystemExt};
+use sysinfo::{CpuRefreshKind, ProcessRefreshKind, RefreshKind, System, SystemExt};
 use term_size::dimensions;
 
 use info::*;
@@ -48,6 +48,7 @@ fn main() {
 
     let sys = System::new_with_specifics(
         RefreshKind::new()
+            .with_cpu(CpuRefreshKind::new())
             .with_users_list()
             .with_processes(ProcessRefreshKind::new().with_user().with_cpu())
             .with_disks_list()
