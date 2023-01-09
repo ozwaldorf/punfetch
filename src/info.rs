@@ -10,7 +10,7 @@ use std::time::Duration;
 use sysinfo::{CpuExt, DiskExt, Pid, PidExt, ProcessExt, System, SystemExt, UserExt};
 
 pub fn user_info(sys: &System) -> Vec<String> {
-    let host = sys.host_name().unwrap_or("localhost".to_string());
+    let host = sys.host_name().unwrap_or_else(|| "localhost".to_string());
     let mut len = host.len();
     let mut line = String::new();
     if let Some(user) = sys.process(Pid::from_u32(id())).and_then(|p| {
