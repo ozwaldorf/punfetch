@@ -50,7 +50,7 @@ fn main() {
         RefreshKind::new()
             .with_cpu(CpuRefreshKind::new())
             .with_users_list()
-            .with_processes(ProcessRefreshKind::new().with_user().with_cpu())
+            .with_processes(ProcessRefreshKind::new().with_user())
             .with_disks_list()
             .with_memory(),
     );
@@ -81,12 +81,12 @@ fn main() {
             for i in 0..art.len().max(info.len()) {
                 let line = info.get(i).map(|i| i.to_string()).unwrap_or_default();
                 let art = art.get(i).map(|i| i.to_string()).unwrap_or_default();
-                buf.push_str(&format!("{:<art_width$}{}\n", art, line));
+                buf.push_str(&format!("{art:<art_width$}{line}\n"));
             }
         }
     } else {
         for line in info {
-            buf.push_str(&format!("{}\n", line));
+            buf.push_str(&format!("{line}\n"));
         }
     }
 
