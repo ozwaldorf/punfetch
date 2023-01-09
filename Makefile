@@ -28,7 +28,7 @@ precommit: format build lint
 
 demo:
 	kitty @ launch --cwd=current --copy-env --location=vsplit sh -c "make demo-1; sleep 30"
-	clear && make demo-0
+	clear && make demo-0 && sleep 30
 
 demo-0:
 	punfetch -i $(IMAGE)

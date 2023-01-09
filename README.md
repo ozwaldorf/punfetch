@@ -14,7 +14,7 @@
     </p>
     <hr>
     <p align="center">
-        <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png"/> 
+        <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/211231336-194d6836-154b-4189-beac-b022d3056504.png"/> 
     </p>
 </header>
 

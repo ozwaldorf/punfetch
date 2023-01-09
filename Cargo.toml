@@ -1,6 +1,6 @@
 [package]
 name = "punfetch"
-version = "0.1.8"
+version = "0.1.9"
 edition = "2021"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
 license = "MIT"
