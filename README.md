@@ -10,11 +10,11 @@
         <a href="https://github.com/ozwaldorf/punfetch/actions/workflows/publish.yml"><img alt="publish" src="https://img.shields.io/github/actions/workflow/status/ozwaldorf/punfetch/publish.yml?label=Publish&style=for-the-badge" /></a>
     </p>
     <p align="center">
-        A blazingly fast sysinfo fetcher designed to match <a href="https://github.com/o2sh/onefetch">onefetch's</a> formatting.
+        A blazingly fast system fetch program to pair with <a href="https://github.com/o2sh/onefetch">onefetch</a>
     </p>
     <hr>
-    <p align="center" style="margin: 5%">
-        <img alt="preview" src="https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png"/> 
+    <p align="center">
+        <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/211184085-b4fb05d5-b31b-4d85-9320-1e2060d6db6d.png"/> 
     </p>
 </header>
 
@@ -43,6 +43,7 @@ make install
 # Usage
 
 ```man
+$ punfetch -h
 Usage: punfetch [OPTIONS]
 
 Options:
@@ -59,10 +60,6 @@ Options:
 - GPU info
 - Smart colors from image
 - Full onefetch formatting feature parity
-
-&nbsp;
-
----
 
 <footer>
     <h2 align="center">Contributing ❤️</h2>
