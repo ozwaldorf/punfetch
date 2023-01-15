@@ -140,7 +140,7 @@ impl Renderer {
         }
 
         if let Some(info) = &mut self.host_info {
-            info.0.push(("OS", self.os.clone()));
+            info.0.push_front(("OS", self.os.clone()));
             push_fmt(&mut self.lines, info.iter(), self.color);
         }
 

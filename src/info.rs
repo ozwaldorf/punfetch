@@ -1,4 +1,5 @@
 use std::{collections::HashSet, env, process::id, string::ToString, time::Duration};
+use std::collections::VecDeque;
 
 use byte_unit::Byte;
 use humantime::format_duration;
@@ -24,7 +25,7 @@ impl UserInfo {
     }
 }
 
-pub struct HostInfo(pub Vec<(&'static str, String)>);
+pub struct HostInfo(pub VecDeque<(&'static str, String)>);
 
 impl HostInfo {
     pub fn new(sys: &System) -> Self {
@@ -38,7 +39,7 @@ impl HostInfo {
             buf.push(("Terminal", term))
         }
 
-        Self(buf)
+        Self(buf.into())
     }
 
     //noinspection DuplicatedCode
