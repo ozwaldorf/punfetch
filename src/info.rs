@@ -1,5 +1,10 @@
-use std::{collections::HashSet, env, process::id, string::ToString, time::Duration};
-use std::collections::VecDeque;
+use std::{
+    collections::{HashSet, VecDeque},
+    env,
+    process::id,
+    string::ToString,
+    time::Duration,
+};
 
 use byte_unit::Byte;
 use humantime::format_duration;
