@@ -1,6 +1,6 @@
 [package]
 name = "punfetch"
-version = "0.1.11"
+version = "0.2.0"
 edition = "2021"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
 license = "MIT"
@@ -9,25 +9,34 @@ repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
 
+[workspace]
+members = ["distros"]
+
 [dependencies]
 byte-unit = "4.0.18"
-clap = { version = "4.0.32", features=["cargo"] }
+clap = { version = "4.0.32", features = ["cargo"] }
 colored = "2.0.0"
 humantime = "2.1.0"
 image = "0.24.5"
 onefetch-image = "2.14.2"
+punfetch_distros = { path = "distros" }
 sysinfo = "0.27.2"
 term_size = "0.3.2"
 
 [dev-dependencies]
 criterion = "0.4"
+punfetch_distros = { path = "distros" }
 
 [[bin]]
 name = "punfetch"
 path = "src/main.rs"
 
 [[bench]]
-name = "main"
+name = "cli"
+harness = false
+
+[[bench]]
+name = "distro"
 harness = false
 
 [profile.release]

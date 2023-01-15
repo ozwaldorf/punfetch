@@ -55,8 +55,8 @@ Options:
 
 # Todo
 
-- Distribution ascii logos
-- templating (see [this](https://github.com/o2sh/onefetch/blob/main/build.rs))
+- Improve sysinfo query time
+- Ascii colors ([see this](https://github.com/dylanaraps/neofetch/blob/master/neofetch))
 - GPU info
 - Smart colors from image
 - Full onefetch formatting feature parity
@@ -65,6 +65,6 @@ Options:
     <h2 align="center">Contributing ❤️</h2>
     <p align="center">This project follows <a>Conventional Commits</a>.</p>
     <p align="center">
-        <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
+        <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img alt="contrib.rocks" src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
     </p>
 </footer>
