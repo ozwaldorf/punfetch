@@ -84,10 +84,6 @@ impl SystemInfo {
     pub fn new(sys: &System) -> Self {
         let mut buf = vec![];
 
-        let uptime = sys.uptime();
-        let line = format!("{} ago", format_duration(Duration::from_secs(uptime)));
-        buf.push(("Last boot", line));
-
         let cpus = sys.cpus();
         if !cpus.is_empty() {
             buf.push(("CPU", cpus[0].brand().to_string()));
@@ -96,6 +92,10 @@ impl SystemInfo {
             let line = format!("~{load:.2}%");
             buf.push(("Load average", line));
         }
+
+        let uptime = sys.uptime();
+        let line = format!("{} ago", format_duration(Duration::from_secs(uptime)));
+        buf.push(("Last boot", line));
 
         let used_mem = sys.used_memory() as u128;
         let total_mem = sys.total_memory() as u128;
