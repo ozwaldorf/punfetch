@@ -13,13 +13,13 @@ authors = ["ossian <self@ossian.dev>"]
 members = ["distros"]
 
 [dependencies]
-punfetch_distros = { path = "distros" }
 byte-unit = "4.0.18"
-clap = { version = "4.0.32", features=["cargo"] }
+clap = { version = "4.0.32", features = ["cargo"] }
 colored = "2.0.0"
 humantime = "2.1.0"
 image = "0.24.5"
 onefetch-image = "2.14.2"
+punfetch_distros = { path = "distros" }
 sysinfo = "0.27.2"
 term_size = "0.3.2"
 
