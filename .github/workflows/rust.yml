@@ -25,11 +25,11 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --verbose
+          args: --verbose --release
       - uses: actions/upload-artifact@v2
         with:
-          name: binary
-          path: target/debug/punfetch
+          name: punfetch
+          path: target/release/punfetch
 
   run:
     name: Run
@@ -38,8 +38,8 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: binary
-          path: punfetch
+          name: punfetch
+          path: .
       - run: ./punfetch
 
   fmt:
