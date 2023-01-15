@@ -55,8 +55,8 @@ Options:
 
 # Todo
 
-- Distribution ascii logos
-- templating (see [this](https://github.com/o2sh/onefetch/blob/main/build.rs))
+- Improve sysinfo query time
+- Ascii colors ([see this](https://github.com/dylanaraps/neofetch/blob/master/neofetch))
 - GPU info
 - Smart colors from image
 - Full onefetch formatting feature parity

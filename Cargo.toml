@@ -9,7 +9,11 @@ repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
 
+[workspace]
+members = ["distros"]
+
 [dependencies]
+punfetch_distros = { path = "distros" }
 byte-unit = "4.0.18"
 clap = { version = "4.0.32", features=["cargo"] }
 colored = "2.0.0"
@@ -21,13 +25,18 @@ term_size = "0.3.2"
 
 [dev-dependencies]
 criterion = "0.4"
+punfetch_distros = { path = "distros" }
 
 [[bin]]
 name = "punfetch"
 path = "src/main.rs"
 
 [[bench]]
-name = "main"
+name = "cli"
+harness = false
+
+[[bench]]
+name = "distro"
 harness = false
 
 [profile.release]
