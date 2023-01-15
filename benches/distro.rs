@@ -32,7 +32,7 @@ fn bench(c: &mut Criterion) {
         b.iter_custom(|iters| {
             let start = std::time::Instant::now();
             for i in 0..iters as usize {
-                distros::search_match(SAMPLES[i % len]);
+                search_match(SAMPLES[i % len]);
             }
             start.elapsed()
         })

@@ -126,27 +126,27 @@ mod tests {
     use crate::sys;
 
     #[test]
-    fn test_host_info() {
+    fn host_info() {
         let sys = sys();
         let host_info = HostInfo::new(&sys);
         assert_eq!(host_info.0.len(), 2)
     }
 
     #[test]
-    fn test_user_info() {
+    fn user_info() {
         let sys = sys();
         let _ = UserInfo::new(&sys);
     }
 
     #[test]
-    fn test_sys_info() {
+    fn sys_info() {
         let sys = sys();
         let sys_info = SystemInfo::new(&sys);
         assert_eq!(sys_info.0.len(), 4)
     }
 
     #[test]
-    fn test_disk_info() {
+    fn disk_info() {
         let sys = sys();
         let _ = DiskInfo::from(sys.disks());
     }

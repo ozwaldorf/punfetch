@@ -28,7 +28,7 @@ mod tests {
 
     /// Ensure some common distros with extra data in them will match correctly
     #[test]
-    fn test_search() {
+    fn search_multiple() {
         let manjaro = Distro::search("Manjaro Linux");
         assert_eq!(manjaro, Distro::MANJARO);
 

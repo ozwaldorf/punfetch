@@ -9,6 +9,12 @@ clean:
 build:
 	cargo build
 
+install:
+	cargo install --path .
+
+uninstall:
+	cargo remove --path .
+
 run:
 	cargo run
 
@@ -18,14 +24,14 @@ format:
 lint:
 	cargo fmt -- --check
 	cargo clippy --all-features -- -Dwarnings
-	
-install:
-	cargo install --path .
 
-uninstall:
-	cargo remove --path .
+test:
+	cargo test --all --all-features
 
-ci: format lint
+bench:
+	cargo bench
+
+ci: format lint test
 
 # Requires kitty with remote control enabled
 demo:
