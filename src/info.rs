@@ -90,7 +90,7 @@ impl SystemInfo {
 
         let cpus = sys.cpus();
         if !cpus.is_empty() {
-            buf.push(("CPU", cpus[0].name().to_string()));
+            buf.push(("CPU", cpus[0].brand().to_string()));
 
             let load = sys.load_average().fifteen;
             let line = format!("~{load:.2}%");
