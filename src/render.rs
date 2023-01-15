@@ -3,9 +3,11 @@ use std::fmt::Display;
 use colored::{Color, Colorize};
 use image::DynamicImage;
 use onefetch_image::get_best_backend;
-use punfetch_distros::Distro;
 
-use crate::info::{DiskInfo, HostInfo, SystemInfo, UserInfo};
+use crate::{
+    distros::Distro,
+    info::{DiskInfo, HostInfo, SystemInfo, UserInfo},
+};
 
 pub struct Renderer {
     pub os: String,

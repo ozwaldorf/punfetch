@@ -41,9 +41,9 @@ demo:
 # Run punfetch demo
 demo-0:
 	punfetch -i $(IMAGE)
-	printf '%.s─' $$(seq 1 $$(tput cols));
+	@printf '%.s─' $$(seq 1 $$(tput cols));
 	punfetch
-	printf '%.s─' $$(seq 1 $$(tput cols));
+	@printf '%.s─' $$(seq 1 $$(tput cols));
 	punfetch --show-logo never
 
 # Run onefetch comparison demo

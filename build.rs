@@ -8,12 +8,12 @@ use std::{
 use tera::{Context, Tera};
 
 fn main() -> Result<(), Box<dyn Error>> {
-    println!("cargo:rerun-if-changed=../distros.yaml");
-    println!("cargo:rerun-if-changed=src/distros.tera");
+    println!("cargo:rerun-if-changed=distros.yaml");
+    println!("cargo:rerun-if-changed=src/distros/distro.tera");
 
     let out_dir = std::env::var("OUT_DIR")?;
     let mut tera = Tera::default();
-    let mut data: serde_json::Value = from_reader(read_to_string("../distros.yaml")?.as_bytes())?;
+    let mut data: serde_json::Value = from_reader(read_to_string("distros.yaml")?.as_bytes())?;
 
     // for each distro
     for (name, obj) in data.as_object_mut().unwrap().iter_mut() {
@@ -49,7 +49,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     let rust_code = tera.render_str(
-        &read_to_string("src/distros.tera")?,
+        &read_to_string("src/distros/distro.tera")?,
         &Context::from_value(json!({ "distros": data }))?,
     )?;
 

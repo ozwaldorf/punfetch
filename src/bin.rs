@@ -1,26 +1,12 @@
 use clap::{arg, command};
 use image::open;
-use sysinfo::{CpuRefreshKind, ProcessRefreshKind, RefreshKind, System, SystemExt};
+use sysinfo::SystemExt;
 use term_size::dimensions;
 
-pub use crate::{
-    info::{HostInfo, SystemInfo, UserInfo},
+use libpunfetch::{
+    info::{sys, HostInfo, SystemInfo, UserInfo},
     render::Renderer,
 };
-
-pub mod info;
-mod render;
-
-pub fn sys() -> System {
-    System::new_with_specifics(
-        RefreshKind::new()
-            .with_cpu(CpuRefreshKind::new())
-            .with_users_list()
-            .with_processes(ProcessRefreshKind::new().with_user())
-            .with_disks_list()
-            .with_memory(),
-    )
-}
 
 fn main() {
     let args = command!()
