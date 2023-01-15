@@ -8,7 +8,21 @@ use std::{
 
 use byte_unit::Byte;
 use humantime::format_duration;
-use sysinfo::{CpuExt, Disk, DiskExt, Pid, PidExt, ProcessExt, System, SystemExt, UserExt};
+use sysinfo::{
+    CpuExt, CpuRefreshKind, Disk, DiskExt, Pid, PidExt, ProcessExt, ProcessRefreshKind,
+    RefreshKind, System, SystemExt, UserExt,
+};
+
+pub fn sys() -> System {
+    System::new_with_specifics(
+        RefreshKind::new()
+            .with_cpu(CpuRefreshKind::new())
+            .with_users_list()
+            .with_processes(ProcessRefreshKind::new().with_user())
+            .with_disks_list()
+            .with_memory(),
+    )
+}
 
 pub struct UserInfo {
     pub user: String,
@@ -129,7 +143,6 @@ impl SystemInfo {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::sys;
 
     #[test]
     fn host_info() {

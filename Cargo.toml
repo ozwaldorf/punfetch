@@ -9,8 +9,13 @@ repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
 
-[workspace]
-members = ["distros"]
+[[bin]]
+name = "punfetch"
+path = "src/bin.rs"
+
+[lib]
+name = "libpunfetch"
+path = "src/lib.rs"
 
 [dependencies]
 byte-unit = "4.0.18"
@@ -19,17 +24,21 @@ colored = "2.0.0"
 humantime = "2.1.0"
 image = "0.24.5"
 onefetch-image = "2.14.2"
-punfetch_distros = { path = "distros", version = "0.1.0" }
 sysinfo = "0.27.2"
 term_size = "0.3.2"
+num_enum = "0.5.7"
+regex = "1"
+
+[build-dependencies]
+lazy_static = "1"
+regex = "1"
+serde_json = "1"
+serde_yaml = "0.9"
+tera = { version = "1", default-features = false }
 
 [dev-dependencies]
 criterion = "0.4"
-punfetch_distros = { path = "distros", version = "0.1.0" }
-
-[[bin]]
-name = "punfetch"
-path = "src/main.rs"
+punfetch = { path = "." }
 
 [[bench]]
 name = "cli"
