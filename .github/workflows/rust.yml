@@ -1,4 +1,4 @@
-name: CI
+name: Rust
 on:
   push:
     branches: ["*"]
@@ -25,7 +25,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --verbose --release
+          args: --release
       - uses: actions/upload-artifact@v2
         with:
           name: punfetch
@@ -44,7 +44,7 @@ jobs:
       - run: ./punfetch
 
   fmt:
-    name: Rustfmt
+    name: Format
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -83,9 +83,9 @@ jobs:
         with:
           profile: minimal
           toolchain: ${{ env.TOOLCHAIN }}
+          components: clippy
           override: true
-      - run: rustup component add clippy
-      - uses: actions-rs/cargo@v1
+      - uses: actions-rs/clippy-check@v1
         with:
-          command: clippy
-          args: -- -D warnings
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: --all-features
