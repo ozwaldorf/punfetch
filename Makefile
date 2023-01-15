@@ -16,6 +16,7 @@ format:
 	cargo fmt
 
 lint:
+	cargo fmt -- --check
 	cargo clippy --all-features -- -Dwarnings
 	
 install:
@@ -24,20 +25,22 @@ install:
 uninstall:
 	cargo remove --path .
 
-precommit: format build lint
+ci: format lint
 
+# Requires kitty with remote control enabled
 demo:
 	kitty @ launch --cwd=current --copy-env --location=vsplit sh -c "make demo-1; sleep 30"
 	clear && make demo-0 && sleep 30
 
+# Run punfetch demo
 demo-0:
 	punfetch -i $(IMAGE)
-	@printf "%.s\n" $$(seq 1 5); printf '%.s─' $$(seq 1 $$(tput cols));
+	printf '%.s─' $$(seq 1 $$(tput cols));
 	punfetch
-	@printf "%.s\n" $$(seq 1 5); printf '%.s─' $$(seq 1 $$(tput cols));
+	printf '%.s─' $$(seq 1 $$(tput cols));
 	punfetch --show-logo never
-	@printf "%.s\n" $$(seq 1 10)
 
+# Run onefetch comparison demo
 demo-1:
 	onefetch -i $(IMAGE)
 	@printf '%.s─' $$(seq 1 $$(tput cols)); echo

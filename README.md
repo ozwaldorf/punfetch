@@ -65,6 +65,6 @@ Options:
     <h2 align="center">Contributing ❤️</h2>
     <p align="center">This project follows <a>Conventional Commits</a>.</p>
     <p align="center">
-        <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
+        <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img alt="contrib.rocks" src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
     </p>
 </footer>
