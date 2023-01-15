@@ -61,10 +61,51 @@ Options:
 - Smart colors from image
 - Full onefetch formatting feature parity
 
+# Contributing
+
+This project follows [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)!
+
+## Adding a new distribution
+
+New distributions can easily be supported by adding a new line to the [distros.yaml](distros.yaml) file. A simple example entry might look like:
+
+```yaml
+"Examplo Linux":
+  ascii: |
+    {0}         _nnnn_
+    {0}        dGGGGMMb
+    {0}       @p~qp~~qMb
+    {0}       M|@||@) M|
+    {0}       @,----.JM|
+    {0}      JS^\__/  qKL
+    {0}     dZP        qKRb
+    {0}    dZP          qKKb
+    {0}   fZP            SMMb
+    {0}   HZM            MMMM
+    {0}   FqM            MMMM
+    {0} __| ".        |\dS"qML
+    {0} |    `.       | `' \Zq
+    {0}_)      \.___.,|     .'
+    {0}\____   )MMMMMP|   .'
+    {0}     `-'       `--'
+```
+
+If there are multiple patterns that could be used to identify the distribution, or the title of the distribution is lengthy, a custom pattern can be specified:
+
+```yaml
+"Examplo Linux":
+  regex: "{examplo,oldname1,oldname2}"
+  ascii: |
+    ...
+```
+
+> Regex patterns should be simple, lowercase, and `A-z0-9` only.
+
+
 <footer>
-    <h2 align="center">Contributing ❤️</h2>
-    <p align="center">This project follows <a>Conventional Commits</a>.</p>
+    <h2 align="center">Contributors ❤️</h2>
     <p align="center">
         <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img alt="contrib.rocks" src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
     </p>
+    <p align="center">(<a href="https://contrib.rocks/preview?repo=ozwaldorf%2Fpunfetch">contrib.rocks</a>)</p>
 </footer>
