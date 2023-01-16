@@ -1,5 +1,5 @@
 use criterion::{criterion_group, criterion_main, Criterion};
-use libpunfetch::distros::Distro;
+use punfetch::distros::Distro;
 use std::fmt::Display;
 
 const SAMPLES: [&str; 13] = [

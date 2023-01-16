@@ -1,423 +1,429 @@
 "Default":
+  colors:
+    ansi:
+      - white
   ascii: |
-    {1}         _nnnn_
-            dGGGGMMb
-           @p~qp~~qMb
-           M|@||@) M|
-           @,----.JM|
-          JS^\__/  qKL
-         dZP        qKRb
-        dZP          qKKb
-       fZP            SMMb
-       HZM            MMMM
-       FqM            MMMM
-     __| ".        |\dS"qML
-     |    `.       | `' \Zq
-    _)      \.___.,|     .'
-    \____   )MMMMMP|   .'
-         `-'       `--'
+    {0}         _nnnn_
+    {0}        dGGGGMMb
+    {0}       @p~qp~~qMb
+    {0}       M|@||@) M|
+    {0}       @,----.JM|
+    {0}      JS^\__/  qKL
+    {0}     dZP        qKRb
+    {0}    dZP          qKKb
+    {0}   fZP            SMMb
+    {0}   HZM            MMMM
+    {0}   FqM            MMMM
+    {0} __| ".        |\dS"qML
+    {0} |    `.       | `' \Zq
+    {0}_)      \.___.,|     .'
+    {0}\____   )MMMMMP|   .'
+    {0}     `-'       `--'
 
 "AIX":
+  colors:
+    ansi:
+      - green
   ascii: |
-    {1}           `:+ssssossossss+-`
-            .oys///oyhddddhyo///sy+.
-          /yo:+hNNNNNNNNNNNNNNNNh+:oy/
-        :h/:yNNNNNNNNNNNNNNNNNNNNNNy-+h:
-      `ys.yNNNNNNNNNNNNNNNNNNNNNNNNNNy.ys
-     `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oh
-     h+-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN.oy
-    /d`mNNNNNNN/::mNNNd::m+:/dNNNo::dNNNd`m:
-    h//NNNNNNN: . .NNNh  mNo  od. -dNNNNN:+y
-    N.sNNNNNN+ -N/ -NNh  mNNd.   sNNNNNNNo-m
-    N.sNNNNNs  +oo  /Nh  mNNs` ` /mNNNNNNo-m
-    h//NNNNh  ossss` +h  md- .hm/ `sNNNNN:+y
-    :d`mNNN+/yNNNNNd//y//h//oNNNNy//sNNNd`m-
-     yo-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNm.ss
-     `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oy
-       sy.yNNNNNNNNNNNNNNNNNNNNNNNNNNs.yo
-        :h+-yNNNNNNNNNNNNNNNNNNNNNNs-oh-
-          :ys:/yNNNNNNNNNNNNNNNmy/:sy:
-            .+ys///osyhhhhys+///sy+.
-                -/osssossossso/-
+    {0}           `:+ssssossossss+-`
+    {0}        .oys///oyhddddhyo///sy+.
+    {0}      /yo:+hNNNNNNNNNNNNNNNNh+:oy/
+    {0}    :h/:yNNNNNNNNNNNNNNNNNNNNNNy-+h:
+    {0}  `ys.yNNNNNNNNNNNNNNNNNNNNNNNNNNy.ys
+    {0} `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oh
+    {0} h+-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN.oy
+    {0}/d`mNNNNNNN/::mNNNd::m+:/dNNNo::dNNNd`m:
+    {0}h//NNNNNNN: . .NNNh  mNo  od. -dNNNNN:+y
+    {0}N.sNNNNNN+ -N/ -NNh  mNNd.   sNNNNNNNo-m
+    {0}N.sNNNNNs  +oo  /Nh  mNNs` ` /mNNNNNNo-m
+    {0}h//NNNNh  ossss` +h  md- .hm/ `sNNNNN:+y
+    {0}:d`mNNN+/yNNNNNd//y//h//oNNNNy//sNNNd`m-
+    {0} yo-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNm.ss
+    {0} `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oy
+    {0}   sy.yNNNNNNNNNNNNNNNNNNNNNNNNNNs.yo
+    {0}    :h+-yNNNNNNNNNNNNNNNNNNNNNNs-oh-
+    {0}      :ys:/yNNNNNNNNNNNNNNNmy/:sy:
+    {0}        .+ys///osyhhhhys+///sy+.
+    {0}            -/osssossossso/-
 
-
-"Aperio GNU/Linux":
-  glob: "Aperio*"
+"Aperio Linux":
+  colors:
+    ansi:
+      - white
   ascii: |
-    {2}
-     _.._  _ ._.. _
-    (_][_)(/,[  |(_)
-       |   GNU/Linux
-
+    {0}
+    {0} _.._  _ ._.. _
+    {0}(_][_)(/,[  |(_)
+    {0}   |   GNU/Linux
 
 "Hash":
   ascii: |
-    {1}
-          +   ######   +
-        ###   ######   ###
-      #####   ######   #####
-     ######   ######   ######
-    ####### '"###### '"########
-    #######   ######   ########
-    #######   ######   ########
-     ###### '"###### '"######
-      #####   ######   #####
-        ###   ######   ###
-          ~   ######   ~
-
+    {0}
+    {0}      +   ######   +
+    {0}    ###   ######   ###
+    {0}  #####   ######   #####
+    {0} ######   ######   ######
+    {0}####### '"###### '"########
+    {0}#######   ######   ########
+    {0}#######   ######   ########
+    {0} ###### '"###### '"######
+    {0}  #####   ######   #####
+    {0}    ###   ######   ###
+    {0}      ~   ######   ~
 
 "Alma Linux":
-  glob: "AlmaLinux*"
+  colors:
+    ansi:
+      - red
+      - yellow
+      - blue
+      - green
+      - cyan
   ascii: |
-    {1}         'c:.
-    {1}        lkkkx, ..       {2}..   ,cc,
-    {1}        okkkk:ckkx'  {2}.lxkkx.okkkkd
-    {1}        .:llcokkx'  {2}:kkkxkko:xkkd,
-    {1}      .xkkkkdood:  {2};kx,  .lkxlll;
-    {1}       xkkx.       {2}xk'     xkkkkk:
-    {1}       'xkx.       {2}xd      .....,.
-    {3}      .. {1}:xkl'     {2}:c      ..''..
-    {3}    .dkx'  {1}.:ldl:'. {2}'  {4}':lollldkkxo;
-    {3}  .''lkkko'                     {4}ckkkx.
-    {3}'xkkkd:kkd.       ..  {5};'        {4}:kkxo.
-    {3},xkkkd;kk'      ,d;    {5}ld.   {4}':dkd::cc,
-    {3} .,,.;xkko'.';lxo.      {5}dx,  {4}:kkk'xkkkkc
-    {3}     'dkkkkkxo:.        {5};kx  {4}.kkk:;xkkd.
-    {3}       .....   {5}.;dk:.   {5}lkk.  {4}:;,
-                 {5}:kkkkkkkdoxkkx
-                  ,c,,;;;:xkkd.
-                    ;kkkkl...
-                    ;kkkkl
-                     ,od;
+    {0}         'c:.
+    {0}        lkkkx, ..       {1}..   ,cc,
+    {0}        okkkk:ckkx'  {1}.lxkkx.okkkkd
+    {0}        .:llcokkx'  {1}:kkkxkko:xkkd,
+    {0}      .xkkkkdood:  {1};kx,  .lkxlll;
+    {0}       xkkx.       {1}xk'     xkkkkk:
+    {0}       'xkx.       {1}xd      .....,.
+    {2}      .. {0}:xkl'     {1}:c      ..''..
+    {2}    .dkx'  {0}.:ldl:'. {1}'  {3}':lollldkkxo;
+    {2}  .''lkkko'                     {3}ckkkx.
+    {2}'xkkkd:kkd.       ..  {4};'        {3}:kkxo.
+    {2},xkkkd;kk'      ,d;    {4}ld.   {3}':dkd::cc,
+    {2} .,,.;xkko'.';lxo.      {4}dx,  {3}:kkk'xkkkkc
+    {2}     'dkkkkkxo:.        {4};kx  {3}.kkk:;xkkd.
+    {2}       .....   {4}.;dk:.   {4}lkk.  {3}:;,
+    {4}             :kkkkkkkdoxkkx
+    {4}              ,c,,;;;:xkkd.
+    {4}                ;kkkkl...
+    {4}                ;kkkkl
+    {4}                 ,od;
 
 "Alpine":
+  colors:
+    ansi:
+      - blue
+    hex:
+      - "#0D597F"
   ascii: |
-    {1}       .hddddddddddddddddddddddh.
-          :dddddddddddddddddddddddddd:
-         /dddddddddddddddddddddddddddd/
-        +dddddddddddddddddddddddddddddd+
-      `sdddddddddddddddddddddddddddddddds`
-     `ydddddddddddd++hdddddddddddddddddddy`
-    .hddddddddddd+`  `+ddddh:-sdddddddddddh.
-    hdddddddddd+`      `+y:    .sddddddddddh
-    ddddddddh+`   `//`   `.`     -sddddddddd
-    ddddddh+`   `/hddh/`   `:s-    -sddddddd
-    ddddh+`   `/+/dddddh/`   `+s-    -sddddd
-    ddd+`   `/o` :dddddddh/`   `oy-    .yddd
-    hdddyo+ohddyosdddddddddho+oydddy++ohdddh
-    .hddddddddddddddddddddddddddddddddddddh.
-     `yddddddddddddddddddddddddddddddddddy`
-      `sdddddddddddddddddddddddddddddddds`
-        +dddddddddddddddddddddddddddddd+
-         /dddddddddddddddddddddddddddd/
-          :dddddddddddddddddddddddddd:
-           .hddddddddddddddddddddddh.
-
+    {0}       .hddddddddddddddddddddddh.
+    {0}      :dddddddddddddddddddddddddd:
+    {0}     /dddddddddddddddddddddddddddd/
+    {0}    +dddddddddddddddddddddddddddddd+
+    {0}  `sdddddddddddddddddddddddddddddddds`
+    {0} `ydddddddddddd++hdddddddddddddddddddy`
+    {0}.hddddddddddd+`  `+ddddh:-sdddddddddddh.
+    {0}hdddddddddd+`      `+y:    .sddddddddddh
+    {0}ddddddddh+`   `//`   `.`     -sddddddddd
+    {0}ddddddh+`   `/hddh/`   `:s-    -sddddddd
+    {0}ddddh+`   `/+/dddddh/`   `+s-    -sddddd
+    {0}ddd+`   `/o` :dddddddh/`   `oy-    .yddd
+    {0}hdddyo+ohddyosdddddddddho+oydddy++ohdddh
+    {0}.hddddddddddddddddddddddddddddddddddddh.
+    {0} `yddddddddddddddddddddddddddddddddddy`
+    {0}  `sdddddddddddddddddddddddddddddddds`
+    {0}    +dddddddddddddddddddddddddddddd+
+    {0}     /dddddddddddddddddddddddddddd/
+    {0}      :dddddddddddddddddddddddddd:
+    {0}       .hddddddddddddddddddddddh.
 
 "Alter":
+  colors:
+    ansi:
+      - cyan
+      - cyan
+      - blue
+    hex:
+      - "#009AFF"
+      - "#006EFF"
+      - "#005498"
   ascii: |
-    {1}                      %,
-                        ^WWWw
-                       'wwwwww
-                      !wwwwwwww
-                     #`wwwwwwwww
-                    @wwwwwwwwwwww
-                   wwwwwwwwwwwwwww
-                  wwwwwwwwwwwwwwwww
-                 wwwwwwwwwwwwwwwwwww
-                wwwwwwwwwwwwwwwwwwww,
-               w~1i.wwwwwwwwwwwwwwwww,
-             3~:~1lli.wwwwwwwwwwwwwwww.
-            :~~:~?ttttzwwwwwwwwwwwwwwww
-           #<~:~~~~?llllltO-.wwwwwwwwwww
-          #~:~~:~:~~?ltlltlttO-.wwwwwwwww
-         @~:~~:~:~:~~(zttlltltlOda.wwwwwww
-        @~:~~: ~:~~:~:(zltlltlO    a,wwwwww
-       8~~:~~:~~~~:~~~~_1ltltu          ,www
-      5~~:~~:~~:~~:~~:~~~_1ltq             N,,
-     g~:~~:~~~:~~:~~:~:~~~~1q                N,
-
+    {0}                      %,
+    {0}                    ^WWWw
+    {0}                   'wwwwww
+    {0}                  !wwwwwwww
+    {0}                 #`wwwwwwwww
+    {0}                @wwwwwwwwwwww
+    {0}               wwwwwwwwwwwwwww
+    {0}              wwwwwwwwwwwwwwwww
+    {0}             wwwwwwwwwwwwwwwwwww
+    {0}            wwwwwwwwwwwwwwwwwwww,
+    {1}           w{2}~1i.{0}wwwwwwwwwwwwwwwww,
+    {1}         3~:~{2}1lli.{0}wwwwwwwwwwwwwwww.
+    {1}        :~~:~{2}?ttttz{0}wwwwwwwwwwwwwwww
+    {1}       #<~:~~~~{2}?llllltO-.{0}wwwwwwwwwww
+    {1}      #~:~~:~:~~{2}?ltlltlttO-.{0}wwwwwwwww
+    {1}     @~:~~:~:~:~~{2}(zttlltltlOda.{0}wwwwwww
+    {1}    @~:~~: ~:~~:~:{2}(zltlltlO     {0},wwwwww
+    {1}   8~~:~~:~~~~:~~~~_{2}1ltltu          {0},www
+    {1}  5~~:~~:~~:~~:~~:~~~_{2}1ltq             {0}N,,
+    {1} g~:~~:~~~:~~:~~:~:~~~~{2}1q                {0}N,
 
 "Amazon":
+  colors:
+    ansi:
+      - yellow
+    hex:
+      - "#FF9900"
   ascii: |
-    {1}             `-/oydNNdyo:.`
-          `.:+shmMMMMMMMMMMMMMMmhs+:.`
-        -+hNNMMMMMMMMMMMMMMMMMMMMMMNNho-
-    .``      -/+shmNNMMMMMMNNmhs+/-      ``.
-    dNmhs+:.       `.:/oo/:.`       .:+shmNd
-    dMMMMMMMNdhs+:..        ..:+shdNMMMMMMMd
-    dMMMMMMMMMMMMMMNds    odNMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
-    .:+ydNMMMMMMMMMMMh    yMMMMMMMMMMMNdy+:.
-         `.:+shNMMMMMh    yMMMMMNhs+:``
-                `-+shy    shs+:`
-
+    {0}             `-/oydNNdyo:.`
+    {0}      `.:+shmMMMMMMMMMMMMMMmhs+:.`
+    {0}    -+hNNMMMMMMMMMMMMMMMMMMMMMMNNho-
+    {0}.``      -/+shmNNMMMMMMNNmhs+/-      ``.
+    {0}dNmhs+:.       `.:/oo/:.`       .:+shmNd
+    {0}dMMMMMMMNdhs+:..        ..:+shdNMMMMMMMd
+    {0}dMMMMMMMMMMMMMMNds    odNMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}dMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd
+    {0}.:+ydNMMMMMMMMMMMh    yMMMMMMMMMMMNdy+:.
+    {0}     `.:+shNMMMMMh    yMMMMMNhs+:``
+    {0}            `-+shy    shs+:`
 
 "Anarchy":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#1B93D1"
+      - "#FFFFFF"
   ascii: |
-    {2}..{1}
-    {2}..{1}
-    {2}:..{1}
-    {2}:+++.{1}
-    .:::++{2}++++{1}+::.
-    .:+######{2}++++{1}######+:.
-    .+#########{2}+++++{1}##########:.
-    .+##########{2}+++++++{1}##{2}+{1}#########+.
-    +###########{2}+++++++++{1}############:
-    +##########{2}++++++{1}#{2}++++{1}#{2}+{1}###########+
-    +###########{2}+++++{1}###{2}++++{1}#{2}+{1}###########+
-    :##########{2}+{1}#{2}++++{1}####{2}++++{1}#{2}+{1}############:
-    ###########{2}+++++{1}#####{2}+++++{1}#{2}+{1}###{2}++{1}######+
-    .##########{2}++++++{1}#####{2}++++++++++++{1}#######.
-    .##########{2}+++++++++++++++++++{1}###########.
-    #####{2}++++++++++++++{1}###{2}++++++++{1}#########+
-    :###{2}++++++++++{1}#########{2}+++++++{1}#########:
-    +######{2}+++++{1}##########{2}++++++++{1}#######+
-    +####{2}+++++{1}###########{2}+++++++++{1}#####+
-    :##{2}++++++{1}############{2}++++++++++{1}##:
-    .{2}++++++{1}#############{2}++++++++++{1}+.
-    :{2}++++{1}###############{2}+++++++{1}::
-    .{2}++. .:+{1}##############{2}+++++++{1}..
-    {2}.:.{1}      ..::++++++::..:{2}++++{1}+.
-    {2}.{1}                       {2}.:+++{1}.
-           {2}.:{1}:
-              {2}..{1}
-               {2}..{1}
-
-
-"android_small":
-  ascii: |
-    {1}  ;,           ,;
-       ';,.-----.,;'
-      ,'           ',
-     /    O     O    \\
-    |                 |
-    '-----------------'
-
+    {0}                         {0}..{1}
+                            {0}..{1}
+                          {0}:..{1}
+                        {0}:+++.{1}
+                  .:::++{0}++++{1}+::.
+              .:+######{0}++++{1}######+:.
+           .+#########{0}+++++{1}##########:.
+         .+##########{0}+++++++{1}##{0}+{1}#########+.
+        +###########{0}+++++++++{1}############:
+       +##########{0}++++++{1}#{0}++++{1}#{0}+{1}###########+
+      +###########{0}+++++{1}###{0}++++{1}#{0}+{1}###########+
+     :##########{0}+{1}#{0}++++{1}####{0}++++{1}#{0}+{1}############:
+     ###########{0}+++++{1}#####{0}+++++{1}#{0}+{1}###{0}++{1}######+
+    {1}.##########{0}++++++{1}#####{0}++++++++++++{1}#######.
+    {1}.##########{0}+++++++++++++++++++{1}###########.
+     {1}#####{0}++++++++++++++{1}###{0}++++++++{1}#########+
+     {1}:###{0}++++++++++{1}#########{0}+++++++{1}#########:
+      {1}+######{0}+++++{1}##########{0}++++++++{1}#######+
+       {1}+####{0}+++++{1}###########{0}+++++++++{1}#####+
+        {1}:##{0}++++++{1}############{0}++++++++++{1}##:
+         .{0}++++++{1}#############{0}++++++++++{1}+.
+          :{0}++++{1}###############{0}+++++++{1}::
+         .{0}++. .:+{1}##############{0}+++++++{1}..
+         {0}.:.{1}      ..::++++++::..:{0}++++{1}+.
+         {0}.{1}                       {0}.:+++{1}.
+                                    {0}.:{1}:
+                                       {0}..{1}
+                                        {0}..{1}
 
 "Android":
+  colors:
+      ansi:
+      - green
+      - white
+      hex:
+      - "#00C853"
+      - "#FFFFFF"
   ascii: |
-    {1}         -o          o-
-              +hydNNNNdyh+
-            +mMMMMMMMMMMMMm+
-          `dMM{2}m:{1}NMMMMMMN{2}:m{1}MMd`
-          hMMMMMMMMMMMMMMMMMMh
-      ..  yyyyyyyyyyyyyyyyyyyy  ..
-    .mMMm`MMMMMMMMMMMMMMMMMMMM`mMMm.
-    :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
-    :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
-    :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
-    :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
-    -MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM-
-     +yy+ MMMMMMMMMMMMMMMMMMMM +yy+
-          mMMMMMMMMMMMMMMMMMMm
-          `/++MMMMh++hMMMM++/`
-              MMMMo  oMMMM
-              MMMMo  oMMMM
-              oNMm-  -mMNs
-
+    {0}         -o          o-
+    {0}          +hydNNNNdyh+
+    {0}        +mMMMMMMMMMMMMm+
+    {0}      `dMM{1}m:{0}NMMMMMMN{1}:m{0}MMd`
+    {0}      hMMMMMMMMMMMMMMMMMMh
+    {0}  ..  yyyyyyyyyyyyyyyyyyyy  ..
+    {0}.mMMm`MMMMMMMMMMMMMMMMMMMM`mMMm.
+    {0}:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+    {0}:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+    {0}:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+    {0}:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+    {0}-MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM-
+    {0} +yy+ MMMMMMMMMMMMMMMMMMMM +yy+
+    {0}      mMMMMMMMMMMMMMMMMMMm
+    {0}      `/++MMMMh++hMMMM++/`
+    {0}          MMMMo  oMMMM
+    {0}          MMMMo  oMMMM
+    {0}          oNMm-  -mMNs
 
 "instantOS":
   ascii: |
-    {1}
-         'cx0XWWMMWNKOd:'.
-      .;kNMMMMMMMMMMMMMWNKd'
-     'kNMMMMMMWNNNWMMMMMMMMXo.
-    ,0MMMMMW0o;'..,:dKWMMMMMWx.
-    OMMMMMXl.        .xNMMMMMNo
-    WMMMMNl           .kWWMMMMO'
-    MMMMMX;            oNWMMMMK,
-    NMMMMWo           .OWMMMMMK,
-    kWMMMMNd.        ,kWMMMMMMK,
-    'kWMMMMWXxl:;;:okNMMMMMMMMK,
-     .oXMMMMMMMWWWMMMMMMMMMMMMK,
-       'oKWMMMMMMMMMMMMMMMMMMMK,
-         .;lxOKXXXXXXXXXXXXXXXO;......
-              ................,d0000000kd:.
-                              .kMMMMMMMMMW0;
-                              .kMMMMMMMMMMMX
-                              .xMMMMMMMMMMMW
-                               cXMMMMMMMMMM0
-                                :0WMMMMMMNx,
-                                 .o0NMWNOc.
-
+    {0}
+    {0}     'cx0XWWMMWNKOd:'.
+    {0}  .;kNMMMMMMMMMMMMMWNKd'
+    {0} 'kNMMMMMMWNNNWMMMMMMMMXo.
+    {0},0MMMMMW0o;'..,:dKWMMMMMWx.
+    {0}OMMMMMXl.        .xNMMMMMNo
+    {0}WMMMMNl           .kWWMMMMO'
+    {0}MMMMMX;            oNWMMMMK,
+    {0}NMMMMWo           .OWMMMMMK,
+    {0}kWMMMMNd.        ,kWMMMMMMK,
+    {0}'kWMMMMWXxl:;;:okNMMMMMMMMK,
+    {0} .oXMMMMMMMWWWMMMMMMMMMMMMK,
+    {0}   'oKWMMMMMMMMMMMMMMMMMMMK,
+    {0}     .;lxOKXXXXXXXXXXXXXXXO;......
+    {0}          ................,d0000000kd:.
+    {0}                          .kMMMMMMMMMW0;
+    {0}                          .kMMMMMMMMMMMX
+    {0}                          .xMMMMMMMMMMMW
+    {0}                           cXMMMMMMMMMM0
+    {0}                            :0WMMMMMMNx,
+    {0}                             .o0NMWNOc.
 
 "Antergos":
+  colors:
+      ansi:
+      - blue
+      - white
+      hex:
+        - "#3E659F"
+        - "#DDDDDD"
   ascii: |
-    {2}              `.-/::/-``
-                .-/osssssssso/.
-               :osyysssssssyyys+-
-            `.+yyyysssssssssyyyyy+.
-           `/syyyyyssssssssssyyyyys-`
-          `/yhyyyyysss{1}++{2}ssosyyyyhhy/`
-         .ohhhyyyys{1}o++/+o{2}so{1}+{2}syy{1}+{2}shhhho.
-        .shhhhys{1}oo++//+{2}sss{1}+++{2}yyy{1}+s{2}hhhhs.
-       -yhhhhs{1}+++++++o{2}ssso{1}+++{2}yyy{1}s+o{2}hhddy:
-      -yddhhy{1}o+++++o{2}syyss{1}++++{2}yyy{1}yooy{2}hdddy-
-     .yddddhs{1}o++o{2}syyyyys{1}+++++{2}yyhh{1}sos{2}hddddy`
-    `odddddhyosyhyyyyyy{1}++++++{2}yhhhyosddddddo
-    .dmdddddhhhhhhhyyyo{1}+++++{2}shhhhhohddddmmh.
-    ddmmdddddhhhhhhhso{1}++++++{2}yhhhhhhdddddmmdy
-    dmmmdddddddhhhyso{1}++++++{2}shhhhhddddddmmmmh
-    -dmmmdddddddhhys{1}o++++o{2}shhhhdddddddmmmmd-
-    .smmmmddddddddhhhhhhhhhdddddddddmmmms.
-       `+ydmmmdddddddddddddddddddmmmmdy/.
-          `.:+ooyyddddddddddddyyso+:.`
-
+    {0}              `.-/::/-``
+    {0}            .-/osssssssso/.
+    {0}           :osyysssssssyyys+-
+    {0}        `.+yyyysssssssssyyyyy+.
+    {0}       `/syyyyyssssssssssyyyyys-`
+    {0}      `/yhyyyyysss{1}++{0}ssosyyyyhhy/`
+    {0}     .ohhhyyyys{1}o++/+o{0}so{1}+{0}syy{1}+{0}shhhho.
+    {0}    .shhhhys{1}oo++//+{0}sss{1}+++{0}yyy{1}+s{0}hhhhs.
+    {0}   -yhhhhs{1}+++++++o{0}ssso{1}+++{0}yyy{1}s+o{0}hhddy:
+    {0}  -yddhhy{1}o+++++o{0}syyss{1}++++{0}yyy{1}yooy{0}hdddy-
+    {0} .yddddhs{1}o++o{0}syyyyys{1}+++++{0}yyhh{1}sos{0}hddddy`
+    {0}`odddddhyosyhyyyyyy{1}++++++{0}yhhhyosddddddo
+    {0}.dmdddddhhhhhhhyyyo{1}+++++{0}shhhhhohddddmmh.
+    {0}ddmmdddddhhhhhhhso{1}++++++{0}yhhhhhhdddddmmdy
+    {0}dmmmdddddddhhhyso{1}++++++{0}shhhhhddddddmmmmh
+    {0}-dmmmdddddddhhys{1}o++++o{0}shhhhdddddddmmmmd-
+    {0}.smmmmddddddddhhhhhhhhhdddddddddmmmms.
+    {0}   `+ydmmmdddddddddddddddddddmmmmdy/.
+    {0}      `.:+ooyyddddddddddddyyso+:.`
 
 "antiX":
   ascii: |
-    {1}
-                        \
-             , - ~ ^ ~ - \        /
-         , '              \ ' ,  /
-       ,                   \   '/
-      ,                     \  / ,
-     ,___,                   \/   ,
-     /   |   _  _  _|_ o     /\   ,
-    |,   |  / |/ |  |  |    /  \  ,
-     \,_/\_/  |  |_/|_/|_/_/    \,
-       ,                  /     ,\
-         ,               /  , '   \
-          ' - , _ _ _ ,  '
-
-
-"AOSC OS/Retro":
-  ascii: |
-    {2}          .........
-         ...................
-       .....................{1}################{2}
-     ..............     ....{1}################{2}
-    ..............       ...{1}################{2}
-    .............         ..{1}****************{2}
-    ............     .     .{1}****************{2}
-    ...........     ...     {1}................{2}
-    ..........     .....     {1}...............{2}
-    .........     .......     ...
-     .{3}......                   {2}.
-      {3}.....      .....{2}....    {4}...........
-      {3}....      ......{2}.       {4}...........
-      {3}...      .......        {4}...........
-      {3}................        {4}***********
-      {3}................        {4}###########
-      {3}****************
-      {3}################
-
+    {0}                    \
+    {0}         , - ~ ^ ~ - \        /
+    {0}     , '              \ ' ,  /
+    {0}   ,                   \   '/
+    {0}  ,                     \  / ,
+    {0} ,___,                   \/   ,
+    {0} /   |   _  _  _|_ o     /\   ,
+    {0}|,   |  / |/ |  |  |    /  \  ,
+    {0} \,_/\_/  |  |_/|_/|_/_/    \,
+    {0}   ,                  /     ,\
+    {0}     ,               /  , '   \
+    {0}      ' - , _ _ _ ,  '
 
 "AOSC OS":
+  colors:
+    ansi:
+      - blue
+      - white
   ascii: |
-    {2}             .:+syhhhhys+:.
-             .ohNMMMMMMMMMMMMMMNho.
-          `+mMMMMMMMMMMmdmNMMMMMMMMm+`
-         +NMMMMMMMMMMMM/   `./smMMMMMN+
-       .mMMMMMMMMMMMMMMo        -yMMMMMm.
-      :NMMMMMMMMMMMMMMMs          .hMMMMN:
-     .NMMMMhmMMMMMMMMMMm+/-         oMMMMN.
-     dMMMMs  ./ymMMMMMMMMMMNy.       sMMMMd
-    -MMMMN`      oMMMMMMMMMMMN:      `NMMMM-
-    /MMMMh       NMMMMMMMMMMMMm       hMMMM/
-    /MMMMh       NMMMMMMMMMMMMm       hMMMM/
-    -MMMMN`      :MMMMMMMMMMMMy.     `NMMMM-
-     dMMMMs       .yNMMMMMMMMMMMNy/. sMMMMd
-     .NMMMMo         -/+sMMMMMMMMMMMmMMMMN.
-      :NMMMMh.          .MMMMMMMMMMMMMMMN:
-       .mMMMMMy-         NMMMMMMMMMMMMMm.
-         +NMMMMMms/.`    mMMMMMMMMMMMN+
-          `+mMMMMMMMMNmddMMMMMMMMMMm+`
-             .ohNMMMMMMMMMMMMMMNho.
-                 .:+syhhhhys+:.
-
+    {1}             .:+syhhhhys+:.
+    {1}         .ohNMMMMMMMMMMMMMMNho.
+    {1}      `+mMMMMMMMMMMmdmNMMMMMMMMm+`
+    {1}     +NMMMMMMMMMMMM/   `./smMMMMMN+
+    {1}   .mMMMMMMMMMMMMMMo        -yMMMMMm.
+    {1}  :NMMMMMMMMMMMMMMMs          .hMMMMN:
+    {1} .NMMMMhmMMMMMMMMMMm+/-         oMMMMN.
+    {1} dMMMMs  ./ymMMMMMMMMMMNy.       sMMMMd
+    {1}-MMMMN`      oMMMMMMMMMMMN:      `NMMMM-
+    {1}/MMMMh       NMMMMMMMMMMMMm       hMMMM/
+    {1}/MMMMh       NMMMMMMMMMMMMm       hMMMM/
+    {1}-MMMMN`      :MMMMMMMMMMMMy.     `NMMMM-
+    {1} dMMMMs       .yNMMMMMMMMMMMNy/. sMMMMd
+    {1} .NMMMMo         -/+sMMMMMMMMMMMmMMMMN.
+    {1}  :NMMMMh.          .MMMMMMMMMMMMMMMN:
+    {1}   .mMMMMMy-         NMMMMMMMMMMMMMm.
+    {1}     +NMMMMMms/.`    mMMMMMMMMMMMN+
+    {1}      `+mMMMMMMMMNmddMMMMMMMMMMm+`
+    {1}         .ohNMMMMMMMMMMMMMMNho.
+    {1}             .:+syhhhhys+:.
 
 "Apricity":
+  colors:
+    ansi:
+      - blue
+      - white
   ascii: |
-    {2}                                    ./o-
-              ``...``              `:. -/:
-         `-+ymNMMMMMNmho-`      :sdNNm/
-       `+dMMMMMMMMMMMMMMMmo` sh:.:::-
-      /mMMMMMMMMMMMMMMMMMMMm/`sNd/
-     oMMMMMMMMMMMMMMMMMMMMMMMs -`
-    :MMMMMMMMMMMMMMMMMMMMMMMMM/
-    NMMMMMMMMMMMMMMMMMMMMMMMMMd
-    MMMMMMMmdmMMMMMMMMMMMMMMMMd
-    MMMMMMy` .mMMMMMMMMMMMmho:`
-    MMMMMMNo/sMMMMMMMNdy+-.`-/
-    MMMMMMMMMMMMNdy+:.`.:ohmm:
-    MMMMMMMmhs+-.`.:+ymNMMMy.
-    MMMMMM/`.-/ohmNMMMMMMy-
-    MMMMMMNmNNMMMMMMMMmo.
-    MMMMMMMMMMMMMMMms:`
-    MMMMMMMMMMNds/.
-    dhhyys+/-`
-
+    {1}                                    ./o-
+    {1}          ``...``              `:. -/:
+    {1}     `-+ymNMMMMMNmho-`      :sdNNm/
+    {1}   `+dMMMMMMMMMMMMMMMmo` sh:.:::-
+    {1}  /mMMMMMMMMMMMMMMMMMMMm/`sNd/
+    {1} oMMMMMMMMMMMMMMMMMMMMMMMs -`
+    {1}:MMMMMMMMMMMMMMMMMMMMMMMMM/
+    {1}NMMMMMMMMMMMMMMMMMMMMMMMMMd
+    {1}MMMMMMMmdmMMMMMMMMMMMMMMMMd
+    {1}MMMMMMy` .mMMMMMMMMMMMmho:`
+    {1}MMMMMMNo/sMMMMMMMNdy+-.`-/
+    {1}MMMMMMMMMMMMNdy+:.`.:ohmm:
+    {1}MMMMMMMmhs+-.`.:+ymNMMMy.
+    {1}MMMMMM/`.-/ohmNMMMMMMy-
+    {1}MMMMMMNmNNMMMMMMMMmo.
+    {1}MMMMMMMMMMMMMMMms:`
+    {1}MMMMMMMMMMNds/.
+    {1}dhhyys+/-`
 
 "Archcraft":
+  colors:
+    ansi:
+      - white
   ascii: |
-    {1}                   -m:
-                      :NMM+      .+
-                     +MMMMMo    -NMy
-                    sMMMMMMMy  -MMMMh`
-                   yMMMMMMMMMd` oMMMMd`
-                 `dMMMMMMMMMMMm. /MMMMm-
-                .mMMMMMm-dMMMMMN- :NMMMN:
-               -NMMMMMd`  yMMMMMN: .mMMMM/
-              :NMMMMMy     sMMMMMM+ `dMMMMo
-             +MMMMMMs       +MMMMMMs `hMMMMy
-            oMMMMMMMds-      :NMMMMMy  sMMMMh`
-           yMMMMMNoydMMmo`    -NMMMMMd` +MMMMd.
-         `dMMMMMN-   `:yNNs`   .mMMMMMm. /MMMMm-
-        .mMMMMMm.        :hN/   `dMMMMMN- -NMMMN:
-       -NMMMMMd`           -hh`  `yMMMMMN: .mMMMM/
-      :NMMMMMy         `s`   :h.   oMMMMMM+ `-----
-     +MMMMMMo         .dMm.   `o.   +MMMMMMo
-    sMMMMMM+         .mMMMN:    :`   :NMMMMMy
-
-
-"arcolinux_small":
-  ascii: |
-    {2}          A
-             ooo
-            ooooo
-           ooooooo
-          ooooooooo
-         ooooo ooooo
-        ooooo   ooooo
-       ooooo     ooooo
-      ooooo  {1}<oooooooo>{2}
-     ooooo      {1}<oooooo>{2}
-    ooooo          {1}<oooo>{2}
-
+    {0}                   -m:
+    {0}                  :NMM+      .+
+    {0}                 +MMMMMo    -NMy
+    {0}                sMMMMMMMy  -MMMMh`
+    {0}               yMMMMMMMMMd` oMMMMd`
+    {0}             `dMMMMMMMMMMMm. /MMMMm-
+    {0}            .mMMMMMm-dMMMMMN- :NMMMN:
+    {0}           -NMMMMMd`  yMMMMMN: .mMMMM/
+    {0}          :NMMMMMy     sMMMMMM+ `dMMMMo
+    {0}         +MMMMMMs       +MMMMMMs `hMMMMy
+    {0}        oMMMMMMMds-      :NMMMMMy  sMMMMh`
+    {0}       yMMMMMNoydMMmo`    -NMMMMMd` +MMMMd.
+    {0}     `dMMMMMN-   `:yNNs`   .mMMMMMm. /MMMMm-
+    {0}    .mMMMMMm.        :hN/   `dMMMMMN- -NMMMN:
+    {0}   -NMMMMMd`           -hh`  `yMMMMMN: .mMMMM/
+    {0}  :NMMMMMy         `s`   :h.   oMMMMMM+ `-----
+    {0} +MMMMMMo         .dMm.   `o.   +MMMMMMo
+    {0}sMMMMMM+         .mMMMN:    :`   :NMMMMMy
 
 "ArcoLinux":
+  colors:
+      ansi:
+      - blue
+      - white
   ascii: |
-    {2}                    /-
-                       ooo:
-                      yoooo/
-                     yooooooo
-                    yooooooooo
-                   yooooooooooo
-                 .yooooooooooooo
-                .oooooooooooooooo
-               .oooooooarcoooooooo
-              .ooooooooo-oooooooooo
-             .ooooooooo-  oooooooooo
-            :ooooooooo.    :ooooooooo
-           :ooooooooo.      :ooooooooo
-          :oooarcooo         .oooarcooo
-         :ooooooooy           .ooooooooo
-        :ooooooooo   {1}/ooooooooooooooooooo{2}
-       :ooooooooo      {1}.-ooooooooooooooooo.{2}
-      ooooooooo-             {1}-ooooooooooooo.{2}
-     ooooooooo-                 {1}.-oooooooooo.{2}
-    ooooooooo.                     {1}-ooooooooo{2}
-
+    {0}                    /-
+    {0}                   ooo:
+    {0}                  yoooo/
+    {0}                 yooooooo
+    {0}                yooooooooo
+    {0}               yooooooooooo
+    {0}             .yooooooooooooo
+    {0}            .oooooooooooooooo
+    {0}           .oooooooarcoooooooo
+    {0}          .ooooooooo-oooooooooo
+    {0}         .ooooooooo-  oooooooooo
+    {0}        :ooooooooo.    :ooooooooo
+    {0}       :ooooooooo.      :ooooooooo
+    {0}      :oooarcooo         .oooarcooo
+    {0}     :ooooooooy           .ooooooooo
+    {0}    :ooooooooo   {1}/ooooooooooooooooooo
+    {0}   :ooooooooo      {1}.-ooooooooooooooooo.
+    {0}  ooooooooo-             {1}-ooooooooooooo.
+    {0} ooooooooo-                 {1}.-oooooooooo.
+    {0}ooooooooo.                     {1}-ooooooooo
 
 "ArchBox":
   ascii: |
@@ -440,7 +446,6 @@
         `--/:`   /:     `hhhhhhhhhhhho/-
                  -/:.   `hhhhhhs+:-`
                     ::::/ho/-`
-
 
 "ARCHlabs":
   ascii: |
@@ -466,7 +471,6 @@
       ,xko:'.             {4}.. {1}           .':okx;
      .,'.                                   .',.
 
-
 "ArchStrike":
   ascii: |
     {1}                   *   
@@ -486,7 +490,6 @@
          ******{2}/{1}***  {2}////   {1}**{2}/{1}******
         ********{2}/{1}* {2}///      {1}*{2}/{1}********
       ,******     {2}// ______ /    {1}******,
-
 
 "XFerience":
   ascii: |
@@ -509,7 +512,6 @@
            `:/++ooooooooooooo++/-`
               `.-//++++++//:-.`
                    ``````
-
 
 "ArchMerge":
   ascii: |
@@ -534,7 +536,6 @@
      +Mmy/.                          `:smN:
     /+.                                  -o.
 
-
 "Arch":
   ascii: |
     {1}                   -`
@@ -556,18 +557,6 @@
       `+sso+:-`                 `.-/+oso:
      `++:.                           `-/+/
      .`                                 `/
-
-
-"artix_small":
-  ascii: |
-    {1}      /\\
-         /  \\
-        /`'.,\\
-       /     ',
-      /      ,`\\
-     /   ,.'`.  \\
-    /.,'`     `'.\\
-
 
 "Artix":
   ascii: |
@@ -592,7 +581,6 @@
      'i:'`                          '':io'
     '`                                   `'
 
-
 "Arya":
   ascii: |
     {1}                `oyyy/{2}-yyyyyy+
@@ -610,7 +598,6 @@
     {1}  .syyyyyy+`  :yyyyyy/{2}-yyyyy+-+syyyyyyyy
     {1} -syyyyyy/    :yyyyyy/{2}-yyys:.syyyyyyyyyy
     {1}:syyyyyy/     :yyyyyy/{2}-yyo.:syyyyyyyyyyy
-
 
 "AsteroidOS":
   ascii: |
@@ -632,7 +619,6 @@
     {4}                   %%%%%
     {4}                    %%%
 
-
 "Bedrock":
   ascii: |
     {1}--------------------------------------
@@ -653,7 +639,6 @@
     --------------------------------------
     --------------------------------------
 
-
 "Bitrig":
   ascii: |
     {1}   `hMMMMN+
@@ -673,7 +658,6 @@
     /MN/-------oNN:
     hMd.       .dMh
     sm/         /ms
-
 
 "BlackArch":
   ascii: |
@@ -699,7 +683,6 @@
      `++:.             {3}//{1}            `-/+/
      .`                {3}/{1}                `/
 
-
 "BLAG":
   ascii: |
     {1}             d
@@ -720,7 +703,6 @@
                oWk,
                ;:
 
-
 "BlankOn":
   ascii: |
     {2}        `./ohdNMMMMNmho+.` {1}       .+oo:`
@@ -740,7 +722,6 @@
     {2}     :yNMMMMMMMMMMMMMMMMMMNy:`   {1}`yyyyys
     {2}       .:sdNMMMMMMMMMMNds/.      {1}`yyyyyo
     {2}           `.:/++++/:.`           {1}:oys+.
-
 
 "BlueLight":
   ascii: |
@@ -764,7 +745,6 @@
                   {1}oMMM{2}mdhyyo..{1}+mMMMMMMMMMMMM
                   oNNNNNNm{2}dso{1}mMMMMMMMMMMMMMM
 
-
 "Bodhi":
   ascii: |
     {1}|           {2},,mmKKKKKKKKWm,,
@@ -786,7 +766,6 @@
         "Kpp{1}LL++,.,    ,,|||${2}#K*   {1}'.
                {2}`"MKWpppppppp#KM"`        {1}`h,
 
-
 "bonsai":
   ascii: |
     {2}   ,####,
@@ -805,7 +784,6 @@
      ##, ,##,',##, ,##  ,#,   ,
      # # #  # #''# #,,  # #   #
      '#' '##' #  #  ,,# '##;, #
-
 
 "BunsenLabs":
   ascii: |
@@ -830,7 +808,6 @@
               mh.
              -/
 
-
 "Calculate":
   ascii: |
     {1}                              ......
@@ -854,7 +831,6 @@
           {2},++++++**+++++{1}***********{2}+++++++++,{1}
          {2}.,,,,++++,..  .,,,,,.....,+++,.,,{1}
 
-
 "Carbs":
   ascii: |
     {2}             ..........
@@ -876,7 +852,6 @@
               ...',;;;;;;,,...
                     .....
 
-
 "CBL-Mariner":
   ascii: |
     {1}                    .
@@ -897,7 +872,6 @@
     :--------.                :========-
                         ..:::--=========-
                 ..::---================-=-
-
 
 "CelOS":
   ascii: |
@@ -921,18 +895,6 @@
                     `":MMMMMMMMMMMMMMMMMMM:"
                          "************"
 
-
-"centos_small":
-  ascii: |
-    {2} ____{1}^{4}____
-    {2} |\\  {1}|{4}  /|
-    {2} | \\ {1}|{4} / |
-    {4}<---- {3}---->
-    {3} | / {2}|{1} \\ |
-    {3} |/__{2}|{1}__\\|
-    {2}     v
-
-
 "CentOS":
   ascii: |
     {1}                 ..
@@ -955,7 +917,6 @@
                    'MKKM'
                      ''
 
-
 "Chakra":
   ascii: |
     {1}     _ _ _        "kkkkkkkk.
@@ -976,7 +937,6 @@
                  ';kkkkkkkkkk'
                    ';kkkkkk'
                       "''"
-
 
 "ChaletOS":
   ascii: |
@@ -1001,7 +961,6 @@
              -ohNNmhsoo++osshmNNh+.
                 `./+syyhhyys+:``
 
-
 "Chapeau":
   ascii: |
     {1}               .-/-.
@@ -1022,7 +981,6 @@
         `//////////{2}++{1}//////////
            `////////////////.
                -////////-
-
 
 "Chrom":
   ascii: |
@@ -1045,18 +1003,6 @@
     {1}        ..,::cccc{3}xOOOkkko;.
     {1}            ..,:{3}dOkxl:.
 
-
-"cleanjaro_small":
-  ascii: |
-    {1}█████ ██████████
-    █████ ██████████
-    █████
-    █████
-    █████
-    ████████████████
-    ████████████████
-
-
 "Cleanjaro":
   ascii: |
     {1}███████▌ ████████████████
@@ -1071,7 +1017,6 @@
     █████████████████████████
     █████████████████████████
     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-
 
 "ClearOS":
   ascii: |
@@ -1096,7 +1041,6 @@
                  `///:    :///`
                   `...    ...`
 
-
 "Clear Linux OS":
   ascii: |
     {1}          BBB
@@ -1119,7 +1063,6 @@
      WWWWWWWWWWWWWWWW
           WWWWWWWWWW
               WWW
-
 
 "Clover":
   ascii: |
@@ -1144,7 +1087,6 @@
                  `oNMMMNNMMMNs`
                    `omo``oNs`
 
-
 "Condres":
   ascii: |
     {1}syyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy+{3}.+.
@@ -1164,7 +1106,6 @@
     {2}/hhhhhdddddhhy{1}./yo:{3}+oooooo+++++++++++++/
     {2}/hhhhhhhhhhhhhy{1}:-.{3}+sooooo+++++++++++///:
     {2}:sssssssssssso++{1}{3}`:/:--------.````````
-
 
 "Container Linux":
   glob: "{*Container_Linux*, *Container Linux*}"
@@ -1190,7 +1131,6 @@
               .';ccccclllccc:;..
                     .....
 
-
 "CRUX":
   ascii: |
     {1}         odddd
@@ -1211,7 +1151,6 @@
     {2}dkkkxkkk{3}OKX{2}NNNX0Oxx{1}xc:cd
     {2} odxxdx{3}xllod{2}ddooxx{1}dc:ldo
     {2}   lodd{1}dolccc{2}ccox{1}xoloo
-
 
 "Crystal Linux":
   ascii: |
@@ -1235,7 +1174,6 @@
     {1}             dysssym
     {1}           dysssym
     {1}         dysssym
-
 
 "Cucumber":
   ascii: |
@@ -1278,7 +1216,6 @@
                               "RMMMM
                                 .PMB
 
-
 "dahlia":
   ascii: |
     {1}
@@ -1300,7 +1237,6 @@
                    ,/%@@@%/.
                       ,#,
 
-
 "Debian":
   ascii: |
     {2}       _,met$$$$$gg.
@@ -1320,7 +1256,6 @@
            `Y$$b.
               `"Y$b._
                   `"""
-
 
 "Deepin":
   ascii: |
@@ -1343,7 +1278,6 @@
             .;okkkkkdl;.    .,cl:.
                 .,:cccccccc:,.
 
-
 "Devuan":
   ascii: |
     {1}   ..,,;;;::;,..
@@ -1362,7 +1296,6 @@
      `$$$$$bd:''`
        `'''`
 
-
 "DracOS":
   ascii: |
     {1}       `-:/-
@@ -1379,7 +1312,6 @@
                ./o/.`           .oyyso+oo:`
                   :+oo+//::::///:-.`     `.`
 
-
 "Itc":
   ascii: |
     {1}....................-==============+...
@@ -1393,7 +1325,6 @@
     {1}..+-:+-.+::*:+::+:-++::++-.:-.*.:++:++.
     {1}..:-:-++++:-::--:+::-::.:++-++:++--:-:.    ⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
 
 "dragonfly_old":
   ascii: |
@@ -1415,18 +1346,6 @@
                   \\=/
                    ^
 
-
-"dragonfly_small":
-  ascii: |
-    {2}   ,{1}_{2},
-    ('-_{1}|{2}_-')
-     >--{1}|{2}--<
-    (_-'{1}|{2}'-_)
-        {1}|
-        |
-        |
-
-
 "DragonFly":
   ascii: |
     {2},--,           {1}|           {2},--,
@@ -1444,7 +1363,6 @@
                   | |
                   | |
                   `|'
-
 
 "Drauger":
   ascii: |
@@ -1464,17 +1382,7 @@
      `/++-                            -++/`
     .:-.`..............................`.-:.
     `.-/++++++++++++++++++++++++++++++++/-.`
-
-
-"elementary_small":
-  ascii: |
-    {2}  _______
-     / ____  \\
-    /  |  /  /\\
-    |__\\ /  / |
-    \\   /__/  /
-     \\_______/
-
+    
 
 "Elementary":
   ascii: |
@@ -1496,7 +1404,6 @@
           eeeeeee         eeeeeee
              eeeeeeeeeeeeeeeee
 
-
 "EndeavourOS":
   ascii: |
     {1}                     ./{2}o{3}.
@@ -1514,7 +1421,6 @@
     {1} `..-+{2}oosssssssssssssssssssssssso{3}+++++/`
        ./++++++++++++++++++++++++++++++/:.
       `:::::::::::::::::::::::::------``
-
 
 "Endless":
   ascii: |
@@ -1539,7 +1445,6 @@
             -odMMNhso//////oshNMMdo-
                `:+yhmNMMMMNmhy+:`
 
-
 "EuroLinux":
   ascii: |
     {1}                __
@@ -1560,7 +1465,6 @@
         wWWWWWWWWWWWWWWWw
            WWWWWWWWWWWWWw
                wWWWWWWWw
-
 
 "Exherbo":
   ascii: |
@@ -1587,7 +1491,6 @@
                  ':d0XWMMMMWNNNNMMMNOl'
                        ':okKXWNKkl'
 
-
 "fedora_old":
   glob: "{*Fedora_old*,*RFRemix*}"
   ascii: |
@@ -1608,7 +1511,6 @@
     :---{2}:sdNMMMMNds:{1}------------:
     :------{2}:://:{1}-------------::
     :---------------------://
-
 
 "Fedora":
   ascii: |
@@ -1632,7 +1534,6 @@
     .:cccccccccccccccccccccc:;,..
       '::cccccccccccccc::;,.
 
-
 "Feren":
   ascii: |
     {1} `----------`
@@ -1652,7 +1553,6 @@
                `.:///+++.             `
               `.........
 
-
 "FreeMiNT":
   ascii: |
     {1}          ##
@@ -1670,7 +1570,6 @@
         ##      ##    ####  ####
         ##    ##  ##    ##  ##  ####
           ####  ##          ##  ##
-
 
 "Frugalware":
   ascii: |
@@ -1698,7 +1597,6 @@
                             `-:/+osyyssssyo
                                     .-:+++`
 
-
 "Funtoo":
   ascii: |
     {1}   .dKXXd                         .
@@ -1711,7 +1609,6 @@
       kXX  xN0:.       KNN' oNNNX' ,XNk
       kXX  xNNXNNNNNNNNXNNNNNNNNXNNOxXNX0Xl
       ...  ......................... .;cc;.
-
 
 "GalliumOS":
   ascii: |
@@ -1735,7 +1632,6 @@
     yyyo+:-..............................-//
     o/:-...................................:
 
-
 "Garuda":
   ascii: |
     {3}
@@ -1757,7 +1653,6 @@
               d:SS@8ba89aa67a853Sxxad.
                 .d988999889889899dd.
 
-
 "Gentoo":
   ascii: |
     {1}         -/oyddmdhs+:.
@@ -1778,7 +1673,6 @@
     /h{2}MMNNNNNNNNMNdhs++/{1}-`
     `/{2}ohdmmddhys+++/:{1}.`
       `-//////:--.
-
 
 "Pentoo":
   ascii: |
@@ -1803,7 +1697,6 @@
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
-
 "glaucus":
   ascii: |
     {1}             ,,        ,d88P
@@ -1819,7 +1712,6 @@
       Y888888888P* `*``*888888888888*
        *^888^*            *Y888P**
 
-
 "gNewSense":
   ascii: |
     {1}                     ..,,,,..
@@ -1834,7 +1726,6 @@
         ochllc.            ++++            .cllhco
            `+occooo+.                .+ooocco+'
                   `+oo++++      ++++oo+'
-
 
 "GNOME":
   ascii: |
@@ -1860,7 +1751,6 @@
                   &@@@@@@@@@@@@@@
                          ...
 
-
 "GoboLinux":
   ascii: |
     {1}  _____       _
@@ -1869,7 +1759,6 @@
     | | |_ |/ _ \| '_ \ / _ \
     | |__| | (_) | |_) | (_) |
      \_____|\___/|_.__/ \___/
-
 
 "Grombyang":
   ascii: |
@@ -1892,18 +1781,6 @@
           eeeeeeeeeeeeeeeeeeeeeee
              eeeeeeeeeeeeeeeee
 
-
-"guix_small":
-  ascii: |
-    {1}|.__          __.|
-    |__ \\        / __|
-       \\ \\      / /
-        \\ \\    / /
-         \\ \\  / /
-          \\ \\/ /
-           \\__/
-
-
 "Guix":
   ascii: |
     {1} ..                             `.
@@ -1916,19 +1793,6 @@
                  -+++-:::.
                   :+/:::-
                   `-....`
-
-
-"haiku_small":
-  ascii: |
-    {1}       ,^,
-          /   \\
-    *--_ ;     ; _--*
-    \\   '"     "'   /
-     '.           .'
-    .-'"         "'-.
-     '-.__.   .__.-'
-           |_|
-
 
 "Haiku":
   ascii: |
@@ -1945,7 +1809,6 @@
                MMMM              MMMM
                MMMM              MMMM
                """"              """"
-
 
 "Huayra":
   ascii: |
@@ -1967,7 +1830,6 @@
                               .` `..
                                     ``
 
-
 "HydroOS":
   ascii: |
     {1}
@@ -1979,18 +1841,6 @@
      |_|  |_|\__, |\__,_|_|  \___/ \____/|_____/
               __/ |
              |___/
-
-
-"hyperbola_small":
-  ascii: |
-    {1}    |`__.`/
-        \____/
-        .--.
-       /    \\
-      /  ___ \\
-     / .`   `.\\
-    /.`      `.\\
-
 
 "Hyperbola":
   ascii: |
@@ -2011,7 +1861,6 @@
      NKXN                       W0W
     WW                           W
 
-
 "iglu":
   ascii: |
     {1}     |
@@ -2026,7 +1875,6 @@
      \    /        /
       \  /        /
        \/________/
-
 
 "janus":
   ascii: |
@@ -2055,7 +1903,6 @@
                            looool:      ooooooooooooooo:
                            cooolc        .ooooooooooool
 
-
 "Kaisen":
   ascii: |
     {1}                          `
@@ -2076,7 +1923,6 @@
           :sydds           -hddddddd`    /
            .+shd-      `:ohddddddddd`
                     `:+ooooooooooooo:
-
 
 "Kali":
   ascii: |
@@ -2102,7 +1948,6 @@
                                                 .'
                                                  .
 
-
 "KaOS":
   ascii: |
     {1}                     ..
@@ -2121,7 +1966,6 @@
            .K      ..SSSASSSS.. ..SSA.
                      .SSS.AAKAKSSKA.
                         .SSS....S..
-
 
 "KDE":
   ascii: |
@@ -2145,7 +1989,6 @@
              `---.``   ``   `.---.`
                  `..---+/---..`
 
-
 "Kibojoe":
   ascii: |
     {3}           ./+oooooo+/.
@@ -2161,7 +2004,6 @@
     `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd.
     ods+/:-----://+oyydmNMMMMMMMMMMMMMMMMMN-
     `                     .-:+osyhhdmmNNNmdo
-
 
 "Kogaion":
   ascii: |
@@ -2186,7 +2028,6 @@
                ';;;;; ;;;;
                  ';;; ;;
 
-
 "Korora":
   ascii: |
     {2}                ____________
@@ -2206,7 +2047,6 @@
     :#baaaaaaas!J'{1}`
      ```````````
 
-
 "KSLinux":
   ascii: |
     {1} K   K U   U RRRR   ooo
@@ -2220,31 +2060,6 @@
          S A   A WW WW A   A
       SSS  A   A W   W A   A
 
-
-"Kubuntu":
-  ascii: |
-    {1}           `.:/ossyyyysso/:.
-            .:oyyyyyyyyyyyyyyyyyyo:`
-          -oyyyyyyyo{2}dMMy{1}yyyyyyysyyyyo-
-        -syyyyyyyyyy{2}dMMy{1}oyyyy{2}dmMMy{1}yyyys-
-       oyyys{2}dMy{1}syyyy{2}dMMMMMMMMMMMMMy{1}yyyyyyo
-     `oyyyy{2}dMMMMy{1}syysoooooo{2}dMMMMy{1}yyyyyyyyo`
-     oyyyyyy{2}dMMMMy{1}yyyyyyyyyyys{2}dMMy{1}sssssyyyo
-    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
-    oyyyysoo{2}dMy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
-    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyysosyyyyyyyy
-    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-    oyyyyysos{2}dy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
-    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
-     oyyyyyy{2}dMMMy{1}syyyyyyyyyyys{2}dMMy{1}oyyyoyyyo
-     `oyyyy{2}dMMMy{1}syyyoooooo{2}dMMMMy{1}oyyyyyyyyo
-       oyyysyyoyyyys{2}dMMMMMMMMMMMy{1}yyyyyyyo
-        -syyyyyyyyy{2}dMMMy{1}syyy{2}dMMMy{1}syyyys-
-          -oyyyyyyy{2}dMMy{1}yyyyyysosyyyyo-
-            ./oyyyyyyyyyyyyyyyyyyo/.
-               `.:/oosyyyysso/:.`
-
-
 "LEDE":
   ascii: |
     {1} _________
@@ -2256,7 +2071,6 @@
     \    LE  \    /
     \  DE    \  /
     \________\/
-
 
 "LaxerOS":
   ascii: |
@@ -2280,7 +2094,6 @@
     .:://////////////////////////////////::.
     ////////////////////////////////////////
     .:////////////////////////////////////:.
-
 
 "LibreELEC":
   ascii: |
@@ -2349,7 +2162,6 @@
     {1}       {2}.{1}:+-.
      `--.``
 
-
 "Lubuntu":
   ascii: |
     {1}           `.:/ossyyyysso/:.
@@ -2373,7 +2185,6 @@
             `.:yyyy{2}s{1}yyyyyyyyyyyyy:.`
                `.:/oosyyyysso/:.`
 
-
 "Lunar":
   ascii: |
     {1}`-.                                 `-.
@@ -2390,39 +2201,43 @@
              |  |__| | |   | .'|  _|
              |_____|___|_|_|__,|_|
 
-
-"mac":
-  glob: "{*mac*,*Darwin*,*OSX*}"
+"Darwin":
+  regex: "(darwin|mac|osx)"
+  colors:
+    ansi:
+      - yellow
+      - green
+      - yellow
+      - red
+      - red
+      - magenta
+      - blue
+    hex:
+      - "#FEF2CD"
+      - "#66BA49"
+      - "#FBB922"
+      - "#F58223"
+      - "#E43A41"
+      - "#964199"
+      - "#169FD9"
   ascii: |
     {1}                    c.'
-                     ,xNMM.
-                   .OMMMMo
-                   lMM"
-         .;loddo:.  .olloddol;.
-       cKMMMMMMMMMMNWMMMMMMMMMM0:
+    {1}                 ,xNMM.
+    {1}               .OMMMMo
+    {1}               lMM"
+    {1}     .;loddo:.  .olloddol;.
+    {1}   cKMMMMMMMMMMNWMMMMMMMMMM0:
     {2} .KMMMMMMMMMMMMMMMMMMMMMMMWd.
-     XMMMMMMMMMMMMMMMMMMMMMMMX.
-    {3};MMMMMMMMMMMMMMMMMMMMMMMM:
-    :MMMMMMMMMMMMMMMMMMMMMMMM:
+    {2} XMMMMMMMMMMMMMMMMMMMMMMMX.
+    {3};MMMMMMMMMMMMMMMMMMMMMMMM
+    {3}:MMMMMMMMMMMMMMMMMMMMMMMM:
     {4}.MMMMMMMMMMMMMMMMMMMMMMMMX.
-     kMMMMMMMMMMMMMMMMMMMMMMMMWd.
-     {5}'XMMMMMMMMMMMMMMMMMMMMMMMMMMk
-      'XMMMMMMMMMMMMMMMMMMMMMMMMK.
-        {6}kMMMMMMMMMMMMMMMMMMMMMMd
-         ;KMMMMMMMWXXWMMMMMMMk.
-           "cooc*"    "*coo'"
-
-
-"mageia_small":
-  ascii: |
-    {1}   *
-        *
-       **
-    {2} /\\__/\\
-    /      \\
-    \\      /
-     \\____/
-
+    {4} kMMMMMMMMMMMMMMMMMMMMMMMMWd.
+    {5} 'XMMMMMMMMMMMMMMMMMMMMMMMMMMk
+    {5}  'XMMMMMMMMMMMMMMMMMMMMMMMMK.
+    {6}    kMMMMMMMMMMMMMMMMMMMMMMd
+    {6}     ;KMMMMMMMWXXWMMMMMMMk.
+    {6}       "cooc*"    "*coo'"
 
 "Mageia":
   ascii: |
@@ -2445,7 +2260,6 @@
       .lO0Kc;,,,,,,;c0KOc.
          ;d00KKKKKK00d;
             .,KKKK,.
-
 
 "MagpieOS":
   ascii: |
@@ -2470,9 +2284,8 @@
                         :xxolldxd'
                           ;oxdl.
 
-
 "Mandriva":
-  glob: "{*Mandriva*,*Mandrake*}"
+  regex: "(mandriva|mandrake)"
   ascii: |
     {2}                        ``
                            `-.
@@ -2490,35 +2303,27 @@
     {1}  -ossso+/:://+/-`        {2}.:`
     {1}    -/+ooo+/-.              {2}`
 
-
-"manjaro_small":
-  ascii: |
-    {1}||||||||| ||||
-    ||||||||| ||||
-    ||||      ||||
-    |||| |||| ||||
-    |||| |||| ||||
-    |||| |||| ||||
-    |||| |||| ||||
-
-
 "Manjaro":
+  colors:
+    ansi:
+      - green
+    hex:
+      - "#36BC65"
   ascii: |
-    {1}██████████████████  ████████
-    ██████████████████  ████████
-    ██████████████████  ████████
-    ██████████████████  ████████
-    ████████            ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-    ████████  ████████  ████████
-
+    {0}██████████████████  ████████
+    {0}██████████████████  ████████
+    {0}██████████████████  ████████
+    {0}██████████████████  ████████
+    {0}████████            ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
+    {0}████████  ████████  ████████
 
 "TeArch":
   ascii: |
@@ -2544,7 +2349,6 @@
           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               @@@@@@@@@@@@@@@@@@@@@
 
-
 "Maui":
   ascii: |
     {1}             `.-://////:--`
@@ -2567,7 +2371,6 @@
           `:+oooooooooooooooooooooo+:`
              .:+oooooooooooooooo+:.
                  `.-://////:-.`
-
 
 "Mer":
   ascii: |
@@ -2599,7 +2402,6 @@
                              .:`
                              dMs
 
-
 "Minix":
   ascii: |
     {2}   -sdhyo+:-`                -/syymm:
@@ -2620,20 +2422,9 @@
                -+oyhNsooo+omy/```
                   `::ohdmds-`
 
-
-"linuxmint_small":
-  ascii: |
-    {1} ___________
-    |_          \\
-      | {2}| _____ {1}|
-      | {2}| | | | {1}|
-      | {2}| | | | {1}|
-      | {2}\\__{2}___/ {1}|
-      \\_________/
-
-
 "Linux Mint Old":
   glob: "{*Linux Mint Old*,*LinuxMintOld*,*mint_old*}"
+  regex: "(mint_old|mintold)"
   ascii: |
     {1}MMMMMMMMMMMMMMMMMMMMMMMMMmds+.
     MMm----::-://////////////oymNMd+`
@@ -2652,9 +2443,7 @@
              ./ydNMMMMMMMMMMMMMMMMMMMMM
                 .MMMMMMMMMMMMMMMMMMM
 
-
 "Linux Mint":
-  glob: "{*Linux Mint*,*LinuxMint*,*mint*}"
   ascii: |
     {2}             ...-:::::-...
     {2}          .-MMMMMMMMMMMMMMM-.
@@ -2675,7 +2464,6 @@
            '.-MMMM{1}``--:::::--``{2}MMMM-.'
     {2}            '-MMMMMMMMMMMMM-'
     {2}               ``-:::::-``
-
 
 "Live Raizo":
   glob: "{*Live Raizo*,*Live_Raizo*,*raizo*}"
@@ -2701,18 +2489,6 @@
                  .hMMMMd:
                    `..`
 
-
-"mx_small":
-  ascii: |
-    {3}    \\\\  /
-         \\\\/
-          \\\\
-       /\\/ \\\\
-      /  \\  /\\
-     /    \\/  \\
-    /__________\\
-
-
 "MX":
   ascii: |
     {3}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMM
@@ -2732,7 +2508,6 @@
     MMNs`                   -          :dMMM
     Mm:                                 `oMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-
 
 "Namib":
   ascii: |
@@ -2757,7 +2532,6 @@
            -/yyys              syyy/-
               .:+shysyhyhhysyhs+:.
 
-
 "Neptune":
   ascii: |
     {1}            ./+sydddddddys/-.
@@ -2778,18 +2552,6 @@
              -+ymNNmdyyyyyyydmNNmy+.
                  `-//sssssss//.
 
-
-"netbsd_small":
-  ascii: |
-    {2}\\\\{1}\`-______,----__
-    {2} \\\\        {1}__,---\`_
-    {2}  \\\\       {1}\`.____
-    {2}   \\\\{1}-______,----\`-
-    {2}    \\\\
-         \\\\
-          \\\\
-
-
 "NetBSD":
   ascii: |
     {1}                     `-/oshdmNMNdhyo+:-`
@@ -2809,7 +2571,6 @@
                 :Ms
                  :Ms
                   :Ms
-
 
 "Netrunner":
   ascii: |
@@ -2834,7 +2595,6 @@
             -odMMMMMMMMMMMMMMMMMMdo-
                `:+ydmNMMMMNmhy+-`
 
-
 "Nitrux":
   ascii: |
     {1}`:/.
@@ -2855,7 +2615,6 @@
     `//+sssssso:.
     `+syyyy+:`
     :+s+-
-
 
 "nixos_old":
   ascii: |
@@ -2878,7 +2637,6 @@
     {1}           .::::''::::.     {2}'::::.
     {1}          .::::'   ::::.     {2}'::::.
     {1}         .::::      ::::      {2}'::::.
-
 
 "NixOS":
   ascii: |
@@ -2903,7 +2661,6 @@
     {1}         ▟███▛  ▜███▙       {2}▜███▙
     {1}         ▝▀▀▀    ▀▀▀▀▘       {2}▀▀▀▘
 
-
 "Nurunner":
   ascii: |
     {1}                  ,xc
@@ -2925,7 +2682,6 @@
                   cKk'    cXk.
                     ;00:lXx.
                       ,kd.
-
 
 "NuTyX":
   ascii: |
@@ -2953,7 +2709,6 @@
           -  .
           .
 
-
 "OBRevenge":
   ascii: |
     {1}   __   __
@@ -2974,7 +2729,6 @@
        @@@@@@@@@@@@@@@@l
         ^W@@@@@@@@@@@P
            ^TMMMMTll
-
 
 "OpenBSD":
   ascii: |
@@ -3002,7 +2756,6 @@
           \\ (  `\\
            `.\\
 
-
 "openEuler":
   ascii: |
     {1}                 `.cc.`
@@ -3029,7 +2782,6 @@
                   `.cccccccc.`
                      `....`
 
-
 "OpenIndiana":
   ascii: |
     {2}                         .sy/
@@ -3047,7 +2799,6 @@
     +-               `./oyys/.
     h+`      `.-:+oyyyo/-`
     `/ossssysso+/-.`
-
 
 "openmamba":
   ascii: |
@@ -3072,7 +2823,6 @@
             .:ooooooooooooooooooo+:.
                `-:/ooooooooo+/:.`
                      ``````
-
 
 "OpenMandriva":
   ascii: |
@@ -3099,7 +2849,6 @@
                 .:+syhhhhhhhhys+:-`
                      ``....``
 
-
 "OpenStage":
   ascii: |
     {1}                 /(/
@@ -3120,7 +2869,6 @@
      /(((((((((((((((((,   /(((((((((((/
          */(((((//*.      */((/(/(/*
 
-
 "OpenWrt":
   ascii: |
     {1} _______
@@ -3132,7 +2880,6 @@
     |  |  |  |.----.|  |_
     |  |  |  ||   _||   _|
     |________||__|  |____|
-
 
 "Open Source Media Center":
   glob: "{*osmc*,*Open Source Media Center*}"
@@ -3158,7 +2905,6 @@
             .+hMNho/:..``..:/ohNMh+.
                 -+shdmNNNNmdhs+-
 
-
 "Oracle":
   ascii: |
     {1}
@@ -3173,7 +2919,6 @@
       /yyyyo:-...............-:oyyyy/`
        `/syyyyyyyyyyyyyyyyyyyyyyys+.
          `.:/+ooooooooooooooo+/:.`
-
 
 "OS Elbrus":
   ascii: |
@@ -3191,7 +2936,6 @@
        ██   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀██
        ██                       ██
        ███████████████████████████
-
 
 "PacBSD":
   ascii: |
@@ -3220,17 +2964,6 @@
             `-/hmNMNMMMMMMmmddddhhy/-`
                 `-+oooyMMMdsoo+/:.
 
-
-"parabola_small":
-  ascii: |
-    {1}  __ __ __  _
-    .`_//_//_/ / `.
-              /  .`
-             / .`
-            /.`
-           /`
-
-
 "Parabola":
   ascii: |
     {1}                          `.-.    `.
@@ -3249,7 +2982,6 @@
                             /+-
                            //`
                           -.
-
 
 "Pardus":
   ascii: |
@@ -3271,7 +3003,6 @@
         ./` .s/`s+sMdd+``+ddMs+s`/s. `/.
             : -y.  -hNmddmNy.  .y- :
              -+       `..`       +-
-
 
 "Parrot":
   ascii: |
@@ -3300,7 +3031,6 @@
                                -+
                                 -
 
-
 "Parsix":
   ascii: |
     {2}-/+/:.
@@ -3324,7 +3054,6 @@
     {1}`--`    {2}+sssssssso    {1}`--`
     {2}+sssssy+`
     {2}`.::-`
-
 
 "TrueOs":
   glob: "{*TrueOS*,*PCBSD*}"
@@ -3357,7 +3086,6 @@
             .+oo:-.     /mdhs+::oo+.
                 -/o+++++++++++/-
 
-
 "PCLinuxOS":
   ascii: |
     {1}            mhhhyyyyhhhdN
@@ -3380,7 +3108,6 @@
              dhyssyhhhhhhyssyyhN
                   mddhdhdmN
 
-
 "Pengwin":
   ascii: |
     {3}                     ...`
@@ -3398,7 +3125,6 @@
     {3}        :{2}yyyyy{3}o
     {3}         .+{2}ooo{3}+
     {3}           `.::/:.
-
 
 "Peppermint":
   ascii: |
@@ -3424,7 +3150,6 @@
     {1}           PPPPPPPPPP{2}MMMMMMMM{1}PPPP
     {1}               PPPPPPPPPPPPPP
 
-
 "Pisi":
   ascii: |
     {1}   \Fv/!-                      `:?lzC
@@ -3446,7 +3171,6 @@
            'xopE|      {2}`'{1}     `ledoz-
         `;=>>+`{2}`^llci/|==|/iclc;`{1}'>>>>:
        `^`+~          {2}````{1}          !!-^
-
 
 "PNM Linux":
   glob: "{*PNM Linux*,*WHPNM*}"
@@ -3472,7 +3196,6 @@
            {4}+oo/:o-            +oooooso.`
            {4}.`   `             `/  .-//-
 
-
 "Pop!_OS":
   glob: "{*Pop!_OS*,*popos*,*pop_os*}"
   ascii: |
@@ -3496,7 +3219,6 @@
           ///////////////////////////
              /////////////////////
                  /////////////
-
 
 "Porteus":
   ascii: |
@@ -3524,7 +3246,6 @@
                  .+:
                     `
 
-
 "PostMarketOS":
   ascii: |
     {1}                 /\\
@@ -3546,7 +3267,6 @@
      /           / /                  \\
     /___________/ /____________________\\
 
-
 "PuffOS":
   ascii: |
     {1}
@@ -3562,7 +3282,6 @@
      _; (#\"//     \\"/#)  ;  ,/
     @##\ \##/   =   `"=" ,;mm/
     `\##>.____,...,____,<####@
-
 
 "Proxmox":
   ascii: |
@@ -3587,7 +3306,6 @@
            `hMMMMMMd/          /dMMMMMMh`
              `://:`              `://:`
 
-
 "Puppy":
   glob: "{*Puppy*,*Quirky Wherewolf*,*Precise Puppy*}"
   ascii: |
@@ -3610,17 +3328,6 @@
             .+hNMMMMMMMMMNmdhs/.
                 .:/+ooo+/:-.
 
-
-"pureos_small":
-  ascii: |
-    {1} _____________
-    |  _________  |
-    | |         | |
-    | |         | |
-    | |_________| |
-    |_____________|
-
-
 "PureOS":
   ascii: |
     {1}dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd
@@ -3635,7 +3342,6 @@
     dNd                                  dNd
     dNm//////////////////////////////////mNd
     dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd
-
 
 "Qubes":
   ascii: |
@@ -3661,7 +3367,6 @@
                 `.:////ssss+/+ssssssssssss.
                     `--//-    `-/osssso/.
 
-
 "Qubyt":
   ascii: |
     {1}    ########################{2}({3}ooo
@@ -3679,7 +3384,6 @@
     {1}################{2}({3}oo    oo{2}(((({3}o
     {2}((((((((((((((((({3}ooo     ooooo
       oooooooooooooooooo        o
-
 
 "Quibian":
   ascii: |
@@ -3702,7 +3406,6 @@
         .::::::::::::-               ``
           `.--:::::-.
 
-
 "Radix":
   ascii: |
     {2}                .:oyhdmNo
@@ -3723,20 +3426,6 @@
         `+mMMMMMMMy.
           .yNMMMm+`
            `:yd+.
-
-
-"Raspbian_small":
-  ascii: |
-    {1}   ..    ,.
-      :oo: .:oo:
-      'o\\o o/o:
-    {2} :: . :: . ::
-    :: :::  ::: ::
-    :'  '',.''  ':
-     ::: :::: :::
-     ':,  ''  ,:'
-       ' ~::~ '
-
 
 "Raspbian":
   ascii: |
@@ -3764,7 +3453,6 @@
                 .::::::::::
                  `.-::::-`
 
-
 "Reborn OS":
   glob: "{*Reborn*}"
   ascii: |
@@ -3786,7 +3474,6 @@
           MM  {1}dddddddd  dddddddd  {3}MN
            NM                    MN
             mMMMMMMMMM  MMMMMMMMMm
-
 
 "Red Star":
   ascii: |
@@ -3828,7 +3515,6 @@
            RR   RRRRRRRRRRRRRR   RR
              R       RRRR      RR
 
-
 "redhat_old":
   ascii: |
     {1}             `.-..........`
@@ -3847,7 +3533,6 @@
      MMMM   MMMMMMMMMMMMMNdyNMMh`     hyhMMM
       MMMMMMMMMMMMMMMMyoNNNMMM+.   MMMMMMMM
        MMNMMMNNMMMMMNM+ mhsMNyyyyMNMMMMsMM
-
 
 "Redhat":
   glob: "{*Redhat*,*rhel*,}"
@@ -3871,7 +3556,6 @@
                 `MMMMMMMMMMMMMMMMMMMMMMMM:
                     ``MMMMMMMMMMMMMMMMM'
 
-
 "Refracted Devuan":
   ascii: |
     {2}                             A
@@ -3892,7 +3576,6 @@
                 VWW
                 Wh.
                 V/
-
 
 "Regata":
   ascii: |
@@ -3917,7 +3600,6 @@
             dho:.hhh{6}.:+++/.{1}hhh`-+yd
                 ddhso+++++osyhd
 
-
 "Regolith":
   ascii: |
     {1}
@@ -3940,23 +3622,6 @@
                .:/+++++++++++++++/-`
                   `.-:://////:-.
 
-
-"rocky_small":
-  ascii: |
-    {1}    `-/+++++++++/-.`
-     `-+++++++++++++++++-`
-    .+++++++++++++++++++++.
-    -+++++++++++++++++++++++.
-    +++++++++++++++/-/+++++++
-    +++++++++++++/.   ./+++++
-    +++++++++++:.       ./+++
-    +++++++++:`   `:/:`   .:/
-    -++++++:`   .:+++++:`
-     .+++-`   ./+++++++++:`
-      `-`   ./+++++++++++-
-           -+++++++++:-.`
-
-
 "rocky":
   ascii: |
     {1}          __wgliliiligw_,
@@ -3978,7 +3643,6 @@
                 _gllilililiililii~
                giliiiiiiiiiiiiT`
               -^~$ililili@~~'
-
 
 "Rosa":
   ascii: |
@@ -4003,7 +3667,6 @@
             ROSA               SARO
                ROSAROSAROSAROSAR
 
-
 "sabotage":
   ascii: |
     {2} .|'''.|      |     '||''|.    ..|''||
@@ -4016,7 +3679,6 @@
        ||      |  ||   ||    ....  ||''|
        ||     .''''|.  '|.    ||   ||
       .||.   .|.  .||.  ''|...'|  .||.....|
-
 
 "Sabayon":
   ascii: |
@@ -4039,7 +3701,6 @@
             ..               ..
               ...............
 
-
 "Sailfish":
   ascii: |
     {1}                 _a@b
@@ -4055,7 +3716,6 @@
               _@_#@^
            _a@a*^
        ,a@*^
-
 
 "SalentOS":
   ascii: |
@@ -4080,7 +3740,6 @@
     {2}             `:smMM{4}yy{3}MMNy/`
                      {2}.- {4}`{3}:.
 
-
 "Scientific":
   ascii: |
     {1}                 =/;;/-
@@ -4103,7 +3762,6 @@
                    ;/      #=
                     //    +;
                      '////'
-
 
 "Septor":
   ascii: |
@@ -4128,7 +3786,6 @@
     yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
-
 "Serene":
   ascii: |
     {1}              __---''''''---__
@@ -4152,7 +3809,6 @@
               .                     _ .
                 `''---______---''-``
 
-
 "SharkLinux":
   ascii: |
     {1}                              `:shd/
@@ -4170,7 +3826,6 @@
           .hNMMNNNNMMMMMMMMMMMMMMMd
         .oNNNNNNNNNNMMMMMMMMMMMMMMMo
      `:+syyssoo++++ooooossssssssssso:
-
 
 "Siduction":
   ascii: |
@@ -4194,18 +3849,6 @@
                    mQms_vmQ.
                    ]WQQQQQP
                     -?T??"
-
-
-"slackware_small":
-  ascii: |
-    {1}   ________
-      /  ______|
-      | |______
-      \\______  \\
-       ______| |
-    | |________/
-    |____________
-
 
 "Slackware":
   ascii: |
@@ -4231,7 +3874,6 @@
                ::::::::::::::::::::::
                     ::::::::::::
 
-
 "SliTaz":
   ascii: |
     {1}        @    @(               @
@@ -4251,7 +3893,6 @@
     @    @@     @@@@@@@@@@@@      @@   @
           @      @@@@@@@@@.     #@
            @      ,@@@@@       @
-
 
 "SmartOS":
   ascii: |
@@ -4273,7 +3914,6 @@
     yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
-
 "SkiffOS":
   ascii: |
     {2}
@@ -4286,7 +3926,6 @@
             {1}`'||LLL{{""{2}@$B@@@@@@@@@@@@@@@p{1}||
                 {1}`~=|||||||||||L"{2}$@@@@@@@@@@@
                        {1}````'"""""""{2}'""""""""
-
 
 "Solus":
   ascii: |
@@ -4310,7 +3949,6 @@
           `:+ssssssssssssssssssss+-
              `-/+ssssssssssso+/-`
                   `.-----..`
-
 
 "Source Mage":
   ascii: |
@@ -4336,7 +3974,6 @@
                       -dMMMMMMMMMo
                         -shmNMMms.
 
-
 "Sparky":
   ascii: |
     {1}
@@ -4361,7 +3998,6 @@
                        `-:-.
                        ``
 
-
 "Star":
   ascii: |
     {1}                   ./
@@ -4384,7 +4020,6 @@
               -s/o:`       `:o/+/
               /s-             -yo
 
-
 "SteamOS":
   ascii: |
     {1}              .,,,,.
@@ -4406,7 +4041,6 @@
              ''*##########*''
                   ''''''
 
-
 "openSUSE Leap":
   ascii: |
     {2}                 `-++:`
@@ -4426,7 +4060,6 @@
                     -/oooo+:`
                       `:/.
 
-
 "t2":
   ascii: |
     {2}
@@ -4436,7 +4069,6 @@
         tt     {1}2{2}
         tt    {1}2{2}
         tt  {1}22222{2}
-
 
 "openSUSE Tumbleweed":
   ascii: |
@@ -4453,18 +4085,6 @@
        oWMO:.    .;xNMMk,       NNNMKl.          .xWMx
          :ONMMNXMMMKx;          .  ,xNMWKkxllox0NMWk,
              .....                    .:dOOXXKOxl,
-
-
-"opensuse_small":
-  ascii: |
-    {1}  _______
-    __|   __ \\
-         / .\\ \\
-         \\__/ |
-       _______|
-       \\_______
-    __________/
-
 
 "openSUSE":
   ascii: |
@@ -4487,7 +4107,6 @@
             'lkK0xl:;,,,,;:ldO0kl'
                 '^:ldxkkkkxdl:^'
 
-
 "SwagArch":
   ascii: |
     {2}        .;ldkOKXXNNNNXXK0Oxoc,.
@@ -4505,7 +4124,6 @@
     {2} `':ldxO0KXXXXXK0Okdo{1}cccc.     :cccccccc.
                         :ccc:'     `cccccccc:,
                                        ''
-
 
 "Tails":
   ascii: |
@@ -4529,7 +4147,6 @@
                `:yNMMMds/.`
                   .//`
 
-
 "Trisquel":
   ascii: |
     {1}                         ▄▄▄▄▄▄
@@ -4550,7 +4167,6 @@
                     █████▄   ▀▀  ▄██
                       ██████▄▄▄████
                          ▀▀█████▀▀
-
 
 "Ubuntu Cinnamon":
   ascii: |
@@ -4575,7 +4191,6 @@
             `:+oooooooooooooooooo+:`
                 .-/+oooooooo+/-.
 
-
 "Ubuntu Budgie":
   ascii: |
     {2}           ./oydmMMMMMMmdyo/.
@@ -4599,7 +4214,6 @@
             :smMMMMMMMh+-`   `.:ohs:
                ./oydmMMMMMMdhyo/.
 
-
 "Ubuntu GNOME":
   ascii: |
     {3}          ./o.
@@ -4618,7 +4232,6 @@
     {4}       `soooo.     .oooo`
              `\/oooooooooo`
                 ``\/oo``
-
 
 "Ubuntu MATE":
   ascii: |
@@ -4643,55 +4256,89 @@
             `:+ssssssssssssssssss+:`
                 .:/+oossssoo+/:.
 
-
 "Ubuntu Studio":
+  colors:
+    ansi:
+      - yellow
+      - white
+    hex:
+      - "#E95420"
+      - "#FFFFFF"
   ascii: |
-    {1}              ..-::::::-.`
-             `.:+++++++++++{2}ooo{1}++:.`
-           ./+++++++++++++{2}sMMMNdyo{1}+/.
-         .++++++++++++++++{2}oyhmMMMMms{1}++.
-       `/+++++++++{2}osyhddddhys{1}+{2}osdMMMh{1}++/`
-      `+++++++++{2}ydMMMMNNNMMMMNds{1}+{2}oyyo{1}++++`
-      +++++++++{2}dMMNhso{1}++++{2}oydNMMmo{1}++++++++`
-     :+{2}odmy{1}+++{2}ooysoohmNMMNmyoohMMNs{1}+++++++:
-     ++{2}dMMm{1}+{2}oNMd{1}++{2}yMMMmhhmMMNs+yMMNo{1}+++++++
-    `++{2}NMMy{1}+{2}hMMd{1}+{2}oMMMs{1}++++{2}sMMN{1}++{2}NMMs{1}+++++++.
-    `++{2}NMMy{1}+{2}hMMd{1}+{2}oMMMo{1}++++{2}sMMN{1}++{2}mMMs{1}+++++++.
-     ++{2}dMMd{1}+{2}oNMm{1}++{2}yMMNdhhdMMMs{1}+y{2}MMNo{1}+++++++
-     :+{2}odmy{1}++{2}oo{1}+{2}ss{1}+{2}ohNMMMMmho{1}+{2}yMMMs{1}+++++++:
-      +++++++++{2}hMMmhs+ooo+oshNMMms{1}++++++++
-      `++++++++{2}oymMMMMNmmNMMMMmy+oys{1}+++++`
-       `/+++++++++{2}oyhdmmmmdhso+sdMMMs{1}++/
-         ./+++++++++++++++{2}oyhdNMMMms{1}++.
-           ./+++++++++++++{2}hMMMNdyo{1}+/.
-             `.:+++++++++++{2}sso{1}++:.
-                  ..-::::::-..
+    {0}              ..-::::::-.`
+    {0}         `.:+++++++++++{1}ooo{0}++:.`
+    {0}       ./+++++++++++++{1}sMMMNdyo{0}+/.
+    {0}     .++++++++++++++++{1}oyhmMMMMms{0}++.
+    {0}   `/+++++++++{1}osyhddddhys{0}+{1}osdMMMh{0}++/`
+    {0}  `+++++++++{1}ydMMMMNNNMMMMNds{0}+{1}oyyo{0}++++`
+    {0}  +++++++++{1}dMMNhso{0}++++{1}oydNMMmo{0}++++++++`
+    {0} :+{1}odmy{0}+++{1}ooysoohmNMMNmyoohMMNs{0}+++++++:
+    {0} ++{1}dMMm{0}+{1}oNMd{0}++{1}yMMMmhhmMMNs+yMMNo{0}+++++++
+    {0}`++{1}NMMy{0}+{1}hMMd{0}+{1}oMMMs{0}++++{1}sMMN{0}++{1}NMMs{0}+++++++.
+    {0}`++{1}NMMy{0}+{1}hMMd{0}+{1}oMMMo{0}++++{1}sMMN{0}++{1}mMMs{0}+++++++.
+    {0} ++{1}dMMd{0}+{1}oNMm{0}++{1}yMMNdhhdMMMs{0}+y{1}MMNo{0}+++++++
+    {0} :+{1}odmy{0}++{1}oo{0}+{1}ss{0}+{1}ohNMMMMmho{0}+{1}yMMMs{0}+++++++:
+    {0}  +++++++++{1}hMMmhs+ooo+oshNMMms{0}++++++++
+    {0}  `++++++++{1}oymMMMMNmmNMMMMmy+oys{0}+++++`
+    {0}   `/+++++++++{1}oyhdmmmmdhso+sdMMMs{0}++/
+    {0}     ./+++++++++++++++{1}oyhdNMMMms{0}++.
+    {0}       ./+++++++++++++{1}hMMMNdyo{0}+/.
+    {0}         `.:+++++++++++{1}sso{0}++:.
+    {0}              ..-::::::-..
 
+"Kubuntu":
+  ascii: |
+    {1}           `.:/ossyyyysso/:.
+            .:oyyyyyyyyyyyyyyyyyyo:`
+          -oyyyyyyyo{2}dMMy{1}yyyyyyysyyyyo-
+        -syyyyyyyyyy{2}dMMy{1}oyyyy{2}dmMMy{1}yyyys-
+       oyyys{2}dMy{1}syyyy{2}dMMMMMMMMMMMMMy{1}yyyyyyo
+     `oyyyy{2}dMMMMy{1}syysoooooo{2}dMMMMy{1}yyyyyyyyo`
+     oyyyyyy{2}dMMMMy{1}yyyyyyyyyyys{2}dMMy{1}sssssyyyo
+    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
+    oyyyysoo{2}dMy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
+    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyysosyyyyyyyy
+    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    oyyyyysos{2}dy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
+    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
+     oyyyyyy{2}dMMMy{1}syyyyyyyyyyys{2}dMMy{1}oyyyoyyyo
+     `oyyyy{2}dMMMy{1}syyyoooooo{2}dMMMMy{1}oyyyyyyyyo
+       oyyysyyoyyyys{2}dMMMMMMMMMMMy{1}yyyyyyyo
+        -syyyyyyyyy{2}dMMMy{1}syyy{2}dMMMy{1}syyyys-
+          -oyyyyyyy{2}dMMy{1}yyyyyysosyyyyo-
+            ./oyyyyyyyyyyyyyyyyyyo/.
+               `.:/oosyyyysso/:.`
 
 "Ubuntu":
-  glob: "{*ubuntu*,*i3buntu*}"
+  regex: "(ubuntu|i3buntu)"
+  colors:
+    ansi:
+      - yellow
+      - white
+    hex:
+      - "#E95420"
+      - "#FFFFFF"
   ascii: |
-    {1}            .-/+oossssoo+\-.
-            ´:+ssssssssssssssssss+:`
-          -+ssssssssssssssssssyyssss+-
-        .ossssssssssssssssss{2}dMMMNy{1}sssso.
-       /sssssssssss{2}hdmmNNmmyNMMMMh{1}ssssss\
-      +sssssssss{2}hm{1}yd{2}MMMMMMMNddddy{1}ssssssss+
-     /ssssssss{2}hNMMM{1}yh{2}hyyyyhmNMMMNh{1}ssssssss\
-    .ssssssss{2}dMMMNh{1}ssssssssss{2}hNMMMd{1}ssssssss.
-    +ssss{2}hhhyNMMNy{1}ssssssssssss{2}yNMMMy{1}sssssss+
-    oss{2}yNMMMNyMMh{1}ssssssssssssss{2}hmmmh{1}ssssssso
-    oss{2}yNMMMNyMMh{1}sssssssssssssshmmmh{1}ssssssso
-    +ssss{2}hhhyNMMNy{1}ssssssssssss{2}yNMMMy{1}sssssss+
-    .ssssssss{2}dMMMNh{1}ssssssssss{2}hNMMMd{1}ssssssss.
-     \ssssssss{2}hNMMM{1}yh{2}hyyyyhdNMMMNh{1}ssssssss/
-      +sssssssss{2}dm{1}yd{2}MMMMMMMMddddy{1}ssssssss+
-       \sssssssssss{2}hdmNNNNmyNMMMMh{1}ssssss/
-        .ossssssssssssssssss{2}dMMMNy{1}sssso.
-          -+sssssssssssssssss{2}yyy{1}ssss+-
-            `:+ssssssssssssssssss+:`
-                .-\+oossssoo+/-.
-
+    {0}            .-/+oossssoo+\-.
+    {0}        ´:+ssssssssssssssssss+:`
+    {0}      -+ssssssssssssssssssyyssss+-
+    {0}    .ossssssssssssssssss{1}dMMMNy{0}sssso.
+    {0}   /sssssssssss{1}hdmmNNmmyNMMMMh{0}ssssss\
+    {0}  +sssssssss{1}hm{0}yd{1}MMMMMMMNddddy{0}ssssssss+
+    {0} /ssssssss{1}hNMMM{0}yh{1}hyyyyhmNMMMNh{0}ssssssss\
+    {0}.ssssssss{1}dMMMNh{0}ssssssssss{1}hNMMMd{0}ssssssss.
+    {0}+ssss{1}hhhyNMMNy{0}ssssssssssss{1}yNMMMy{0}sssssss+
+    {0}oss{1}yNMMMNyMMh{0}ssssssssssssss{1}hmmmh{0}ssssssso
+    {0}oss{1}yNMMMNyMMh{0}sssssssssssssshmmmh{0}ssssssso
+    {0}+ssss{1}hhhyNMMNy{0}ssssssssssss{1}yNMMMy{0}sssssss+
+    {0}.ssssssss{1}dMMMNh{0}ssssssssss{1}hNMMMd{0}ssssssss.
+    {0} \ssssssss{1}hNMMM{0}yh{1}hyyyyhdNMMMNh{0}ssssssss/
+    {0}  +sssssssss{1}dm{0}yd{1}MMMMMMMMddddy{0}ssssssss+
+    {0}   \sssssssssss{1}hdmNNNNmyNMMMMh{0}ssssss/
+    {0}    .ossssssssssssssssss{1}dMMMNy{0}sssso.
+    {0}      -+sssssssssssssssss{1}yyy{0}ssss+-
+    {0}        `:+ssssssssssssssssss+:`
+    {0}            .-\+oossssoo+/-.
 
 "Univention":
   ascii: |
@@ -4716,7 +4363,6 @@
      :yhhhhhhhhhhhhhhhhhhhhhhhhhhhh+`
        -+ossssssssssssssssssssss+:`
 
-
 "Venom":
   ascii: |
     {1}   :::::::          :::::::
@@ -4735,8 +4381,12 @@
               +MMMMMMMN:
                 ::::::
 
-
 "Void":
+  colors:
+    ansi:
+      - white
+      - white
+      - bright_green
   ascii: |
     {1}                __.;=====;.__
                 _.=+==++=++=+=+===;.
@@ -4756,7 +4406,6 @@
               +Invnvnvnnnnnnnnvvnn;.
                 ~|Invnvnvvnvvvnnv}+`
                    -~|{*l}*|~
-
 
 "VNux":
   ascii: |
@@ -4781,7 +4430,6 @@
      ^:l<{nUUv>      ^x00J("
                        ^"
 
-
 "LangitKetujuh":
   ascii: |
     {1}
@@ -4800,7 +4448,6 @@
        L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L
     {2}
 
-
 "semc":
   ascii: |
     {1}            /\
@@ -4812,7 +4459,6 @@
     |_______/ / {3}"{1}  \
                   {3}"
                 "
-
 
 "Obarun":
   ascii: |
@@ -4836,10 +4482,8 @@
          ;ooooooooooooool;
            ;looooooolc;
 
-
 "Windows 11":
   ascii: |
-    {1}
     ################  ################
     ################  ################
     ################  ################
@@ -4847,6 +4491,7 @@
     ################  ################
     ################  ################
     ################  ################
+                      
     ################  ################
     ################  ################
     ################  ################
@@ -4854,35 +4499,51 @@
     ################  ################
     ################  ################
     ################  ################
-
 
 "Windows 10":
+  colors:
+    ansi:
+      - blue
+    hex:
+      - "#05ACED"
   ascii: |
-    {1}                                ..,
-                        ....,,:;+ccllll
-          ...,,+:;  cllllllllllllllllll
-    ,cclllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    llllllllllllll  lllllllllllllllllll
-    `'ccllllllllll  lllllllllllllllllll
-           `' \\*::  :ccllllllllllllllll
-                           ````''*::cll
-                                     ``
-
+    {0}                                ..,
+    {0}                    ....,,:;+ccllll
+    {0}      ...,,+:;  cllllllllllllllllll
+    {0},cclllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}llllllllllllll  lllllllllllllllllll
+    {0}`'ccllllllllll  lllllllllllllllllll
+    {0}       `'""*\:  :ccllllllllllllllll
+    {0}                       ````''*::cll
+    {0}                                 ``
 
 "Windows":
+  colors:
+    ansi:
+      - green
+      - red
+      - green
+      - blue
+      - yellow
+    hex:
+      - "#90BA2A"
+      - "#EB6320"
+      - "#90BA2A"
+      - "#3A72B6"
+      - "#FED317"
   ascii: |
     {1}        ,.=:!!t3Z3z.,
-           :tt:::tt333EE3
+    {1}       :tt:::tt333EE3
     {1}       Et:::ztt33EEEL{2} @Ee.,      ..,
     {1}      ;tt:::tt333EE7{2} ;EEEEEEttttt33#
     {1}     :Et:::zt333EEQ.{2} $EEEEEttttt33QL
@@ -4896,8 +4557,7 @@
     {3} E::::::::zt33L{4} @EEEtttt::::z3F
     {3}{3=*^```"*4E3){4} ;EEEtttt:::::tZ`
     {3}             `{4} :EEEEtttt::::z7
-                     "VEzjt:;;z>*`
-
+                     {4}"VEzjt:;;z>*`
 
 "Xubuntu":
   ascii: |
@@ -4922,7 +4582,6 @@
             `.yyyyyyyyyyyyyyyyyyyy.`
                `.:/oosyyyysso/:.`
 
-
 "IRIX":
   ascii: |
     {1}           ./ohmNd/  +dNmho/-
@@ -4945,7 +4604,6 @@
               `:hMMMMMM. NMMMMMh/`
                  .odNm+  /dNms.
 
-
 "Zorin":
   ascii: |
     {1}        `osssssssssssssssssssso`
@@ -4961,7 +4619,6 @@
           .+oooooooooooooooooooooooo+.
            -osssssssssssssssssssssso-
             `osssssssssssssssssssso`
-
 
 "cooc":
   ascii: |
@@ -4983,7 +4640,6 @@
                    ''/''/''
                      '/'/'
                       `;
-
 
 "SambaBOX":
   ascii: |
