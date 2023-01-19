@@ -1,5 +1,3 @@
-//! A collection of structs that implement [`Render`], using [`sysinfo`] as the source of information.
-
 use std::{collections::HashSet, env, process::id, string::ToString, time::Duration};
 
 use byte_unit::Byte;

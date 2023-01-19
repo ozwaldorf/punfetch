@@ -11,7 +11,7 @@ use tera::{try_get_value, Context, Tera};
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!("cargo:rerun-if-changed=distros.yaml");
-    println!("cargo:rerun-if-changed=src/distros/distro.tera");
+    println!("cargo:rerun-if-changed=src/distros/distros.tera");
 
     let out_dir = std::env::var("OUT_DIR")?;
     let mut tera = Tera::default();
@@ -59,7 +59,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     let rust_code = tera.render_str(
-        &read_to_string("src/distros/distro.tera")?,
+        &read_to_string("src/distros/distros.tera")?,
         &Context::from_value(json!({ "distros": data }))?,
     )?;
 

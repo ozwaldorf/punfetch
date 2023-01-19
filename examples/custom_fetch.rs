@@ -5,7 +5,9 @@ use owo_colors::OwoColorize;
 use punfetch::{
     // For the info module, add `features=["sysinfo"]`
     info::{sys, ColorInfo, HostInfo},
-    Distro, Printer, Render,
+    Distro,
+    Printer,
+    Render,
 };
 
 #[derive(Render)]
