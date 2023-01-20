@@ -24,6 +24,8 @@
   colors:
     ansi:
       - green
+    hex:
+      - "#55CC90"
   ascii: |
     {0}           `:+ssssossossss+-`
     {0}        .oys///oyhddddhyo///sy+.
@@ -57,15 +59,22 @@
     {0}   |   GNU/Linux
 
 "Hash":
+  colors:
+    ansi:
+      - cyan
+    hex:
+      - "#42CBBB"
   ascii: |
     {0}
     {0}      +   ######   +
     {0}    ###   ######   ###
     {0}  #####   ######   #####
     {0} ######   ######   ######
+    {0}
     {0}####### '"###### '"########
     {0}#######   ######   ########
     {0}#######   ######   ########
+    {0}
     {0} ###### '"###### '"######
     {0}  #####   ######   #####
     {0}    ###   ######   ###
@@ -354,6 +363,9 @@
     ansi:
       - blue
       - white
+    hex:
+      - "#3399FD"
+      - "#FFFFFF"
   ascii: |
     {1}                                    ./o-
     {1}          ``...``              `:. -/:
@@ -377,7 +389,9 @@
 "Archcraft":
   colors:
     ansi:
-      - white
+      - cyan
+    hex:
+      - "#6394E3"
   ascii: |
     {0}                   -m:
     {0}                  :NMM+      .+
@@ -400,9 +414,12 @@
 
 "ArcoLinux":
   colors:
-      ansi:
+    ansi:
       - blue
       - white
+    hex:
+      - "#6891E1"
+      - "#FFFFFF"
   ascii: |
     {0}                    /-
     {0}                   ooo:
@@ -426,160 +443,157 @@
     {0}ooooooooo.                     {1}-ooooooooo
 
 "ArchBox":
+  colors:
+    ansi:
+      - green
+    hex:
+      - "#287F32"
   ascii: |
-    {1}              ...:+oh/:::..
-             ..-/oshhhhhh`   `::::-.
-         .:/ohhhhhhhhhhhh`        `-::::.
-     .+shhhhhhhhhhhhhhhhh`             `.::-.
-     /`-:+shhhhhhhhhhhhhh`            .-/+shh
-     /      .:/ohhhhhhhhh`       .:/ohhhhhhhh
-     /           `-:+shhh`  ..:+shhhhhhhhhhhh
-     /                 .:ohhhhhhhhhhhhhhhhhhh
-     /                  `hhhhhhhhhhhhhhhhhhhh
-     /                  `hhhhhhhhhhhhhhhhhhhh
-     /                  `hhhhhhhhhhhhhhhhhhhh
-     /                  `hhhhhhhhhhhhhhhhhhhh
-     /      .+o+        `hhhhhhhhhhhhhhhhhhhh
-     /     -hhhhh       `hhhhhhhhhhhhhhhhhhhh
-     /     ohhhhho      `hhhhhhhhhhhhhhhhhhhh
-     /:::+`hhhhoos`     `hhhhhhhhhhhhhhhhhs+`
-        `--/:`   /:     `hhhhhhhhhhhho/-
-                 -/:.   `hhhhhhs+:-`
-                    ::::/ho/-`
+    {0}              ...:+oh/:::..
+    {0}         ..-/oshhhhhh`   `::::-.
+    {0}     .:/ohhhhhhhhhhhh`        `-::::.
+    {0} .+shhhhhhhhhhhhhhhhh`             `.::-.
+    {0} /`-:+shhhhhhhhhhhhhh`            .-/+shh
+    {0} /      .:/ohhhhhhhhh`       .:/ohhhhhhhh
+    {0} /           `-:+shhh`  ..:+shhhhhhhhhhhh
+    {0} /                 .:ohhhhhhhhhhhhhhhhhhh
+    {0} /                  `hhhhhhhhhhhhhhhhhhhh
+    {0} /                  `hhhhhhhhhhhhhhhhhhhh
+    {0} /                  `hhhhhhhhhhhhhhhhhhhh
+    {0} /                  `hhhhhhhhhhhhhhhhhhhh
+    {0} /      .+o+        `hhhhhhhhhhhhhhhhhhhh
+    {0} /     -hhhhh       `hhhhhhhhhhhhhhhhhhhh
+    {0} /     ohhhhho      `hhhhhhhhhhhhhhhhhhhh
+    {0} /:::+`hhhhoos`     `hhhhhhhhhhhhhhhhhs+`
+    {0}    `--/:`   /:     `hhhhhhhhhhhho/-
+    {0}             -/:.   `hhhhhhs+:-`
+    {0}                ::::/ho/-`
 
 "ARCHlabs":
+  colors:
+    ansi:
+      - blue
+      - red
+    hex:
+      - "#3A87E5"
+      - "#BB666A"
   ascii: |
-    {1}                     'c'
-                        'kKk,
-                       .dKKKx.
-                      .oKXKXKd.
-                     .l0XXXXKKo.
-                     c0KXXXXKX0l.
-                    :0XKKOxxOKX0l.
-                   :OXKOc. .c0XX0l.
-                  :OK0o. {4}...{1}'dKKX0l.
-                 :OX0c  {4};xOx'{1}'dKXX0l.
-                :0KKo.{4}.o0XXKd'.{1}lKXX0l.
-               c0XKd.{4}.oKXXXXKd..{1}oKKX0l.
-             .c0XKk;{4}.l0K0OO0XKd..{1}oKXXKo.
-            .l0XXXk:{4},dKx,.'l0XKo.{1}.kXXXKo.
-           .o0XXXX0d,{4}:x;   .oKKx'{1}.dXKXXKd.
-          .oKXXXXKK0c.{4};.    :00c'{1}cOXXXXXKd.
-         .dKXXXXXXXXk,{4}.     cKx'{1}'xKXXXXXXKx'
-        'xKXXXXK0kdl:.     {4}.ok; {1}.cdk0KKXXXKx'
-       'xKK0koc,..         {4}'c, {1}    ..,cok0KKk,
-      ,xko:'.             {4}.. {1}           .':okx;
-     .,'.                                   .',.
+    {0}                     'c'
+    {0}                    'kKk,
+    {0}                   .dKKKx.
+    {0}                  .oKXKXKd.
+    {0}                 .l0XXXXKKo.
+    {0}                 c0KXXXXKX0l.
+    {0}                :0XKKOxxOKX0l.
+    {0}               :OXKOc. .c0XX0l.
+    {0}              :OK0o. {1}...{0}'dKKX0l.
+    {0}             :OX0c  {1};xOx'{0}'dKXX0l.
+    {0}            :0KKo.{1}.o0XXKd'.{0}lKXX0l.
+    {0}           c0XKd.{1}.oKXXXXKd..{0}oKKX0l.
+    {0}         .c0XKk;{1}.l0K0OO0XKd..{0}oKXXKo.
+    {0}        .l0XXXk:{1},dKx,.'l0XKo.{0}.kXXXKo.
+    {0}       .o0XXXX0d,{1}:x;   .oKKx'{0}.dXKXXKd.
+    {0}      .oKXXXXKK0c.{1};.    :00c'{0}cOXXXXXKd.
+    {0}     .dKXXXXXXXXk,{1}.     cKx'{0}'xKXXXXXXKx'
+    {0}    'xKXXXXK0kdl:.     {1}.ok; {0}.cdk0KKXXXKx'
+    {0}   'xKK0koc,..         {1}'c, {0}    ..,cok0KKk,
+    {0}  ,xko:'.             {1}.. {0}           .':okx;
+    {0} .,'.                                   .',.
 
 "ArchStrike":
   ascii: |
     {1}                   *   
-                      **.
-                     ****
-                    ******
-                    *******
-                  ** *******
-                 **** *******
-                {1}****{2}_____{1}***{2}/{1}*
-               ***{2}/{1}*******{2}//{1}***
-              **{2}/{1}********{2}///{1}*{2}/{1}**
-             **{2}/{1}*******{2}////{1}***{2}/{1}**
-            **{2}/{1}****{2}//////.,{1}****{2}/{1}**
-           ***{2}/{1}*****{2}/////////{1}**{2}/{1}***
-          ****{2}/{1}****    {2}/////{1}***{2}/{1}****
-         ******{2}/{1}***  {2}////   {1}**{2}/{1}******
-        ********{2}/{1}* {2}///      {1}*{2}/{1}********
-      ,******     {2}// ______ /    {1}******,
-
-"XFerience":
-  ascii: |
-    {1}           ``--:::::::-.`
-            .-/+++ooooooooo+++:-`
-         `-/+oooooooooooooooooo++:.
-        -/+oooooo/+ooooooooo+/ooo++:`
-      `/+oo++oo.   .+oooooo+.-: +:-o+-
-     `/+o/.  -o.    :oooooo+ ```:.+oo+-
-    `:+oo-    -/`   :oooooo+ .`-`+oooo/.
-    .+ooo+.    .`   `://///+-+..oooooo+:`
-    -+ooo:`                ``.-+oooooo+/`
-    -+oo/`                       :+oooo/.
-    .+oo:            ..-/. .      -+oo+/`
-    `/++-         -:::++::/.      -+oo+-
-     ./o:          `:///+-     `./ooo+:`
-      .++-         `` /-`   -:/+oooo+:`
-       .:+/:``          `-:ooooooo++-
-         ./+o+//:...../+oooooooo++:`
-           `:/++ooooooooooooo++/-`
-              `.-//++++++//:-.`
-                   ``````
+    {1}                  **.
+    {1}                 ****
+    {1}                ******
+    {1}                *******
+    {1}              ** *******
+    {1}             **** *******
+    {1}            {1}****{2}_____{1}***{2}/{1}*
+    {1}           ***{2}/{1}*******{2}//{1}***
+    {1}          **{2}/{1}********{2}///{1}*{2}/{1}**
+    {1}         **{2}/{1}*******{2}////{1}***{2}/{1}**
+    {1}        **{2}/{1}****{2}//////.,{1}****{2}/{1}**
+    {1}       ***{2}/{1}*****{2}/////////{1}**{2}/{1}***
+    {1}      ****{2}/{1}****    {2}/////{1}***{2}/{1}****
+    {1}     ******{2}/{1}***  {2}////   {1}**{2}/{1}******
+    {1}    ********{2}/{1}* {2}///      {1}*{2}/{1}********
+    {1}  ,******     {2}// ______ /    {1}******,
 
 "ArchMerge":
   ascii: |
-    {1}                    y:
-                      sMN-
-                     +MMMm`
-                    /MMMMMd`
-                   :NMMMMMMy
-                  -NMMMMMMMMs
-                 .NMMMMMMMMMM+
-                .mMMMMMMMMMMMM+
-                oNMMMMMMMMMMMMM+
-              `+:-+NMMMMMMMMMMMM+
-              .sNMNhNMMMMMMMMMMMM/
-            `hho/sNMMMMMMMMMMMMMMM/
-           `.`omMMmMMMMMMMMMMMMMMMM+
-          .mMNdshMMMMd+::oNMMMMMMMMMo
-         .mMMMMMMMMM+     `yMMMMMMMMMs
-        .NMMMMMMMMM/        yMMMMMMMMMy
-       -NMMMMMMMMMh         `mNMMMMMMMMd`
-      /NMMMNds+:.`             `-/oymMMMm.
-     +Mmy/.                          `:smN:
-    /+.                                  -o.
+    {1}                   y:
+    {1}                  sMN-
+    {1}                 +MMMm`
+    {1}                /MMMMMd`
+    {1}               :NMMMMMMy
+    {1}              -NMMMMMMMMs
+    {1}             .NMMMMMMMMMM+
+    {1}            .mMMMMMMMMMMMM+
+    {1}            oNMMMMMMMMMMMMM+
+    {1}          `+:-+NMMMMMMMMMMMM+
+    {1}          .sNMNhNMMMMMMMMMMMM/
+    {1}        `hho/sNMMMMMMMMMMMMMMM/
+    {1}       `.`omMMmMMMMMMMMMMMMMMMM+
+    {1}      .mMNdshMMMMd+::oNMMMMMMMMMo
+    {1}     .mMMMMMMMMM+     `yMMMMMMMMMs
+    {1}    .NMMMMMMMMM/        yMMMMMMMMMy
+    {1}   -NMMMMMMMMMh         `mNMMMMMMMMd`
+    {1}  /NMMMNds+:.`             `-/oymMMMm.
+    {1} +Mmy/.                          `:smN:
+    {1}/+.                                  -o.
 
 "Arch":
+  colors:
+    ansi:
+      - cyan
+      - blue
+    hex:
+      - "#33CAE9"
+      - "#1794D2"
   ascii: |
-    {1}                   -`
-                      .o+`
-                     `ooo/
-                    `+oooo:
-                   `+oooooo:
-                   -+oooooo+:
-                 `/:-:++oooo+:
-                `/++++/+++++++:
-               `/++++++++++++++:
-              `/+++o{2}oooooooo{1}oooo/`
-    {2}         {1}./{2}ooosssso++osssssso{1}+`
-    {2}        .oossssso-````/ossssss+`
-           -osssssso.      :ssssssso.
-          :osssssss/        osssso+++.
-         /ossssssss/        +ssssooo/-
-       `/ossssso+/:-        -:/+osssso+-
-      `+sso+:-`                 `.-/+oso:
-     `++:.                           `-/+/
-     .`                                 `/
+    {0}                   -`
+    {0}                  .o+`
+    {0}                 `ooo/
+    {0}                `+oooo:
+    {0}               `+oooooo:
+    {0}              `-+oooooo+:
+    {0}             `/:-:++oooo+:
+    {0}            `/++++/+++++++:
+    {0}           `/++++++++++++++:
+    {0}          `/+++o{1}oooooooo{0}oooo/`
+    {0}         ./{1}ooosssso++osssssso{0}+`
+    {1}        .oossssso-````/ossssss+`
+    {1}       -osssssso.      :ssssssso.
+    {1}      :osssssss/        osssso+++.
+    {1}     /ossssssss/        +ssssooo/-
+    {1}   `/ossssso+/:-        -:/+osssso+-
+    {1}  `+sso+:-`                 `.-/+oso:
+    {1} `++:.                           `-/+/
+    {1} .`                                 `/
 
 "Artix":
   ascii: |
-    {1}                   '
-                      'o'
-                     'ooo'
-                    'ooxoo'
-                   'ooxxxoo'
-                  'oookkxxoo'
-                 'oiioxkkxxoo'
-                ':;:iiiioxxxoo'
-                   `'.;::ioxxoo'
-              '-.      `':;jiooo'
-             'oooio-..     `'i:io'
-            'ooooxxxxoio:,.   `'-;'
-           'ooooxxxxxkkxoooIi:-.  `'
-          'ooooxxxxxkkkkxoiiiiiji'
-         'ooooxxxxxkxxoiiii:'`     .i'
-        'ooooxxxxxoi:::'`       .;ioxo'
-       'ooooxooi::'`         .:iiixkxxo'
-      'ooooi:'`                `'';ioxxo'
-     'i:'`                          '':io'
-    '`                                   `'
+    {0}                   '
+    {0}                  'o'
+    {0}                 'ooo'
+    {0}                'ooxoo'
+    {0}               'ooxxxoo'
+    {0}              'oookkxxoo'
+    {0}             'oiioxkkxxoo'
+    {0}            ':;:iiiioxxxoo'
+    {0}               `'.;::ioxxoo'
+    {0}          '-.      `':;jiooo'
+    {0}         'oooio-..     `'i:io'
+    {0}        'ooooxxxxoio:,.   `'-;'
+    {0}       'ooooxxxxxkkxoooIi:-.  `'
+    {0}      'ooooxxxxxkkkkxoiiiiiji'
+    {0}     'ooooxxxxxkxxoiiii:'`     .i'
+    {0}    'ooooxxxxxoi:::'`       .;ioxo'
+    {0}   'ooooxooi::'`         .:iiixkxxo'
+    {0}  'ooooi:'`                `'';ioxxo'
+    {0} 'i:'`                          '':io'
+    {0}'`                                   `'
 
 "Arya":
   ascii: |
@@ -660,6 +674,9 @@
     sm/         /ms
 
 "BlackArch":
+  colors:
+    ansi:
+      - cyan
   ascii: |
     {3}                   00
                        11
@@ -1238,45 +1255,54 @@
                       ,#,
 
 "Debian":
+  colors:
+    ansi:
+      - red
+    hex:
+      - "#D70752"
   ascii: |
-    {2}       _,met$$$$$gg.
-        ,g$$$$$$$$$$$$$$$P.
-      ,g$$P"        """Y$$.".
-     ,$$P'              `$$$.
-    ',$$P       ,ggs.     `$$b:
-    `d$$'     ,$P"'   {1}.{2}    $$$
-     $$P      d$'     {1},{2}    $$P
-     $$:      $$.   {1}-{2}    ,d$$'
-     $$;      Y$b._   _,d$P'
-     Y$$.    {1}`.{2}`"Y$$$$P"'
-    {2} `$$b      {1}"-.__
-    {2}  `Y$$
-       `Y$$.
-         `$$b.
-           `Y$$b.
-              `"Y$b._
-                  `"""
+    {0}        _,met$$$$$gg.
+    {0}     ,g$$$$$$$$$$$$$$$P.
+    {0} . ,g$$P"        """Y$$.".
+    {0}  ,$$P'              `$$$.'
+    {0}',$$P       ,ggs.     `$$b\
+    {0} `d$$'     ,$P"'   .    $$$
+    {0} $$P      d$'     ,    $$P
+    {0} |$$:      $$.   -    ,d$$
+    {0} '$$;      Y$b._   _,d$P'
+    {0}  Y$$.    `.`"Y$$$$P"'
+    {0}  `$$b      "-.__
+    {0}   `Y$$
+    {0}    `Y$.
+    {0}      `$b.
+    {0}       `Yb.
+    {0}         `"b._
 
 "Deepin":
+  colors:
+    ansi:
+      - cyan
+    hex:
+      - "#31C5FE"
   ascii: |
-    {1}             ............
-             .';;;;;.       .,;,.
-          .,;;;;;;;.       ';;;;;;;.
-        .;::::::::'     .,::;;,''''',.
-       ,'.::::::::    .;;'.          ';
-      ;'  'cccccc,   ,' :: '..        .:
-     ,,    :ccccc.  ;: .c, '' :.       ,;
-    .l.     cllll' ., .lc  :; .l'       l.
-    .c       :lllc  ;cl:  .l' .ll.      :'
-    .l        'looc. .   ,o:  'oo'      c,
-    .o.         .:ool::coc'  .ooo'      o.
-     ::            .....   .;dddo      ;c
-      l:...            .';lddddo.     ,o
-       lxxxxxdoolllodxxxxxxxxxc      :l
-        ,dxxxxxxxxxxxxxxxxxxl.     'o,
-          ,dkkkkkkkkkkkkko;.    .;o;
-            .;okkkkkdl;.    .,cl:.
-                .,:cccccccc:,.
+    {0}             ............
+    {0}         .';;;;;.       .,;,.
+    {0}      .,;;;;;;;.       ';;;;;;;.
+    {0}    .;::::::::'     .,::;;,''''',.
+    {0}   ,'.::::::::    .;;'.          ';
+    {0}  ;'  'cccccc,   ,' :: '..        .:
+    {0} ,,    :ccccc.  ;: .c, '' :.       ,;
+    {0}.l.     cllll' ., .lc  :; .l'       l.
+    {0}.c       :lllc  ;cl:  .l' .ll.      :'
+    {0}.l        'looc. .   ,o:  'oo'      c,
+    {0}.o.         .:ool::coc'  .ooo'      o.
+    {0} ::            .....   .;dddo      ;c
+    {0}  l:...            .';lddddo.     ,o
+    {0}   lxxxxxdoolllodxxxxxxxxxc      :l
+    {0}    ,dxxxxxxxxxxxxxxxxxxl.     'o,
+    {0}      ,dkkkkkkkkkkkkko;.    .;o;
+    {0}        .;okkkkkdl;.    .,cl:.
+    {0}            .,:cccccccc:,.
 
 "Devuan":
   ascii: |
@@ -1311,20 +1337,6 @@
             `:sy:        `.    `/yyyyys:
                ./o/.`           .oyyso+oo:`
                   :+oo+//::::///:-.`     `.`
-
-"Itc":
-  ascii: |
-    {1}....................-==============+...
-    {1}....................-==============:...
-    {1}...:===========-....-==============:...
-    {1}...-===========:....-==============-...
-    {1}....*==========+........-::********-...
-    {1}....*===========+.:*====**==*+-.-......
-    {1}....:============*+-..--:+**====*---...
-    {1}......::--........................::...
-    {1}..+-:+-.+::*:+::+:-++::++-.:-.*.:++:++.
-    {1}..:-:-++++:-::--:+::-::.:++-++:++--:-:.    ⠀⠀⠀⠀⠀
-    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 "dragonfly_old":
   ascii: |
@@ -1385,24 +1397,29 @@
     
 
 "Elementary":
+  colors:
+    ansi:
+      - blue
+    hex:
+      - "#45A2E9"
   ascii: |
-    {2}         eeeeeeeeeeeeeeeee
-          eeeeeeeeeeeeeeeeeeeeeee
-        eeeee  eeeeeeeeeeee   eeeee
-      eeee   eeeee       eee     eeee
-     eeee   eeee          eee     eeee
-    eee    eee            eee       eee
-    eee   eee            eee        eee
-    ee    eee           eeee       eeee
-    ee    eee         eeeee      eeeeee
-    ee    eee       eeeee      eeeee ee
-    eee   eeee   eeeeee      eeeee  eee
-    eee    eeeeeeeeee     eeeeee    eee
-     eeeeeeeeeeeeeeeeeeeeeeee    eeeee
-      eeeeeeee eeeeeeeeeeee      eeee
-        eeeee                 eeeee
-          eeeeeee         eeeeeee
-             eeeeeeeeeeeeeeeee
+    {0}         eeeeeeeeeeeeeeeee
+    {0}      eeeeeeeeeeeeeeeeeeeeeee
+    {0}    eeeee  eeeeeeeeeeee   eeeee
+    {0}  eeee   eeeee       eee     eeee
+    {0} eeee   eeee          eee     eeee
+    {0}eee    eee            eee       eee
+    {0}eee   eee            eee        eee
+    {0}ee    eee           eeee       eeee
+    {0}ee    eee         eeeee      eeeeee
+    {0}ee    eee       eeeee      eeeee ee
+    {0}eee   eeee   eeeeee      eeeee  eee
+    {0}eee    eeeeeeeeee     eeeeee    eee
+    {0} eeeeeeeeeeeeeeeeeeeeeeee    eeeee
+    {0}  eeeeeeee eeeeeeeeeeee      eeee
+    {0}    eeeee                 eeeee
+    {0}      eeeeeee         eeeeeee
+    {0}         eeeeeeeeeeeeeeeee
 
 "EndeavourOS":
   ascii: |
@@ -1492,47 +1509,61 @@
                        ':okKXWNKkl'
 
 "fedora_old":
-  glob: "{*Fedora_old*,*RFRemix*}"
+  regex: "(fedora_old|rfremix)"
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#004579"
+      - "#FFFFFF"
   ascii: |
-    {1}          /:-------------:\\
-           :-------------------::
-         :-----------{2}/shhOHbmp{1}---:\\
-       /-----------{2}omMMMNNNMMD  {1}---:
-      :-----------{2}sMMMMNMNMP{1}.    ---:
-     :-----------{2}:MMMdP{1}-------    ---\\
-    ,------------{2}:MMMd{1}--------    ---:
-    :------------{2}:MMMd{1}-------    .---:
-    :----    {2}oNMMMMMMMMMNho{1}     .----:
-    :--     .{2}+shhhMMMmhhy++{1}   .------/
-    :-    -------{2}:MMMd{1}--------------:
-    :-   --------{2}/MMMd{1}-------------;
-    :-    ------{2}/hMMMy{1}------------:
-    :--{2} :dMNdhhdNMMNo{1}------------;
-    :---{2}:sdNMMMMNds:{1}------------:
-    :------{2}:://:{1}-------------::
-    :---------------------://
+    {0}          /:-------------:\\
+    {0}       :-------------------::
+    {0}     :-----------{1}/shhOHbmp{0}---:\\
+    {0}   /-----------{1}omMMMNNNMMD  {0}---:
+    {0}  :-----------{1}sMMMMNMNMP{0}.    ---:
+    {0} :-----------{1}:MMMdP{0}-------    ---\\
+    {0},------------{1}:MMMd{0}--------    ---:
+    {0}:------------{1}:MMMd{0}-------    .---:
+    {0}:----    {1}oNMMMMMMMMMNho{0}     .----:
+    {0}:--     .{1}+shhhMMMmhhy++{0}   .------/
+    {0}:-    -------{1}:MMMd{0}--------------:
+    {0}:-   --------{1}/MMMd{0}-------------;
+    {0}:-    ------{1}/hMMMy{0}------------:
+    {0}:--{1} :dMNdhhdNMMNo{0}------------;
+    {0}:---{1}:sdNMMMMNds:{0}------------:
+    {0}:------{1}:://:{0}-------------::
+    {0}:---------------------://
 
 "Fedora":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#51A2DA"
+      - "#FFFFFF"
   ascii: |
-    {1}             .',;::::;,'.
-             .';:cccccccccccc:;,.
-          .;cccccccccccccccccccccc;.
-        .:cccccccccccccccccccccccccc:.
-      .;ccccccccccccc;{2}.:dddl:.{1};ccccccc;.
-     .:ccccccccccccc;{2}OWMKOOXMWd{1};ccccccc:.
-    .:ccccccccccccc;{2}KMMc{1};cc;{2}xMMc{1};ccccccc:.
-    ,cccccccccccccc;{2}MMM.{1};cc;{2};WW:{1};cccccccc,
-    :cccccccccccccc;{2}MMM.{1};cccccccccccccccc:
-    :ccccccc;{2}oxOOOo{1};{2}MMM0OOk.{1};cccccccccccc:
-    cccccc;{2}0MMKxdd:{1};{2}MMMkddc.{1};cccccccccccc;
-    ccccc;{2}XM0'{1};cccc;{2}MMM.{1};cccccccccccccccc'
-    ccccc;{2}MMo{1};ccccc;{2}MMW.{1};ccccccccccccccc;
-    ccccc;{2}0MNc.{1}ccc{2}.xMMd{1};ccccccccccccccc;
-    cccccc;{2}dNMWXXXWM0:{1};cccccccccccccc:,
-    cccccccc;{2}.:odl:.{1};cccccccccccccc:,.
-    :cccccccccccccccccccccccccccc:'.
-    .:cccccccccccccccccccccc:;,..
-      '::cccccccccccccc::;,.
+    {0}             .',;::::;,'.
+    {0}         .';:cccccccccccc:;,.
+    {0}      .;cccccccccccccccccccccc;.
+    {0}    .:cccccccccccccccccccccccccc:.
+    {0}  .;ccccccccccccc;{1}.:dddl:.{0};ccccccc;.
+    {0} .:ccccccccccccc;{1}OWMKOOXMWd{0};ccccccc:.
+    {0}.:ccccccccccccc;{1}KMMc{0};cc;{1}xMMc{0};ccccccc:.
+    {0},cccccccccccccc;{1}MMM.{0};cc;{1};WW:{0};cccccccc,
+    {0}:cccccccccccccc;{1}MMM.{0};cccccccccccccccc:
+    {0}:ccccccc;{1}oxOOOo{0};{1}MMM0OOk.{0};cccccccccccc:
+    {0}cccccc;{1}0MMKxdd:{0};{1}MMMkddc.{0};cccccccccccc;
+    {0}ccccc;{1}XM0'{0};cccc;{1}MMM.{0};cccccccccccccccc'
+    {0}ccccc;{1}MMo{0};ccccc;{1}MMW.{0};ccccccccccccccc;
+    {0}ccccc;{1}0MNc.{0}ccc{1}.xMMd{0};ccccccccccccccc;
+    {0}cccccc;{1}dNMWXXXWM0:{0};cccccccccccccc:,
+    {0}cccccccc;{1}.:odl:.{0};cccccccccccccc:,.
+    {0}:cccccccccccccccccccccccccccc:'.
+    {0}.:cccccccccccccccccccccc:;,..
+    {0}  '::cccccccccccccc::;,.
 
 "Feren":
   ascii: |
@@ -1674,29 +1705,6 @@
     `/{2}ohdmmddhys+++/:{1}.`
       `-//////:--.
 
-"Pentoo":
-  ascii: |
-    {2}           `:oydNNMMMMNNdyo:`
-            :yNMMMMMMMMMMMMMMMMNy:
-          :dMMMMMMMMMMMMMMMMMMMMMMd:
-         oMMMMMMMho/-....-/ohMMMMMMMo
-        oMMMMMMy.            .yMMMMMMo
-       .MMMMMMo                oMMMMMM.
-       +MMMMMm                  mMMMMM+
-       oMMMMMh                  hMMMMMo
-     //hMMMMMm//{1}`{2}          {1}`{2}////mMMMMMh//
-    MMMMMMMMMMM{1}/{2}      {1}/o/`{2}  {1}.{2}smMMMMMMMMMMM
-    MMMMMMMMMMm      {1}`NMN:{2}    {1}.{2}yMMMMMMMMMM
-    MMMMMMMMMMMh{1}:.{2}              dMMMMMMMMM
-    MMMMMMMMMMMMMy{1}.{2}            {1}-{2}NMMMMMMMMM
-    MMMMMMMMMMMd:{1}`{2}           {1}-{2}yNMMMMMMMMMM
-    MMMMMMMMMMh{1}`{2}          {1}./{2}hNMMMMMMMMMMMM
-    MMMMMMMMMM{1}s{2}        {1}.:{2}ymMMMMMMMMMMMMMMM
-    MMMMMMMMMMN{1}s:..-/{2}ohNMMMMMMMMMMMMMMMMMM
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-
 "glaucus":
   ascii: |
     {1}             ,,        ,d88P
@@ -1728,28 +1736,33 @@
                   `+oo++++      ++++oo+'
 
 "GNOME":
+  colors:
+    ansi:
+      - blue
+    hex:
+      - "#4A86CF"
   ascii: |
-    {1}                               ,@@@@@@@@,
-                     @@@@@@      @@@@@@@@@@@@
-            ,@@.    @@@@@@@    *@@@@@@@@@@@@
-           @@@@@%   @@@@@@(    @@@@@@@@@@@&
-           @@@@@@    @@@@*     @@@@@@@@@#
-    @@@@*   @@@@,              *@@@@@%
-    @@@@@.
-     @@@@#         @@@@@@@@@@@@@@@@
-             ,@@@@@@@@@@@@@@@@@@@@@@@,
-          ,@@@@@@@@@@@@@@@@@@@@@@@@@@&
-        .@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@@@@@@@@@@@@@@
-       @@@@@@@@@@@@@@@@@@@@@@@@(
-       @@@@@@@@@@@@@@@@@@@@%
-        @@@@@@@@@@@@@@@@
-         @@@@@@@@@@@@*        @@@@@@@@/
-          &@@@@@@@@@@        @@@@@@@@@*
-            @@@@@@@@@@@,    @@@@@@@@@*
-              ,@@@@@@@@@@@@@@@@@@@@&
-                  &@@@@@@@@@@@@@@
-                         ...
+    {0}                               ,@@@@@@@@,
+    {0}                 @@@@@@      @@@@@@@@@@@@
+    {0}        ,@@.    @@@@@@@    *@@@@@@@@@@@@
+    {0}       @@@@@%   @@@@@@(    @@@@@@@@@@@&
+    {0}       @@@@@@    @@@@*     @@@@@@@@@#
+    {0}@@@@*   @@@@,              *@@@@@%
+    {0}@@@@@.
+    {0} @@@@#         @@@@@@@@@@@@@@@@
+    {0}         ,@@@@@@@@@@@@@@@@@@@@@@@,
+    {0}      ,@@@@@@@@@@@@@@@@@@@@@@@@@@&
+    {0}    .@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    {0}    @@@@@@@@@@@@@@@@@@@@@@@@@@@
+    {0}   @@@@@@@@@@@@@@@@@@@@@@@@(
+    {0}   @@@@@@@@@@@@@@@@@@@@%
+    {0}    @@@@@@@@@@@@@@@@
+    {0}     @@@@@@@@@@@@*        @@@@@@@@/
+    {0}      &@@@@@@@@@@        @@@@@@@@@*
+    {0}        @@@@@@@@@@@,    @@@@@@@@@*
+    {0}          ,@@@@@@@@@@@@@@@@@@@@&
+    {0}              &@@@@@@@@@@@@@@
+    {0}                     ...
 
 "GoboLinux":
   ascii: |
@@ -1876,6 +1889,42 @@
       \  /        /
        \/________/
 
+
+"IRIX":
+  ascii: |
+    {1}           ./ohmNd/  +dNmho/-
+         `:+ydNMMMMMMMM.-MMMMMMMMMdyo:.
+       `hMMMMMMNhs/sMMM-:MMM+/shNMMMMMMh`
+       -NMMMMMmo-` /MMM-/MMM- `-omMMMMMN.
+     `.`-+hNMMMMMNhyMMM-/MMMshmMMMMMmy+...`
+    +mMNds:-:sdNMMMMMMMyyMMMMMMMNdo:.:sdMMm+
+    dMMMMMMmy+.-/ymNMMMMMMMMNmy/-.+hmMMMMMMd
+    oMMMMmMMMMNds:.+MMMmmMMN/.-odNMMMMmMMMM+
+    .MMMM-/ymMMMMMmNMMy..hMMNmMMMMMmy/-MMMM.
+     hMMM/ `/dMMMMMMMN////NMMMMMMMd/. /MMMh
+     /MMMdhmMMMmyyMMMMMMMMMMMMhymMMMmhdMMM:
+     `mMMMMNho//sdMMMMM//NMMMMms//ohNMMMMd
+      `/so/:+ymMMMNMMMM` mMMMMMMMmh+::+o/`
+         `yNMMNho-yMMMM` NMMMm.+hNMMNh`
+         -MMMMd:  oMMMM. NMMMh  :hMMMM-
+          -yNMMMmooMMMM- NMMMyomMMMNy-
+            .omMMMMMMMM-`NMMMMMMMmo.
+              `:hMMMMMM. NMMMMMh/`
+                 .odNm+  /dNms.
+
+"Itc":
+  ascii: |
+    {1}....................-==============+...
+    {1}....................-==============:...
+    {1}...:===========-....-==============:...
+    {1}...-===========:....-==============-...
+    {1}....*==========+........-::********-...
+    {1}....*===========+.:*====**==*+-.-......
+    {1}....:============*+-..--:+**====*---...
+    {1}......::--........................::...
+    {1}..+-:+-.+::*:+::+:-++::++-.:-.*.:++:++.
+    {1}..:-:-++++:-::--:+::-::.:++-++:++--:-:.    ⠀⠀⠀⠀⠀
+
 "janus":
   ascii: |
     {1}               'l:
@@ -1925,28 +1974,35 @@
                     `:+ooooooooooooo:
 
 "Kali":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#3579EB"
+      - "#FFFFFF"
   ascii: |
     {1}..............
-                ..,;:ccc,.
-              ......''';lxO.
-    .....''''..........,:ld;
-               .';;;:::;,,.x,
-          ..'''.            0Xxoc:,.  ...
-      ....                ,ONkc;,;cokOdc',.
-     .                   OMo           ':{2}dd{1}o.
-                        dMc               :OO;
-                        0M.                 .:o.
-                        ;Wd
-                         ;XO,
-                           ,d0Odlc;,..
-                               ..',;:cdOOd::,.
-                                        .:d;.':;.
-                                           'd,  .'
-                                             ;l   ..
-                                              .o
-                                                c
-                                                .'
-                                                 .
+    {1}            ..,;:ccc,.
+    {1}          ......''';lxO.
+    {1}.....''''..........,:ld;
+    {1}           .';;;:::;,,.x,
+    {1}      ..'''.            0Xxoc:,.  ...
+    {1}  ....                ,ONkc;,;cokOdc',.
+    {1} .                   OMo           ':{2}dd{1}o.
+    {1}                    dMc               :OO;
+    {1}                    0M.                 .:o.
+    {1}                    ;Wd
+    {1}                     ;XO,
+    {1}                       ,d0Odlc;,..
+    {1}                           ..',;:cdOOd::,.
+    {1}                                    .:d;.':;.
+    {1}                                       'd,  .'
+    {1}                                         ;l   ..
+    {1}                                          .o
+    {1}                                            c
+    {1}                                            .'
+    {1}                                             .
 
 "KaOS":
   ascii: |
@@ -1968,26 +2024,31 @@
                         .SSS....S..
 
 "KDE":
+  colors:
+    ansi:
+      - cyan
+    hex:
+      - "#54A3D8"
   ascii: |
-    {1}             `..---+/---..`
-             `---.``   ``   `.---.`
-          .--.`        ``        `-:-.
-        `:/:     `.----//----.`     :/-
-       .:.    `---`          `--.`    .:`
-      .:`   `--`                .:-    `:.
-     `/    `:.      `.-::-.`      -:`   `/`
-     /.    /.     `:++++++++:`     .:    .:
-    `/    .:     `+++++++++++/      /`   `+`
-    /+`   --     .++++++++++++`     :.   .+:
-    `/    .:     `+++++++++++/      /`   `+`
-     /`    /.     `:++++++++:`     .:    .:
-     ./    `:.      `.:::-.`      -:`   `/`
-      .:`   `--`                .:-    `:.
-       .:.    `---`          `--.`    .:`
-        `:/:     `.----//----.`     :/-
-          .-:.`        ``        `-:-.
-             `---.``   ``   `.---.`
-                 `..---+/---..`
+    {0}             `..---+/---..`
+    {0}         `---.``   ``   `.---.`
+    {0}      .--.`        ``        `-:-.
+    {0}    `:/:     `.----//----.`     :/-
+    {0}   .:.    `---`          `--.`    .:`
+    {0}  .:`   `--`                .:-    `:.
+    {0} `/    `:.      `.-::-.`      -:`   `/`
+    {0} /.    /.     `:++++++++:`     .:    .:
+    {0}`/    .:     `+++++++++++/      /`   `+`
+    {0}/+`   --     .++++++++++++`     :.   .+:
+    {0}`/    .:     `+++++++++++/      /`   `+`
+    {0} /`    /.     `:++++++++:`     .:    .:
+    {0} ./    `:.      `.:::-.`      -:`   `/`
+    {0}  .:`   `--`                .:-    `:.
+    {0}   .:.    `---`          `--.`    .:`
+    {0}    `:/:     `.----//----.`     :/-
+    {0}      .-:.`        ``        `-:-.
+    {0}         `---.``   ``   `.---.`
+    {0}             `..---+/---..`
 
 "Kibojoe":
   ascii: |
@@ -2423,47 +2484,60 @@
                   `::ohdmds-`
 
 "Linux Mint Old":
-  glob: "{*Linux Mint Old*,*LinuxMintOld*,*mint_old*}"
   regex: "(mint_old|mintold)"
+  colors:
+    ansi:
+      - green
+      - white
+    hex:
+      - "#87AF5F"
+      - "#FFFFFF"
   ascii: |
-    {1}MMMMMMMMMMMMMMMMMMMMMMMMMmds+.
-    MMm----::-://////////////oymNMd+`
-    MMd      {2}/++                {1}-sNMd:
-    MMNso/`  {2}dMM    `.::-. .-::.` {1}.hMN:
-    ddddMMh  {2}dMM   :hNMNMNhNMNMNh: {1}`NMm
-        NMm  {2}dMM  .NMN/-+MMM+-/NMN` {1}dMM
-        NMm  {2}dMM  -MMm  `MMM   dMM. {1}dMM
-        NMm  {2}dMM  -MMm  `MMM   dMM. {1}dMM
-        NMm  {2}dMM  .mmd  `mmm   yMM. {1}dMM
-        NMm  {2}dMM`  ..`   ...   ydm. {1}dMM
-        hMM- {2}+MMd/-------...-:sdds  {1}dMM
-        -NMm- {2}:hNMNNNmdddddddddy/`  {1}dMM
-         -dMNs-{2}``-::::-------.``    {1}dMM
-          `/dMNmy+/:-------------:/yMMM
-             ./ydNMMMMMMMMMMMMMMMMMMMMM
-                .MMMMMMMMMMMMMMMMMMM
+    {0}MMMMMMMMMMMMMMMMMMMMMMMMMmds+.
+    {0}MMm----::-://////////////oymNMd+`
+    {0}MMd      {1}/++                {0}-sNMd:
+    {0}MMNso/`  {1}dMM    `.::-. .-::.` {0}.hMN:
+    {0}ddddMMh  {1}dMM   :hNMNMNhNMNMNh: {0}`NMm
+    {0}    NMm  {1}dMM  .NMN/-+MMM+-/NMN` {0}dMM
+    {0}    NMm  {1}dMM  -MMm  `MMM   dMM. {0}dMM
+    {0}    NMm  {1}dMM  -MMm  `MMM   dMM. {0}dMM
+    {0}    NMm  {1}dMM  .mmd  `mmm   yMM. {0}dMM
+    {0}    NMm  {1}dMM`  ..`   ...   ydm. {0}dMM
+    {0}    hMM- {1}+MMd/-------...-:sdds  {0}dMM
+    {0}    -NMm- {1}:hNMNNNmdddddddddy/`  {0}dMM
+    {0}     -dMNs-{1}``-::::-------.``    {0}dMM
+    {0}      `/dMNmy+/:-------------:/yMMM
+    {0}         ./ydNMMMMMMMMMMMMMMMMMMMMM
+    {0}            .MMMMMMMMMMMMMMMMMMM
 
 "Linux Mint":
+  colors:
+    ansi:
+      - green
+      - white
+    hex:
+      - "#87AF5F"
+      - "#FFFFFF"
   ascii: |
-    {2}             ...-:::::-...
-    {2}          .-MMMMMMMMMMMMMMM-.
-          .-MMMM{1}`..-:::::::-..`{2}MMMM-.
-        .:MMMM{1}.:MMMMMMMMMMMMMMM:.{2}MMMM:.
-       -MMM{1}-M---MMMMMMMMMMMMMMMMMMM.{2}MMM-
-     `:MMM{1}:MM`  :MMMM:....::-...-MMMM:{2}MMM:`
-     :MMM{1}:MMM`  :MM:`  ``    ``  `:MMM:{2}MMM:
-    .MMM{1}.MMMM`  :MM.  -MM.  .MM-  `MMMM.{2}MMM.
-    :MMM{1}:MMMM`  :MM.  -MM-  .MM:  `MMMM-{2}MMM:
-    :MMM{1}:MMMM`  :MM.  -MM-  .MM:  `MMMM:{2}MMM:
-    :MMM{1}:MMMM`  :MM.  -MM-  .MM:  `MMMM-{2}MMM:
-    .MMM{1}.MMMM`  :MM:--:MM:--:MM:  `MMMM.{2}MMM.
-     :MMM{1}:MMM-  `-MMMMMMMMMMMM-`  -MMM-{2}MMM:
-      :MMM{1}:MMM:`                `:MMM:{2}MMM:
-       .MMM{1}.MMMM:--------------:MMMM.{2}MMM.
-         '-MMMM{1}.-MMMMMMMMMMMMMMM-.{2}MMMM-'
-           '.-MMMM{1}``--:::::--``{2}MMMM-.'
-    {2}            '-MMMMMMMMMMMMM-'
-    {2}               ``-:::::-``
+    {1}             ...-:::::-...
+    {1}          .-MMMMMMMMMMMMMMM-.
+    {1}      .-MMMM{0}`..-:::::::-..`{1}MMMM-.
+    {1}    .:MMMM{0}.:MMMMMMMMMMMMMMM:.{1}MMMM:.
+    {1}   -MMM{0}-M---MMMMMMMMMMMMMMMMMMM.{1}MMM-
+    {1} `:MMM{0}:MM`  :MMMM:....::-...-MMMM:{1}MMM:`
+    {1} :MMM{0}:MMM`  :MM:`  ``    ``  `:MMM:{1}MMM:
+    {1}.MMM{0}.MMMM`  :MM.  -MM.  .MM-  `MMMM.{1}MMM.
+    {1}:MMM{0}:MMMM`  :MM.  -MM-  .MM:  `MMMM-{1}MMM:
+    {1}:MMM{0}:MMMM`  :MM.  -MM-  .MM:  `MMMM:{1}MMM:
+    {1}:MMM{0}:MMMM`  :MM.  -MM-  .MM:  `MMMM-{1}MMM:
+    {1}.MMM{0}.MMMM`  :MM:--:MM:--:MM:  `MMMM.{1}MMM.
+    {1} :MMM{0}:MMM-  `-MMMMMMMMMMMM-`  -MMM-{1}MMM:
+    {1}  :MMM{0}:MMM:`                `:MMM:{1}MMM:
+    {1}   .MMM{0}.MMMM:--------------:MMMM.{1}MMM.
+    {1}     '-MMMM{0}.-MMMMMMMMMMMMMMM-.{1}MMMM-'
+    {1}       '.-MMMM{0}``--:::::--``{1}MMMM-.'
+    {1}            '-MMMMMMMMMMMMM-'
+    {1}               ``-:::::-``
 
 "Live Raizo":
   glob: "{*Live Raizo*,*Live_Raizo*,*raizo*}"
@@ -3055,58 +3129,88 @@
     {2}+sssssy+`
     {2}`.::-`
 
-"TrueOs":
-  glob: "{*TrueOS*,*PCBSD*}"
+"Pentoo":
   ascii: |
-    {1}                       ..
-                            s.
-                            +y
-                            yN
-                           -MN  `.
-                          :NMs `m
-                        .yMMm` `No
-                `-/+++sdMMMNs+-`+Ms
-            `:oo+-` .yMMMMy` `-+oNMh
-          -oo-     +NMMMM/       oMMh-
-        .s+` `    oMMMMM/     -  oMMMhy.
-       +s`- ::   :MMMMMd     -o `mMMMy`s+
-      y+  h .Ny+oNMMMMMN/    sh+NMMMMo  +y
-     s+ .ds  -NMMMMMMMMMMNdhdNMMMMMMh`   +s
-    -h .NM`   `hMMMMMMMMMMMMMMNMMNy:      h-
-    y- hMN`     hMMmMMMMMMMMMNsdMNs.      -y
-    m` mMMy`    oMMNoNMMMMMMo`  sMMMo     `m
-    m` :NMMMdyydMMMMo+MdMMMs     sMMMd`   `m
-    h-  `+ymMMMMMMMM--M+hMMN/    +MMMMy   -h
-    :y     `.sMMMMM/ oMM+.yMMNddNMMMMMm   y:
-     y:   `s  dMMN- .MMMM/ :MMMMMMMMMMh  :y
-     `h:  `mdmMMM/  yMMMMs  sMMMMMMMMN- :h`
-       so  -NMMMN   /mmd+  `dMMMMMMMm- os
-        :y: `yMMM`       `+NMMMMMMNo`:y:
-          /s+`.omy      /NMMMMMNh/.+s:
-            .+oo:-.     /mdhs+::oo+.
-                -/o+++++++++++/-
+    {2}           `:oydNNMMMMNNdyo:`
+    {2}        :yNMMMMMMMMMMMMMMMMNy:
+    {2}      :dMMMMMMMMMMMMMMMMMMMMMMd:
+    {2}     oMMMMMMMho/-....-/ohMMMMMMMo
+    {2}    oMMMMMMy.            .yMMMMMMo
+    {2}   .MMMMMMo                oMMMMMM.
+    {2}   +MMMMMm                  mMMMMM+
+    {2}   oMMMMMh                  hMMMMMo
+    {2} //hMMMMMm//{1}`{2}          {1}`{2}////mMMMMMh//
+    {2}MMMMMMMMMMM{1}/{2}      {1}/o/`{2}  {1}.{2}smMMMMMMMMMMM
+    {2}MMMMMMMMMMm      {1}`NMN:{2}    {1}.{2}yMMMMMMMMMM
+    {2}MMMMMMMMMMMh{1}:.{2}              dMMMMMMMMM
+    {2}MMMMMMMMMMMMMy{1}.{2}            {1}-{2}NMMMMMMMMM
+    {2}MMMMMMMMMMMd:{1}`{2}           {1}-{2}yNMMMMMMMMMM
+    {2}MMMMMMMMMMh{1}`{2}          {1}./{2}hNMMMMMMMMMMMM
+    {2}MMMMMMMMMM{1}s{2}        {1}.:{2}ymMMMMMMMMMMMMMMM
+    {2}MMMMMMMMMMN{1}s:..-/{2}ohNMMMMMMMMMMMMMMMMMM
+    {2}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    {2}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    {2} MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+"TrueOs":
+  regex: "(trueos|pcbsd)"
+  ascii: |
+    {0}                       ..
+    {0}                        s.
+    {0}                        +y
+    {0}                        yN
+    {0}                       -MN  `.
+    {0}                      :NMs `m
+    {0}                    .yMMm` `No
+    {0}            `-/+++sdMMMNs+-`+Ms
+    {0}        `:oo+-` .yMMMMy` `-+oNMh
+    {0}      -oo-     +NMMMM/       oMMh-
+    {0}    .s+` `    oMMMMM/     -  oMMMhy.
+    {0}   +s`- ::   :MMMMMd     -o `mMMMy`s+
+    {0}  y+  h .Ny+oNMMMMMN/    sh+NMMMMo  +y
+    {0} s+ .ds  -NMMMMMMMMMMNdhdNMMMMMMh`   +s
+    {0}-h .NM`   `hMMMMMMMMMMMMMMNMMNy:      h-
+    {0}y- hMN`     hMMmMMMMMMMMMNsdMNs.      -y
+    {0}m` mMMy`    oMMNoNMMMMMMo`  sMMMo     `m
+    {0}m` :NMMMdyydMMMMo+MdMMMs     sMMMd`   `m
+    {0}h-  `+ymMMMMMMMM--M+hMMN/    +MMMMy   -h
+    {0}:y     `.sMMMMM/ oMM+.yMMNddNMMMMMm   y:
+    {0} y:   `s  dMMN- .MMMM/ :MMMMMMMMMMh  :y
+    {0} `h:  `mdmMMM/  yMMMMs  sMMMMMMMMN- :h`
+    {0}   so  -NMMMN   /mmd+  `dMMMMMMMm- os
+    {0}    :y: `yMMM`       `+NMMMMMMNo`:y:
+    {0}      /s+`.omy      /NMMMMMNh/.+s:
+    {0}        .+oo:-.     /mdhs+::oo+.
+    {0}            -/o+++++++++++/-
 
 "PCLinuxOS":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#2A86C3"
+      - "#FFFFFF"
   ascii: |
-    {1}            mhhhyyyyhhhdN
-            dyssyhhhhhhhhhhhssyhN
-         Nysyhhyo/:-.....-/oyhhhssd
-       Nsshhy+.              `/shhysm
-      dohhy/                    -shhsy
-     dohhs`                       /hhys
-    N+hho   {2}+ssssss+-   .+syhys+   {1}/hhsy
-    ohhh`   {2}ymmo++hmm+`smmy/::+y`   {1}shh+
-    +hho    {2}ymm-  /mmy+mms          {1}:hhod
-    /hh+    {2}ymmhhdmmh.smm/          {1}.hhsh
-    +hhs    {2}ymm+::-`  /mmy`    `    {1}/hh+m
-    yyhh-   {2}ymm-       /dmdyosyd`  {1}`yhh+
-     ohhy`  {2}://`         -/+++/-   {1}ohhom
-     N+hhy-                      `shhoh
-       sshho.                  `+hhyom
-        dsyhhs/.            `:ohhhoy
-          dysyhhhso///://+syhhhssh
-             dhyssyhhhhhhyssyyhN
-                  mddhdhdmN
+    {0}            mhhhyyyyhhhdN
+    {0}        dyssyhhhhhhhhhhhssyhN
+    {0}     Nysyhhyo/:-.....-/oyhhhssd
+    {0}   Nsshhy+.              `/shhysm
+    {0}  dohhy/                    -shhsy
+    {0} dohhs`                       /hhys
+    {0}N+hho   {1}+ssssss+-   .+syhys+   {0}/hhsy
+    {0}ohhh`   {1}ymmo++hmm+`smmy/::+y`   {0}shh+
+    {0}+hho    {1}ymm-  /mmy+mms          {0}:hhod
+    {0}/hh+    {1}ymmhhdmmh.smm/          {0}.hhsh
+    {0}+hhs    {1}ymm+::-`  /mmy`    `    {0}/hh+m
+    {0}yyhh-   {1}ymm-       /dmdyosyd`  {0}`yhh+
+    {0} ohhy`  {1}://`         -/+++/-   {0}ohhom
+    {0} N+hhy-                      `shhoh
+    {0}   sshho.                  `+hhyom
+    {0}    dsyhhs/.            `:ohhhoy
+    {0}      dysyhhhso///://+syhhhssh
+    {0}         dhyssyhhhhhhyssyyhN
+    {0}              mddhdhdmN
 
 "Pengwin":
   ascii: |
@@ -3198,27 +3302,34 @@
 
 "Pop!_OS":
   glob: "{*Pop!_OS*,*popos*,*pop_os*}"
+  colors:
+    ansi:
+      - cyan
+      - white
+    hex:
+      - "#47B9C7"
+      - "#FFFFFF"
   ascii: |
-    {1}             /////////////
-             /////////////////////
-          ///////{2}*767{1}////////////////
-        //////{2}7676767676*{1}//////////////
-       /////{2}76767{1}//{2}7676767{1}//////////////
-      /////{2}767676{1}///{2}*76767{1}///////////////
-     ///////{2}767676{1}///{2}76767{1}.///{2}7676*{1}///////
-    /////////{2}767676{1}//{2}76767{1}///{2}767676{1}////////
-    //////////{2}76767676767{1}////{2}76767{1}/////////
-    ///////////{2}76767676{1}//////{2}7676{1}//////////
-    ////////////,{2}7676{1},///////{2}767{1}///////////
-    /////////////*{2}7676{1}///////{2}76{1}////////////
-    ///////////////{2}7676{1}////////////////////
-     ///////////////{2}7676{1}///{2}767{1}////////////
-      //////////////////////{2}'{1}////////////
-       //////{2}.7676767676767676767,{1}//////
-        /////{2}767676767676767676767{1}/////
-          ///////////////////////////
-             /////////////////////
-                 /////////////
+    {0}             /////////////
+    {0}         /////////////////////
+    {0}      ///////{1}*767.{0}///////////////
+    {0}    //////{1}7676767676*{0}//////////////
+    {0}   /////{1}76767{0}//{1}7676767{0}//////////////
+    {0}  /////{1}767676{0}///{1}*76767{0}///////////////
+    {0} ///////{1}767676{0}///{1}76767{0}.///{1}7676*{0}///////
+    {0}/////////{1}767676{0}//{1}76767{0}///{1}767676{0}////////
+    {0}//////////{1}76767676767{0}////{1}76767{0}/////////
+    {0}///////////{1}76767676{0}//////{1}7676{0}//////////
+    {0}////////////,{1}7676{0},///////{1}767{0}///////////
+    {0}/////////////*{1}7676{0}///////{1}76{0}////////////
+    {0}///////////////{1}7676{0}////////////////////
+    {0} ///////////////{1}7676{0}///{1}767{0}////////////
+    {0}  //////////////////////{1}7{0}////////////
+    {0}   //////{1}.7676767676767676767.{0}//////
+    {0}    /////{1}767676767676767676767{0}/////
+    {0}      ///////////////////////////
+    {0}         /////////////////////
+    {0}             /////////////
 
 "Porteus":
   ascii: |
@@ -3308,25 +3419,30 @@
 
 "Puppy":
   glob: "{*Puppy*,*Quirky Wherewolf*,*Precise Puppy*}"
+  colors:
+    ansi:
+      - blue
+    hex:
+      - "#AAAAFF"
   ascii: |
-    {1}           `-/osyyyysosyhhhhhyys+-
-      -ohmNNmh+/hMMMMMMMMNNNNd+dMMMMNM+
-     yMMMMNNmmddo/NMMMNNNNNNNNNo+NNNNNy
-    .NNNNNNmmmddds:MMNNNNNNNNNNNh:mNNN/
-    -NNNdyyyhdmmmd`dNNNNNmmmmNNmdd/os/
-    .Nm+shddyooo+/smNNNNmmmmNh.   :mmd.
-     NNNNy:`   ./hmmmmmmmNNNN:     hNMh
-     NMN-    -++- +NNNNNNNNNNm+..-sMMMM-
-    .MMo    oNNNNo hNNNNNNNNmhdNNNMMMMM+
-    .MMs    /NNNN/ dNmhs+:-`  yMMMMMMMM+
-     mMM+     .. `sNN+.      hMMMMhhMMM-
-     +MMMmo:...:sNMMMMMms:` hMMMMm.hMMy
-      yMMMMMMMMMMMNdMMMMMM::/+o+//dMMd`
-       sMMMMMMMMMMN+:oyyo:sMMMNNMMMNy`
-        :mMMMMMMMMMMMmddNMMMMMMMMmh/
-          /dMMMMMMMMMMMMMMMMMMNdy/`
-            .+hNMMMMMMMMMNmdhs/.
-                .:/+ooo+/:-.
+    {0}           `-/osyyyysosyhhhhhyys+-
+    {0}  -ohmNNmh+/hMMMMMMMMNNNNd+dMMMMNM+
+    {0} yMMMMNNmmddo/NMMMNNNNNNNNNo+NNNNNy
+    {0}.NNNNNNmmmddds:MMNNNNNNNNNNNh:mNNN/
+    {0}-NNNdyyyhdmmmd`dNNNNNmmmmNNmdd/os/
+    {0}.Nm+shddyooo+/smNNNNmmmmNh.   :mmd.
+    {0} NNNNy:`   ./hmmmmmmmNNNN:     hNMh
+    {0} NMN-    -++- +NNNNNNNNNNm+..-sMMMM-
+    {0}.MMo    oNNNNo hNNNNNNNNmhdNNNMMMMM+
+    {0}.MMs    /NNNN/ dNmhs+:-`  yMMMMMMMM+
+    {0} mMM+     .. `sNN+.      hMMMMhhMMM-
+    {0} +MMMmo:...:sNMMMMMms:` hMMMMm.hMMy
+    {0}  yMMMMMMMMMMMNdMMMMMM::/+o+//dMMd`
+    {0}   sMMMMMMMMMMN+:oyyo:sMMMNNMMMNy`
+    {0}    :mMMMMMMMMMMMmddNMMMMMMMMmh/
+    {0}      /dMMMMMMMMMMMMMMMMMMNdy/`
+    {0}        .+hNMMMMMMMMMNmdhs/.
+    {0}            .:/+ooo+/:-.
 
 "PureOS":
   ascii: |
@@ -3428,30 +3544,37 @@
            `:yd+.
 
 "Raspbian":
+  colors:
+    ansi:
+      - green
+      - red
+    hex:
+      - "#64B547"
+      - "#C31C4A"
   ascii: |
-    {1}  `.::///+:/-.        --///+//-:``
-     `+oooooooooooo:   `+oooooooooooo:
-      /oooo++//ooooo:  ooooo+//+ooooo.
-      `+ooooooo:-:oo-  +o+::/ooooooo:
-       `:oooooooo+``    `.oooooooo+-
-         `:++ooo/.        :+ooo+/.`
-            {2}...`  `.----.` ``..
-         .::::-``:::::::::.`-:::-`
-        -:::-`   .:::::::-`  `-:::-
-       `::.  `.--.`  `` `.---.``.::`
-           .::::::::`  -::::::::` `
-     .::` .:::::::::- `::::::::::``::.
-    -:::` ::::::::::.  ::::::::::.`:::-
-    ::::  -::::::::.   `-::::::::  ::::
-    -::-   .-:::-.``....``.-::-.   -::-
-     .. ``       .::::::::.     `..`..
-       -:::-`   -::::::::::`  .:::::`
-       :::::::` -::::::::::` :::::::.
-       .:::::::  -::::::::. ::::::::
-        `-:::::`   ..--.`   ::::::.
-          `...`  `...--..`  `...`
-                .::::::::::
-                 `.-::::-`
+    {0}  `.::///+:/-.        --///+//-:``
+    {0} `+oooooooooooo:   `+oooooooooooo:
+    {0}  /oooo++//ooooo:  ooooo+//+ooooo.
+    {0}  `+ooooooo:-:oo-  +o+::/ooooooo:
+    {0}   `:oooooooo+``    `.oooooooo+-
+    {0}     `:++ooo/.        :+ooo+/.`
+    {1}        ...`  `.----.` ``..
+    {1}     .::::-``:::::::::.`-:::-`
+    {1}    -:::-`   .:::::::-`  `-:::-
+    {1}   `::.  `.--.`  `` `.---.``.::`
+    {1}       .::::::::`  -::::::::` `
+    {1} .::` .:::::::::- `::::::::::``::.
+    {1}-:::` ::::::::::.  ::::::::::.`:::-
+    {1}::::  -::::::::.   `-::::::::  ::::
+    {1}-::-   .-:::-.``....``.-::-.   -::-
+    {1} .. ``       .::::::::.     `..`..
+    {1}   -:::-`   -::::::::::`  .:::::`
+    {1}   :::::::` -::::::::::` :::::::.
+    {1}   .:::::::  -::::::::. ::::::::
+    {1}    `-:::::`   ..--.`   ::::::.
+    {1}      `...`  `...--..`  `...`
+    {1}            .::::::::::
+    {1}             `.-::::-`
 
 "Reborn OS":
   glob: "{*Reborn*}"
@@ -3516,45 +3639,57 @@
              R       RRRR      RR
 
 "redhat_old":
+  colors:
+    ansi:
+      - red
+      - white
+    hex:
+      - "#EE0000"
+      - "#AAAAAA"
   ascii: |
-    {1}             `.-..........`
-                `////////::.`-/.
-                -: ....-////////.
-                //:-::///////////`
-         `--::: `-://////////////:
-         //////-    ``.-:///////// .`
-         `://////:-.`    :///////::///:`
-           .-/////////:---/////////////:
-              .-://////////////////////.
-    {2}         yMN+`.-{1}::///////////////-`
-    {2}      .-`:NMMNMs`  `..-------..`
-           MN+/mMMMMMhoooyysshsss
-    MMM    MMMMMMMMMMMMMMyyddMMM+
-     MMMM   MMMMMMMMMMMMMNdyNMMh`     hyhMMM
-      MMMMMMMMMMMMMMMMyoNNNMMM+.   MMMMMMMM
-       MMNMMMNNMMMMMNM+ mhsMNyyyyMNMMMMsMM
+    {0}             `.-..........`
+    {0}            `////////::.`-/.
+    {0}            -: ....-////////.
+    {0}            //:-::///////////`
+    {0}     `--::: `-://////////////:
+    {0}     //////-    ``.-:///////// .`
+    {0}     `://////:-.`    :///////::///:`
+    {0}       .-/////////:---/////////////:
+    {0}          .-://////////////////////.
+    {1}         yMN+`.-{0}::///////////////-`
+    {1}      .-`:NMMNMs`  `..-------..`
+    {1}       MN+/mMMMMMhoooyysshsss
+    {1}MMM    MMMMMMMMMMMMMMyyddMMM+
+    {1} MMMM   MMMMMMMMMMMMMNdyNMMh`     hyhMMM
+    {1}  MMMMMMMMMMMMMMMMyoNNNMMM+.   MMMMMMMM
+    {1}   MMNMMMNNMMMMMNM+ mhsMNyyyyMNMMMMsMM
 
 "Redhat":
   glob: "{*Redhat*,*rhel*,}"
+  colors:
+    ansi:
+      - red
+    hex:
+      - "#EE0000"
   ascii: |
-    {1}           .MMM..:MMMMMMM
-              MMMMMMMMMMMMMMMMMM
-              MMMMMMMMMMMMMMMMMMMM.
-             MMMMMMMMMMMMMMMMMMMMMM
-            ,MMMMMMMMMMMMMMMMMMMMMM:
-            MMMMMMMMMMMMMMMMMMMMMMMM
-      .MMMM'  MMMMMMMMMMMMMMMMMMMMMM
-     MMMMMM    `MMMMMMMMMMMMMMMMMMMM.
-    MMMMMMMM      MMMMMMMMMMMMMMMMMM .
-    MMMMMMMMM.       `MMMMMMMMMMMMM' MM.
-    MMMMMMMMMMM.                     MMMM
-    `MMMMMMMMMMMMM.                 ,MMMMM.
-     `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
-             MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                `MMMMMMMMMMMMMMMMMMMMMMMM:
-                    ``MMMMMMMMMMMMMMMMM'
+    {0}           .MMM..:MMMMMMM
+    {0}          MMMMMMMMMMMMMMMMMM
+    {0}          MMMMMMMMMMMMMMMMMMMM.
+    {0}         MMMMMMMMMMMMMMMMMMMMMM
+    {0}        ,MMMMMMMMMMMMMMMMMMMMMM:
+    {0}        MMMMMMMMMMMMMMMMMMMMMMMM
+    {0}  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM
+    {0} MMMMMM    `MMMMMMMMMMMMMMMMMMMM.
+    {0}MMMMMMMM      MMMMMMMMMMMMMMMMMM .
+    {0}MMMMMMMMM.       `MMMMMMMMMMMMM' MM.
+    {0}MMMMMMMMMMM.                     MMMM
+    {0}`MMMMMMMMMMMMM.                 ,MMMMM.
+    {0} `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.
+    {0}    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    {0}      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
+    {0}         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    {0}            `MMMMMMMMMMMMMMMMMMMMMMMM:
+    {0}                ``MMMMMMMMMMMMMMMMM'
 
 "Refracted Devuan":
   ascii: |
@@ -3851,28 +3986,35 @@
                     -?T??"
 
 "Slackware":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#576DB5"
+      - "#FFFFFF"
   ascii: |
-    {1}                  :::::::
-                :::::::::::::::::::
-             :::::::::::::::::::::::::
-           ::::::::{2}cllcccccllllllll{1}::::::
-        :::::::::{2}lc               dc{1}:::::::
-       ::::::::{2}cl   clllccllll    oc{1}:::::::::
-      :::::::::{2}o   lc{1}::::::::{2}co   oc{1}::::::::::
-     ::::::::::{2}o    cccclc{1}:::::{2}clcc{1}::::::::::::
-     :::::::::::{2}lc        cclccclc{1}:::::::::::::
-    ::::::::::::::{2}lcclcc          lc{1}::::::::::::
-    ::::::::::{2}cclcc{1}:::::{2}lccclc     oc{1}:::::::::::
-    ::::::::::{2}o    l{1}::::::::::{2}l    lc{1}:::::::::::
-     :::::{2}cll{1}:{2}o     clcllcccll     o{1}:::::::::::
-     :::::{2}occ{1}:{2}o                  clc{1}:::::::::::
-      ::::{2}ocl{1}:{2}ccslclccclclccclclc{1}:::::::::::::
-       :::{2}oclcccccccccccccllllllllllllll{1}:::::
-        ::{2}lcc1lcccccccccccccccccccccccco{1}::::
-          ::::::::::::::::::::::::::::::::
-            ::::::::::::::::::::::::::::
-               ::::::::::::::::::::::
-                    ::::::::::::
+    {0}                  :::::::
+    {0}            :::::::::::::::::::
+    {0}         :::::::::::::::::::::::::
+    {0}       ::::::::{1}cllcccccllllllll{0}::::::
+    {0}    :::::::::{1}lc               dc{0}:::::::
+    {0}   ::::::::{1}cl   clllccllll    oc{0}:::::::::
+    {0}  :::::::::{1}o   lc{0}::::::::{1}co   oc{0}::::::::::
+    {0} ::::::::::{1}o    cccclc{0}:::::{1}clcc{0}::::::::::::
+    {0} :::::::::::{1}lc        cclccclc{0}:::::::::::::
+    {0}::::::::::::::{1}lcclcc          lc{0}::::::::::::
+    {0}::::::::::{1}cclcc{0}:::::{1}lccclc     oc{0}:::::::::::
+    {0}::::::::::{1}o    l{0}::::::::::{1}l    lc{0}:::::::::::
+    {0} :::::{1}cll{0}:{1}o     clcllcccll     o{0}:::::::::::
+    {0} :::::{1}occ{0}:{1}o                  clc{0}:::::::::::
+    {0}  ::::{1}ocl{0}:{1}ccslclccclclccclclc{0}:::::::::::::
+    {0}   :::{1}oclcccccccccccccllllllllllllll{0}:::::
+    {0}    ::{1}lcc0lcccccccccccccccccccccccco{0}::::
+    {0}      ::::::::::::::::::::::::::::::::
+    {0}        ::::::::::::::::::::::::::::
+    {0}           ::::::::::::::::::::::
+    {0}                ::::::::::::
 
 "SliTaz":
   ascii: |
@@ -3928,27 +4070,36 @@
                        {1}````'"""""""{2}'""""""""
 
 "Solus":
+  colors:
+    ansi:
+      - blue
+      - black
+      - white
+    hex:
+      - "#5295E2"
+      - "#4B5164"
+      - "#FFFFFF"
   ascii: |
-    {2}            -```````````
-              `-+/------------.`
-           .---:mNo---------------.
-         .-----yMMMy:---------------.
-       `------oMMMMMm/----------------`
-      .------/MMMMMMMN+----------------.
-     .------/NMMMMMMMMm-+/--------------.
-    `------/NMMMMMMMMMN-:mh/-------------`
-    .-----/NMMMMMMMMMMM:-+MMd//oso/:-----.
-    -----/NMMMMMMMMMMMM+--mMMMh::smMmyo:--
-    ----+NMMMMMMMMMMMMMo--yMMMMNo-:yMMMMd/.
-    .--oMMMMMMMMMMMMMMMy--yMMMMMMh:-yMMMy-`
-    `-sMMMMMMMMMMMMMMMMh--dMMMMMMMd:/Ny+y.
-    `-/+osyhhdmmNNMMMMMm-/MMMMMMMmh+/ohm+
-      .------------:://+-/++++++{1}oshddys:
-       -hhhhyyyyyyyyyyyhhhhddddhysssso-
-        `:ossssssyysssssssssssssssso:`
-          `:+ssssssssssssssssssss+-
-             `-/+ssssssssssso+/-`
-                  `.-----..`
+    {1}            -```````````
+    {1}          `-{2}+/{1}------------.`
+    {1}       .---{2}:mNo{1}---------------.
+    {1}     .-----{2}yMMMy:{1}---------------.
+    {1}   `------{2}oMMMMMm/{1}----------------`
+    {1}  .------{2}/MMMMMMMN+{1}----------------.
+    {1} .------{2}/NMMMMMMMMm{1}-{2}+/{1}--------------.
+    {1}`------{2}/NMMMMMMMMMN{1}-{2}:mh/{1}-------------`
+    {1}.-----{2}/NMMMMMMMMMMM:{1}-{2}+MMd{1}//{2}oso/:{1}-----.
+    {1}-----{2}/NMMMMMMMMMMMM+{1}--{2}mMMMh{1}::{2}smMmyo:{1}--
+    {1}----{2}+NMMMMMMMMMMMMMo{1}--{2}yMMMMNo{1}-:{2}yMMMMd{1}/.
+    {1}.--{2}oMMMMMMMMMMMMMMMy{1}--{2}yMMMMMMh:{1}-{2}yMMMy{1}-`
+    {1}`-{2}sMMMMMMMMMMMMMMMMh{1}--{2}dMMMMMMMd:/Ny+{0}y.
+    {1}`-{2}/+osyhhdmmNNMMMMMm{1}-{2}/MMMMMMMmh+{0}/ohm+
+    {1}  .------------:://+-/{0}++++++oshddys:
+    {0}   -hhhhyyyyyyyyyyyhhhhddddhysssso-
+    {0}    `:ossssssyysssssssssssssssso:`
+    {0}      `:+ssssssssssssssssssss+-
+    {0}         `-/+ssssssssssso+/-`
+    {0}              `.-----..`
 
 "Source Mage":
   ascii: |
@@ -4021,25 +4172,32 @@
               /s-             -yo
 
 "SteamOS":
+  colors:
+    ansi:
+      - magenta
+      - white
+    hex:
+      - "#B75AF9"
+      - "#FFFFFF"
   ascii: |
-    {1}              .,,,,.
-            .,'onNMMMMMNNnn',.
-         .'oNMANKMMMMMMMMMMMNNn'.
-       .'ANMMMMMMMXKNNWWWPFFWNNMNn.
-      ;NNMMMMMMMMMMNWW'' ,.., 'WMMM,
-     ;NMMMMV+##+VNWWW' .+;'':+, 'WMW,
-    ,VNNWP+{2}######{1}+WW,  {2}+:    {1}:+, +MMM,
-    '{2}+#############,   +.    ,+' {1}+NMMM
-    {2}  '*#########*'     '*,,*' {1}.+NMMMM.
-    {2}     `'*###*'          ,.,;###{1}+WNM,
-    {2}         .,;;,      .;##########{1}+W
-    {2},',.         ';  ,+##############'
-     '###+. :,. .,; ,###############'
-      '####.. `'' .,###############'
-        '#####+++################'
-          '*##################*'
-             ''*##########*''
-                  ''''''
+    {0}              .,,,,.
+    {0}        .,'onNMMMMMNNnn',.
+    {0}     .'oNMANKMMMMMMMMMMMNNn'.
+    {0}   .'ANMMMMMMMXKNNWWWPFFWNNMNn.
+    {0}  ;NNMMMMMMMMMMNWW'' ,.., 'WMMM,
+    {0} ;NMMMMV+##+VNWWW' .+;'':+. 'WMW,
+    {0},VNNWP+{1}######{1}+WW,  {1}+:    {0}:+  +MMM,
+    {0}"{1}+#############,   +.    ,+  {0}+NMMM
+    {1}  '*#########*'     '*,,*' {0}.+NMMMM.
+    {1}     `'*###*'          ,.,;###{0}+WNM,
+    {1}          ,..       .;##########{0}+W
+    {1},',.         `.  ,+#############{0}#'
+    {1} '###+.  .   ,' ,###############'
+    {1}  '####.. `'' .,###############'
+    {1}    '#####+++################'
+    {1}      '*##################*'
+    {1}         ''*##########*''
+    {1}              ''''''
 
 "openSUSE Leap":
   ascii: |
@@ -4087,25 +4245,32 @@
              .....                    .:dOOXXKOxl,
 
 "openSUSE":
+  colors:
+    ansi:
+      - green
+      - white
+    hex:
+      - "#608414"
+      - "#FFFFFF"
   ascii: |
-    {2}           .;ldkO0000Okdl;.
-           .;d00xl:^''''''^:ok00d;.
-         .d00l'                'o00d.
-       .d0Kd'{1}  Okxol:;,.          {2}:O0d.
-      .OK{1}KKK0kOKKKKKKKKKKOxo:,      {2}lKO.
-     ,0K{1}KKKKKKKKKKKKKKK0P^{2},,,{1}^dx:{2}    ;00,
-    .OK{1}KKKKKKKKKKKKKKKk'{2}.oOPPb.{1}'0k.{2}   cKO.
-    :KK{1}KKKKKKKKKKKKKKK: {2}kKx..dd {1}lKd{2}   'OK:
-    dKK{1}KKKKKKKKKOx0KKKd {2}^0KKKO' {1}kKKc{2}   dKd
-    dKK{1}KKKKKKKKKK;.;oOKx,..{2}^{1}..;kKKK0.{2}  dKd
-    :KK{1}KKKKKKKKKK0o;...^cdxxOK0O/^^'  {2}.0K:
-     kKK{1}KKKKKKKKKKKKK0x;,,......,;od  {2}lKk
-     '0K{1}KKKKKKKKKKKKKKKKKKKK00KKOo^  {2}c00'
-      'kK{1}KKOxddxkOO00000Okxoc;''   {2}.dKk'
-        l0Ko.                    .c00l'
-         'l0Kk:.              .;xK0l'
-            'lkK0xl:;,,,,;:ldO0kl'
-                '^:ldxkkkkxdl:^'
+    {1}           .;ldkO0000Okdl;.
+    {1}       .;d00xl:^''''''^:ok00d;.
+    {1}     .d00l'                'o00d.
+    {1}   .d0Kd'{0}  Okxol:;,.          {1}:O0d.
+    {1}  .OK{0}KKK0kOKKKKKKKKKKOxo:,      {1}lKO.
+    {1} ,0K{0}KKKKKKKKKKKKKKK0P^{1},,,{0}^dx:{1}    ;00,
+    {1}.OK{0}KKKKKKKKKKKKKKKk'{1}.oOPPb.{0}'0k.{1}   cKO.
+    {1}:KK{0}KKKKKKKKKKKKKKK: {1}kKx..dd {0}lKd{1}   'OK:
+    {1}dKK{0}KKKKKKKKKOx0KKKd {1}^0KKKO' {0}kKKc{1}   dKd
+    {1}dKK{0}KKKKKKKKKK;.;oOKx,..{1}^{0}..;kKKK0.{1}  dKd
+    {1}:KK{0}KKKKKKKKKK0o;...^cdxxOK0O/^^'  {1}.0K:
+    {1} kKK{0}KKKKKKKKKKKKK0x;,,......,;od  {1}lKk
+    {1} '0K{0}KKKKKKKKKKKKKKKKKKKK00KKOo^  {1}c00'
+    {1}  'kK{0}KKOxddxkOO00000Okxoc;''   {1}.dKk'
+    {1}    l0Ko.                    .c00l'
+    {1}     'l0Kk:.              .;xK0l'
+    {1}        'lkK0xl:;,,,,;:ldO0kl'
+    {1}            '^:ldxkkkkxdl:^'
 
 "SwagArch":
   ascii: |
@@ -4192,27 +4357,32 @@
                 .-/+oooooooo+/-.
 
 "Ubuntu Budgie":
+  colors:
+    ansi:
+      - white
+    hex:
+      - "#454A51"
   ascii: |
-    {2}           ./oydmMMMMMMmdyo/.
-            :smMMMMMMMMMMMhs+:++yhs:
-         `omMMMMMMMMMMMN+`        `odo`
-        /NMMMMMMMMMMMMN-            `sN/
-      `hMMMMmhhmMMMMMMh               sMh`
-     .mMmo-     /yMMMMm`              `MMm.
-     mN/       yMMMMMMMd-              MMMm
-    oN-        oMMMMMMMMMms+//+o+:    :MMMMo
-    m/          +NMMMMMMMMMMMMMMMMm. :NMMMMm
-    M`           .NMMMMMMMMMMMMMMMNodMMMMMMM
-    M-            sMMMMMMMMMMMMMMMMMMMMMMMMM
-    mm`           mMMMMMMMMMNdhhdNMMMMMMMMMm
-    oMm/        .dMMMMMMMMh:      :dMMMMMMMo
-     mMMNyo/:/sdMMMMMMMMM+          sMMMMMm
-     .mMMMMMMMMMMMMMMMMMs           `NMMMm.
-      `hMMMMMMMMMMM.oo+.            `MMMh`
-        /NMMMMMMMMMo                sMN/
-         `omMMMMMMMMy.            :dmo`
-            :smMMMMMMMh+-`   `.:ohs:
-               ./oydmMMMMMMdhyo/.
+    {0}           ./oydmMMMMMMmdyo/.
+    {0}        :smMMMMMMMMMMMhs+:++yhs:
+    {0}     `omMMMMMMMMMMMN+`        `odo`
+    {0}    /NMMMMMMMMMMMMN-            `sN/
+    {0}  `hMMMMmhhmMMMMMMh               sMh`
+    {0} .mMmo-     /yMMMMm`              `MMm.
+    {0} mN/       yMMMMMMMd-              MMMm
+    {0}oN-        oMMMMMMMMMms+//+o+:    :MMMMo
+    {0}m/          +NMMMMMMMMMMMMMMMMm. :NMMMMm
+    {0}M`           .NMMMMMMMMMMMMMMMNodMMMMMMM
+    {0}M-            sMMMMMMMMMMMMMMMMMMMMMMMMM
+    {0}mm`           mMMMMMMMMMNdhhdNMMMMMMMMMm
+    {0}oMm/        .dMMMMMMMMh:      :dMMMMMMMo
+    {0} mMMNyo/:/sdMMMMMMMMM+          sMMMMMm
+    {0} .mMMMMMMMMMMMMMMMMMs           `NMMMm.
+    {0}  `hMMMMMMMMMMM.oo+.            `MMMh`
+    {0}    /NMMMMMMMMMo                sMN/
+    {0}     `omMMMMMMMMy.            :dmo`
+    {0}        :smMMMMMMMh+-`   `.:ohs:
+    {0}           ./oydmMMMMMMdhyo/.
 
 "Ubuntu GNOME":
   ascii: |
@@ -4287,27 +4457,34 @@
     {0}              ..-::::::-..
 
 "Kubuntu":
+  colors:
+    ansi:
+      - blue
+      - white
+    hex:
+      - "#0179C0"
+      - "#FFFFFF"
   ascii: |
-    {1}           `.:/ossyyyysso/:.
-            .:oyyyyyyyyyyyyyyyyyyo:`
-          -oyyyyyyyo{2}dMMy{1}yyyyyyysyyyyo-
-        -syyyyyyyyyy{2}dMMy{1}oyyyy{2}dmMMy{1}yyyys-
-       oyyys{2}dMy{1}syyyy{2}dMMMMMMMMMMMMMy{1}yyyyyyo
-     `oyyyy{2}dMMMMy{1}syysoooooo{2}dMMMMy{1}yyyyyyyyo`
-     oyyyyyy{2}dMMMMy{1}yyyyyyyyyyys{2}dMMy{1}sssssyyyo
-    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
-    oyyyysoo{2}dMy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
-    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyysosyyyyyyyy
-    yyys{2}dMMMMMy{1}yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-    oyyyyysos{2}dy{1}yyyyyyyyyyyyyyyyyy{2}dMMMMy{1}syyyo
-    -yyyyyyyy{2}dMy{1}syyyyyyyyyyyyyys{2}dMMMMMy{1}syyy-
-     oyyyyyy{2}dMMMy{1}syyyyyyyyyyys{2}dMMy{1}oyyyoyyyo
-     `oyyyy{2}dMMMy{1}syyyoooooo{2}dMMMMy{1}oyyyyyyyyo
-       oyyysyyoyyyys{2}dMMMMMMMMMMMy{1}yyyyyyyo
-        -syyyyyyyyy{2}dMMMy{1}syyy{2}dMMMy{1}syyyys-
-          -oyyyyyyy{2}dMMy{1}yyyyyysosyyyyo-
-            ./oyyyyyyyyyyyyyyyyyyo/.
-               `.:/oosyyyysso/:.`
+    {0}           `.:/ossyyyysso/:.
+    {0}        .:oyyyyyyyyyyyyyyyyyyo:`
+    {0}      -oyyyyyyyo{1}dMMy{0}yyyyyyysyyyyo-
+    {0}    -syyyyyyyyyy{1}dMMy{0}oyyyy{1}dmMMy{0}yyyys-
+    {0}   oyyys{1}dMy{0}syyyy{1}dMMMMMMMMMMMMMy{0}yyyyyyo
+    {0} `oyyyy{1}dMMMMy{0}syysoooooo{1}dMMMMy{0}yyyyyyyyo`
+    {0} oyyyyyy{1}dMMMMy{0}yyyyyyyyyyys{1}dMMy{0}sssssyyyo
+    {0}-yyyyyyyy{1}dMy{0}syyyyyyyyyyyyyys{1}dMMMMMy{0}syyy-
+    {0}oyyyysoo{1}dMy{0}yyyyyyyyyyyyyyyyyy{1}dMMMMy{0}syyyo
+    {0}yyys{1}dMMMMMy{0}yyyyyyyyyyyyyyyyyysosyyyyyyyy
+    {0}yyys{1}dMMMMMy{0}yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    {0}oyyyyysos{1}dy{0}yyyyyyyyyyyyyyyyyy{1}dMMMMy{0}syyyo
+    {0}-yyyyyyyy{1}dMy{0}syyyyyyyyyyyyyys{1}dMMMMMy{0}syyy-
+    {0} oyyyyyy{1}dMMMy{0}syyyyyyyyyyys{1}dMMy{0}oyyyoyyyo
+    {0} `oyyyy{1}dMMMy{0}syyyoooooo{1}dMMMMy{0}oyyyyyyyyo
+    {0}   oyyysyyoyyyys{1}dMMMMMMMMMMMy{0}yyyyyyyo
+    {0}    -syyyyyyyyy{1}dMMMy{0}syyy{1}dMMMy{0}syyyys-
+    {0}      -oyyyyyyy{1}dMMy{0}yyyyyysosyyyyo-
+    {0}        ./oyyyyyyyyyyyyyyyyyyo/.
+    {0}           `.:/oosyyyysso/:.`
 
 "Ubuntu":
   regex: "(ubuntu|i3buntu)"
@@ -4384,28 +4561,32 @@
 "Void":
   colors:
     ansi:
+      - green
+      - green
       - white
-      - white
-      - bright_green
+    hex:
+      - "#478061"
+      - "#8EA08E"
+      - "#FFFFFF"
   ascii: |
     {1}                __.;=====;.__
-                _.=+==++=++=+=+===;.
-                 -=+++=+===+=+=+++++=_
-            .     -=:``     `--==+=++==.
-           _vi,    `            --+=++++:
-          .uvnvi.       _._       -==+==+.
-         .vvnvnI`    .;==|==;.     :|=||=|.
-    {2}+QmQQm{1}pvvnv; {2}_yYsyQQWUUQQQm #QmQ#{1}:{2}QQQWUV$QQm.
-    {2} -QQWQW{1}pvvo{2}wZ?.wQQQE{1}==<{2}QWWQ/QWQW.QQWW{1}(: {2}jQWQE
+    {1}            _.=+==++=++=+=+===;.
+    {1}             -=+++=+===+=+=+++++=_
+    {0}        .     {1}-=:``     `--==+=++==.
+    {0}       _vi,    {1}`            --+=++++:
+    {0}      .uvnvi.      {1}_._       -==+==+.
+    {0}     .vvnvnI`    {1}.;==|==;.     :|=||=|.
+    {2}+QmQQm{0}pvvnv; {2}_yYsyQQWUUQQQm #QmQ#{1}:{2}QQQWUV$QQm.
+    {2} -QQWQW{0}pvvo{2}wZ?.wQQQE{1}==<{2}QWWQ/QWQW.QQWW{1}(: {2}jQWQE
     {2}  -$QQQQmmU'  jQQQ@{1}+=<{2}QWQQ)mQQQ.mQQQC{1}+;{2}jWQQ@'
     {2}   -$WQ8Y{1}nI:   {2}QWQQwgQQWV{1}`{2}mWQQ.jQWQQgyyWW@!
-    {1}     -1vvnvv.     `~+++`        ++|+++
-          +vnvnnv,                 `-|===
-           +vnvnvns.           .      :=-
-            -Invnvvnsi..___..=sv=.     `
-              +Invnvnvnnnnnnnnvvnn;.
-                ~|Invnvnvvnvvvnnv}+`
-                   -~|{*l}*|~
+    {0}     -1vvnvv.     {1}`~+++`        {1}++|+++
+    {0}      +vnvnnv,                 {1}`-|===
+    {0}       +vnvnvns.           .      {1}:=-
+    {0}        -Invnvvnsi..___..=sv=.     {1}`
+    {0}          +Invnvnvnnnnnnnnvvnn;.
+    {0}            ~|Invnvnvvnvvvnnv}+`
+    {0}               -~|{*l}*|~
 
 "VNux":
   ascii: |
@@ -4558,6 +4739,27 @@
     {3}{3=*^```"*4E3){4} ;EEEtttt:::::tZ`
     {3}             `{4} :EEEEtttt::::z7
                      {4}"VEzjt:;;z>*`
+"XFerience":
+  ascii: |
+    {0}           ``--:::::::-.`
+    {0}        .-/+++ooooooooo+++:-`
+    {0}     `-/+oooooooooooooooooo++:.
+    {0}    -/+oooooo/+ooooooooo+/ooo++:`
+    {0}  `/+oo++oo.   .+oooooo+.-: +:-o+-
+    {0} `/+o/.  -o.    :oooooo+ ```:.+oo+-
+    {0}`:+oo-    -/`   :oooooo+ .`-`+oooo/.
+    {0}.+ooo+.    .`   `://///+-+..oooooo+:`
+    {0}-+ooo:`                ``.-+oooooo+/`
+    {0}-+oo/`                       :+oooo/.
+    {0}.+oo:            ..-/. .      -+oo+/`
+    {0}`/++-         -:::++::/.      -+oo+-
+    {0} ./o:          `:///+-     `./ooo+:`
+    {0}  .++-         `` /-`   -:/+oooo+:`
+    {0}   .:+/:``          `-:ooooooo++-
+    {0}     ./+o+//:...../+oooooooo++:`
+    {0}       `:/++ooooooooooooo++/-`
+    {0}          `.-//++++++//:-.`
+    {0}               ``````
 
 "Xubuntu":
   ascii: |
@@ -4581,28 +4783,6 @@
           `yyyyyyyyyyyyyyyyyyyyyyyyyy`
             `.yyyyyyyyyyyyyyyyyyyy.`
                `.:/oosyyyysso/:.`
-
-"IRIX":
-  ascii: |
-    {1}           ./ohmNd/  +dNmho/-
-         `:+ydNMMMMMMMM.-MMMMMMMMMdyo:.
-       `hMMMMMMNhs/sMMM-:MMM+/shNMMMMMMh`
-       -NMMMMMmo-` /MMM-/MMM- `-omMMMMMN.
-     `.`-+hNMMMMMNhyMMM-/MMMshmMMMMMmy+...`
-    +mMNds:-:sdNMMMMMMMyyMMMMMMMNdo:.:sdMMm+
-    dMMMMMMmy+.-/ymNMMMMMMMMNmy/-.+hmMMMMMMd
-    oMMMMmMMMMNds:.+MMMmmMMN/.-odNMMMMmMMMM+
-    .MMMM-/ymMMMMMmNMMy..hMMNmMMMMMmy/-MMMM.
-     hMMM/ `/dMMMMMMMN////NMMMMMMMd/. /MMMh
-     /MMMdhmMMMmyyMMMMMMMMMMMMhymMMMmhdMMM:
-     `mMMMMNho//sdMMMMM//NMMMMms//ohNMMMMd
-      `/so/:+ymMMMNMMMM` mMMMMMMMmh+::+o/`
-         `yNMMNho-yMMMM` NMMMm.+hNMMNh`
-         -MMMMd:  oMMMM. NMMMh  :hMMMM-
-          -yNMMMmooMMMM- NMMMyomMMMNy-
-            .omMMMMMMMM-`NMMMMMMMmo.
-              `:hMMMMMM. NMMMMMh/`
-                 .odNm+  /dNms.
 
 "Zorin":
   ascii: |
