@@ -4,12 +4,12 @@ on:
     branches: ["*"]
     paths-ignore:
       - "**.md"
-      - "docs/**"
+      - "pages/**"
   pull_request:
     branches: [main]
     paths-ignore:
       - "**.md"
-      - "docs/**"
+      - "pages/**"
 env:
   TERM: xterm
   TOOLCHAIN: nightly

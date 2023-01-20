@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     paths:
-      - "docs/**"
+      - "pages/**"
       - "distros.yaml"
       - ".github/workflows/pages.yml"
     branches:
@@ -36,27 +36,27 @@ jobs:
 
       - name: Patch
         run: |
-          make patch-docs
+          make patch-pages
 
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'npm'
-          cache-dependency-path: './docs/vercel/package-lock.json'
+          cache-dependency-path: './pages/vercel/package-lock.json'
 
       - name: Install NPM packages
-        working-directory: docs/vercel
+        working-directory: pages/vercel
         run: npm ci
 
       - name: Build project
-        working-directory: docs/vercel
+        working-directory: pages/vercel
         run: npm run build
 
       - name: Upload to pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./docs/vercel/dist
+          path: ./pages/vercel/dist
           name: github-pages
           retention-days: 7
 
@@ -64,8 +64,8 @@ jobs:
     name: Deploy
     needs: build
     environment:
-      name: github-pages
-      url: https://ozwaldorf.github.io/punfetch
+      name: punfetch.dev
+      url: https://punfetch.dev
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 

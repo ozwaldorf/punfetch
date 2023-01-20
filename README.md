@@ -73,9 +73,9 @@ make lint        # Run linter
 make fmt         # Run formatter
 make ci          # Precommit CI checks
 
-make init-docs   # Initialize docs
-make patch-docs  # Patch vercel docs 
-make save-docs   # Save the diff patch
+make init-pages   # Initialize pages
+make patch-pages  # Patch vercel pages
+make save-pages   # Save the diff patch
 make dev         # Run the docs locally
 ```
 
