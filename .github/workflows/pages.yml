@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Github Pages
 
 on:
   push:
@@ -26,23 +26,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           submodules: true
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
+      - name: Patch
+        run: |
+          make patch-docs
 
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'npm'
-
-      - name: Patch
-        run: |
-          make patch-docs
+          cache-dependency-path: './docs/vercel/package-lock.json'
 
       - name: Install NPM packages
         working-directory: docs/vercel
