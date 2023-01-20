@@ -1,6 +1,8 @@
 <header>
     <p align="center">
-        <img alt="logo" src="https://user-images.githubusercontent.com/8976745/211187132-1a5e959b-d3a4-4c84-84c1-f8bd5463a30e.png" width="50%"/>
+        <a href="https://punfetch.dev">
+            <img alt="logo" src="https://user-images.githubusercontent.com/8976745/211187132-1a5e959b-d3a4-4c84-84c1-f8bd5463a30e.png" width="50%"/>
+        </a>
     </p>
     <p align="center">
         <a href="https://crates.io/crates/punfetch"><img alt="crate" src="https://img.shields.io/crates/v/punfetch?style=for-the-badge" /></a>
@@ -16,7 +18,9 @@
     <p align="center">
         <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/213606833-78967106-5a1b-403d-ad90-74a0e00dee0e.png"/> 
     </p>
-
+    <p align="center">
+        View the complete ascii art collection at <a href="https://punfetch.dev/">punfetch.dev</a>
+    </p>
 </header>
 
 ---
@@ -63,6 +67,8 @@ Punfetch is also a library to implement your own custom system fetchers! See [th
 
 ## Makefile
 
+Developing on the crate:
+
 ```
 make clean       # Clean the project
 make build       # Build the project
@@ -72,11 +78,15 @@ make test        # Run tests
 make lint        # Run linter
 make fmt         # Run formatter
 make ci          # Precommit CI checks
+```
 
+Developing on punfetch.dev:
+
+```
 make init-pages   # Initialize pages
 make patch-pages  # Patch vercel pages
 make save-pages   # Save the diff patch
-make dev         # Run the docs locally
+make dev          # Run the pages locally
 ```
 
 # Contributing

@@ -18,7 +18,7 @@ members = ["derive"]
 [workspace.package]
 license = "MIT"
 edition = "2021"
-homepage = "https://github.com/ozwaldorf/punfetch"
+homepage = "https://punfetch.dev/"
 repository = "https://github.com/ozwaldorf/punfetch"
 documentation = "https://docs.rs/punfetch"
 categories = ["command-line-utilities"]
