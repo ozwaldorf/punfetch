@@ -68,14 +68,14 @@ impl ColorMode {
 
 fn main() {
     let args = Args::parse();
-    let mut renderer = Printer::default();
+    let mut printer = Printer::default();
 
     let sys = sys();
     let host_info = HostInfo::new(&sys);
     let distro = Distro::search(host_info.distro.clone());
 
     let colors = args.color_mode.mode();
-    renderer.with_color(
+    printer.with_color(
         args.color
             .map(|c| DynColors::Ansi(AnsiColors::from(c.as_str())))
             .unwrap_or(distro.color(colors)),
@@ -84,19 +84,19 @@ fn main() {
     if args.show_logo.should_show() {
         if let Some(path) = args.image {
             match open(path) {
-                Ok(image) => renderer.with_image(image),
+                Ok(image) => printer.with_image(image),
                 Err(e) => eprintln!("Error opening image: {e}"),
             }
         } else {
-            renderer.with_ascii(distro.ascii(colors));
+            printer.with_ascii(distro.ascii(colors));
         }
     }
 
-    renderer.with_info(UserInfo::new(&sys));
-    renderer.with_info(host_info);
-    renderer.with_info(PercentBar::from(sys.disks()));
-    renderer.with_info(SystemInfo::new(&sys));
-    renderer.with_info(ColorBar::default());
+    printer.with_info(UserInfo::new(&sys));
+    printer.with_info(host_info);
+    printer.with_info(PercentBar::from(sys.disks()));
+    printer.with_info(SystemInfo::new(&sys));
+    printer.with_info(ColorBar::default());
 
-    renderer.render()
+    printer.render()
 }

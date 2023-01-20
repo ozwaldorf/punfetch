@@ -36,22 +36,22 @@ fn main() {
     let host_info = HostInfo::new(&sys);
 
     // Create a printer with true colors enabled
-    let mut renderer = Printer::default();
+    let mut printer = Printer::default();
 
     // Find the distro
     let distro = Distro::search(host_info.distro.clone());
 
     // Add some ascii art with true colors
-    renderer.with_ascii(distro.ascii(Some(true)));
+    printer.with_ascii(distro.ascii(Some(true)));
 
     // Add a color
-    renderer.with_color(distro.color(Some(true)));
+    printer.with_color(distro.color(Some(true)));
 
     // Add the host info
-    renderer.with_info(host_info);
+    printer.with_info(host_info);
 
     // Let's add a percentage bar
-    renderer.with_info(PercentBar {
+    printer.with_info(PercentBar {
         title: "Example Stats".to_string(),
         total: 100.0,
         items: vec![
@@ -69,11 +69,11 @@ fn main() {
     });
 
     // Add our custom info
-    renderer.with_info(ExampleInfo::new());
+    printer.with_info(ExampleInfo::new());
 
     // Add a color bar
-    renderer.with_info(ColorBar::default());
+    printer.with_info(ColorBar::default());
 
     // Render the output!
-    renderer.render()
+    printer.render()
 }
