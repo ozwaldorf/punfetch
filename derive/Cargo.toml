@@ -1,7 +1,7 @@
 [package]
 name = "punfetch-derive"
 description = "Derive macros for punfetch"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["ossian <self@ossian.dev>"]
 edition.workspace = true
 license.workspace = true

@@ -32,7 +32,7 @@ num_enum = "0.5.7"
 onefetch-ascii = "2.15.1"
 onefetch-image = "2.15.1"
 owo-colors = "3.5.0"
-punfetch-derive = { path = "derive", version = "0.1.0" }
+punfetch-derive = { path = "derive", version = "0.1.1" }
 regex = "1"
 sysinfo = { version = "0.27.2", optional = true }
 term_size = { version = "0.3.2", optional = true }
