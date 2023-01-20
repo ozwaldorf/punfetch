@@ -30,16 +30,23 @@ index 2add992..b5bed26 100644
        "devDependencies": {
          "@rollup/plugin-yaml": "^4.0.1",
 diff --git a/docs/vercel/package.json b/docs/vercel/package.json
-index c37225b..9b97ba8 100644
+index c37225b..1932902 100644
 --- a/docs/vercel/package.json
 +++ b/docs/vercel/package.json
-@@ -1,5 +1,5 @@
+@@ -1,11 +1,11 @@
  {
 -  "name": "onefetch-web",
 +  "name": "punfetch-web",
    "private": true,
    "version": "0.0.0",
    "type": "module",
+   "scripts": {
+     "dev": "vite",
+-    "build": "vite build",
++    "build": "vite build --base=/punfetch/",
+     "format": "prettier -w .",
+     "preview": "vite preview",
+     "check": "check:svelte && check:prettier && check:eslint",
 diff --git a/docs/vercel/public/sakura.css b/docs/vercel/public/sakura.css
 index 3b6cc0f..2e27919 100644
 --- a/docs/vercel/public/sakura.css
