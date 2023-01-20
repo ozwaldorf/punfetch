@@ -1,16 +1,27 @@
 [package]
 name = "punfetch"
 version = "0.3.0"
-edition = "2021"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
-license = "MIT"
-homepage = "https://github.com/ozwaldorf/punfetch"
-repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
+license.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+documentation.workspace = true
+keywords.workspace = true
 
 [workspace]
 members = ["derive"]
+
+[workspace.package]
+license = "MIT"
+edition = "2021"
+homepage = "https://github.com/ozwaldorf/punfetch"
+repository = "https://github.com/ozwaldorf/punfetch"
+documentation = "https://docs.rs/punfetch"
+categories = ["command-line-utilities"]
+keywords = ["fetch", "system", "onefetch", "cli", "terminal", "rust"]
 
 [dependencies]
 byte-unit = "4.0.18"
