@@ -72,7 +72,7 @@ fn impl_render(ast: DeriveInput) -> Result<TokenStream2> {
         });
         quote! {
             impl Render for #name {
-                fn render(self: &'_ Self, color: owo_colors::DynColors) -> Vec<String> {
+                fn render(self: &'_ Self, color: DynColors) -> Vec<String> {
                     let mut buf = Vec::new();
                     #(#data_expanded_members)*
                     buf

@@ -27,18 +27,18 @@ impl Distro {
     }
 
     /// Build ascii art from the inner template and colors
-    pub fn ascii<'a>(&self, color_mode: Option<bool>) -> AsciiArt<'a> {
-        let colors = self.colors(color_mode);
+    pub fn ascii<'a>(&self, colors: Option<bool>) -> AsciiArt<'a> {
+        let colors = self.colors(colors);
         let bold = !colors.is_empty();
         AsciiArt::new(self.template(), colors.leak(), bold)
     }
 
     /// Get the primary color for the distro
-    pub fn color(&self) -> DynColors {
-        self.colors(None)
+    pub fn color(&self, colors: Option<bool>) -> DynColors {
+        *self
+            .colors(colors)
             .get(0)
-            .unwrap_or(&DynColors::Ansi(AnsiColors::Default))
-            .clone()
+            .unwrap_or(&Ansi(AnsiColors::Default))
     }
 }
 
@@ -64,6 +64,16 @@ mod tests {
 
         for (distro, name) in DISTROS.iter() {
             assert_eq!(*distro, Distro::search(name));
+        }
+    }
+
+    #[test]
+    fn ascii() {
+        let distro = Distro::search("Arch Linux");
+        assert_ne!(distro, Distro::DEFAULT);
+        let ascii = distro.ascii(Some(true));
+        for line in ascii {
+            println!("{line}")
         }
     }
 }

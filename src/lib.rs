@@ -10,9 +10,10 @@
 #![doc = include_str ! ("../examples/custom_fetch.rs")]
 //! ```
 
-use std::fmt::Write;
+use std::{default::Default, fmt::Write};
 
 use image::DynamicImage;
+use onefetch_ascii::AsciiArt;
 use onefetch_image::get_best_backend;
 use owo_colors::{AnsiColors, DynColors};
 
@@ -22,35 +23,46 @@ pub use crate::distros::Distro;
 
 mod distros;
 
-/// A collection of structs implementing [`Render`], using [`sysinfo`] to fetch cross-platform information
-#[cfg(feature = "sysinfo")]
+/// A collection of structs implementing [`Render`]
 pub mod info;
 
-/// Trait for any type be added to the [`Printer`].
+/// Trait for types be added to the [`Printer`].
 pub trait Render {
     fn render(&self, color: DynColors) -> Vec<String>;
 }
 
+impl Render for Vec<String> {
+    fn render(&self, _: DynColors) -> Vec<String> {
+        self.to_owned()
+    }
+}
+
+impl Render for String {
+    fn render(&self, _: DynColors) -> Vec<String> {
+        vec![self.to_owned()]
+    }
+}
+
 /// Generic system fetch printer accepting a distro or image, some configuration, and [`Render`]-able info
 pub struct Printer<'a> {
-    pub color: Option<DynColors>,
-    pub color_mode: Option<bool>,
+    pub color: DynColors,
     pub info: Vec<Box<dyn Render + 'a>>,
-    pub distro: Option<Distro>,
+    pub ascii: Option<AsciiArt<'a>>,
     pub image: Option<DynamicImage>,
 }
 
-impl<'a> Printer<'a> {
-    pub fn new(color_mode: Option<bool>) -> Self {
+impl<'a> Default for Printer<'a> {
+    fn default() -> Self {
         Self {
-            color_mode,
-            color: None,
+            color: DynColors::Ansi(AnsiColors::Default),
             info: Vec::new(),
-            distro: None,
+            ascii: None,
             image: None,
         }
     }
+}
 
+impl<'a> Printer<'a> {
     /// Provide an image to the renderer
     #[inline]
     pub fn with_image(&mut self, image: DynamicImage) {
@@ -59,42 +71,28 @@ impl<'a> Printer<'a> {
 
     /// Provide a distro to the renderer
     #[inline]
-    pub fn with_distro(&mut self, distro: Distro) {
-        self.distro = Some(distro);
+    pub fn with_ascii(&mut self, ascii: AsciiArt<'a>) {
+        self.ascii = Some(ascii);
     }
 
     /// Provide a color to the renderer for text
     #[inline]
     pub fn with_color(&mut self, color: DynColors) {
-        self.color = Some(color);
+        self.color = color;
     }
 
     /// Render an object and add it to the text lines
     #[inline]
-    pub fn with_info<S: Render + 'a>(&mut self, info: S) {
+    pub fn with_info<R: Render + 'a>(&mut self, info: R) {
         self.info.push(Box::new(info));
-    }
-
-    /// Get renderer's current main color
-    fn main_color(&self) -> DynColors {
-        self.color.unwrap_or_else(|| {
-            self.distro
-                .map(|d| d.color())
-                .unwrap_or_else(|| DynColors::Ansi(AnsiColors::Default))
-        })
     }
 
     /// Render the ascii art and print it to stdout
     #[inline]
     pub fn render(&mut self) {
         let mut buf = String::new();
-        let color = self.main_color();
-        let lines = self
-            .info
-            .iter()
-            .map(|i| i.render(color))
-            .flatten()
-            .collect();
+        let color = self.color;
+        let lines = self.info.iter().flat_map(|i| i.render(color)).collect();
 
         if let Some((image, backend)) = self
             .image
@@ -102,18 +100,16 @@ impl<'a> Printer<'a> {
             .and_then(|img| get_best_backend().map(|backend| (img, backend)))
         {
             buf.push_str(backend.add_image(lines, image, 32).unwrap().as_str());
-        } else if let Some(distro) = &self.distro {
-            let mut art = distro.ascii(self.color_mode);
-            let width = art.width();
+        } else if let Some(ref mut art) = &mut self.ascii {
+            let padding = art.width();
             let mut lines = lines.iter();
-
             loop {
                 match (art.next(), lines.next()) {
                     (Some(art), Some(line)) => {
                         writeln!(buf, "  {art}  {line}")
                     }
                     (Some(art), None) => writeln!(buf, "  {art}"),
-                    (None, Some(line)) => writeln!(buf, "  {}  {line}", " ".repeat(width)),
+                    (None, Some(line)) => writeln!(buf, "  {}  {line}", " ".repeat(padding)),
                     (None, None) => break,
                 }
                 .expect("failed to write to buffer");

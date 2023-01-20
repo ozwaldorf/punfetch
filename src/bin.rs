@@ -1,8 +1,8 @@
-use std::{path::PathBuf, process::exit, str::FromStr};
+use std::path::PathBuf;
 
 use clap::{arg, command, Parser, ValueEnum};
 use image::open;
-use owo_colors::DynColors;
+use owo_colors::{AnsiColors, DynColors};
 use sysinfo::SystemExt;
 use term_size::dimensions;
 
@@ -68,18 +68,18 @@ impl ColorMode {
 
 fn main() {
     let args = Args::parse();
-    let mut renderer = Printer::new(args.color_mode.mode());
-    if let Some(color) = args.color {
-        if let Ok(color) = DynColors::from_str(&color) {
-            renderer.color = Some(color);
-        } else {
-            eprintln!("Invalid color: {color}");
-            exit(1);
-        }
-    }
+    let mut renderer = Printer::default();
 
     let sys = sys();
-    let host_info = HostInfo::new(&sys); // need the distro!
+    let host_info = HostInfo::new(&sys);
+    let distro = Distro::search(host_info.distro.clone());
+
+    let colors = args.color_mode.mode();
+    renderer.with_color(
+        args.color
+            .map(|c| DynColors::Ansi(AnsiColors::from(c.as_str())))
+            .unwrap_or(distro.color(colors)),
+    );
 
     if args.show_logo.should_show() {
         if let Some(path) = args.image {
@@ -88,15 +88,15 @@ fn main() {
                 Err(e) => eprintln!("Error opening image: {e}"),
             }
         } else {
-            let str = args.distro.unwrap_or(host_info.distro.clone());
-            renderer.with_distro(Distro::search(str));
+            renderer.with_ascii(distro.ascii(colors));
         }
     }
 
     renderer.with_info(UserInfo::new(&sys));
     renderer.with_info(host_info);
-    renderer.with_info(DiskInfo::from(sys.disks()));
+    renderer.with_info(PercentBar::from(sys.disks()));
     renderer.with_info(SystemInfo::new(&sys));
+    renderer.with_info(ColorBar::default());
 
     renderer.render()
 }
