@@ -1,6 +1,6 @@
 [package]
 name = "punfetch"
-version = "0.3.3"
+version = "0.3.4"
 description = "A blazingly fast system fetch program to pair with onefetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
@@ -10,6 +10,7 @@ homepage.workspace = true
 repository.workspace = true
 documentation.workspace = true
 keywords.workspace = true
+categories.workspace = true
 
 [workspace]
 members = ["derive"]
