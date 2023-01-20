@@ -30,7 +30,9 @@ pub struct ColorBar(pub Vec<DynColors>);
 
 impl Default for ColorBar {
     fn default() -> Self {
-        Self(DEFAULT_COLORS.to_vec())
+        let mut colors = vec![DynColors::Ansi(Color::Black)];
+        colors.extend(DEFAULT_COLORS);
+        Self(colors)
     }
 }
 
@@ -38,7 +40,7 @@ impl Render for ColorBar {
     fn render(&self, _: DynColors) -> Vec<String> {
         let mut buf = String::new();
         for color in &self.0 {
-            buf.push_str(&format!("{}", "  ".on_color(*color)));
+            buf.push_str(&format!("{}", "   ".on_color(*color)));
         }
         vec![String::new(), buf]
     }

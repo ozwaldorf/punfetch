@@ -14,8 +14,9 @@
     </p>
     <hr>
     <p align="center">
-        <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/211231336-194d6836-154b-4189-beac-b022d3056504.png"/> 
+        <img alt="preview" width="80%" src="https://user-images.githubusercontent.com/8976745/213606833-78967106-5a1b-403d-ad90-74a0e00dee0e.png"/> 
     </p>
+
 </header>
 
 ---
@@ -102,14 +103,14 @@ New distributions can easily be supported by adding a new entry to the [distros.
 > distribution is lengthy, a regex should be provided. Patterns should be simple, lowercase, and `A-z`, `0-9` only.
 
 <footer>
-    <h2 align="center">Contributors ❤️</h2>
-    <h3 align="center">Honorable mentions</h3>
+    <h2 align="center">Honorable mentions</h2>
     <p align="center">
         <a href="https://github.com/o2sh">@o2sh</a>
         <a href="https://github.com/spenserblack">@spenserblack</a>
         for creating
         <a href="https://github.com/o2sh/onefetch">onefetch</a>
     </p>
+    <h2 align="center">Contributors ❤️</h2>
     <p align="center">
         <a href="https://github.com/ozwaldorf/punfetch/graphs/contributors"><img alt="contrib.rocks" src="https://contrib.rocks/image?repo=ozwaldorf/punfetch"/></a>
     </p>
