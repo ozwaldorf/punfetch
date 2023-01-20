@@ -1,4 +1,4 @@
-name: Publish
+name: Crates.io
 on:
   release:
     types: [published]
@@ -9,6 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        name: Checkout
+        with:
+          submodules: true
+      - name: Patch pages
+        run: |
+          make patch-pages
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
