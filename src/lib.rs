@@ -111,9 +111,9 @@ impl<'a> Printer<'a> {
                     (Some(art), None) => writeln!(buf, "  {art}"),
                     (None, Some(line)) => writeln!(buf, "  {}  {line}", " ".repeat(padding)),
                     (None, None) => {
-                        write!(buf, "\n").unwrap();
+                        writeln!(buf).expect("failed to write to buffer");
                         break;
-                    },
+                    }
                 }
                 .expect("failed to write to buffer");
             }
@@ -121,7 +121,7 @@ impl<'a> Printer<'a> {
             for line in lines.iter() {
                 writeln!(buf, "{line}").expect("failed to write to buffer");
             }
-            buf.push('\n');
+            writeln!(buf).expect("failed to write to buffer");
         }
 
         print!("{buf}")
