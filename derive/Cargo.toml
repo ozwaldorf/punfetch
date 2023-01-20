@@ -1,0 +1,23 @@
+[package]
+name = "punfetch-derive"
+description = "Derive macros for punfetch"
+version = "0.1.0"
+authors = ["ossian <self@ossian.dev>"]
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = "1"
+
+[dev-dependencies]
+owo-colors = "3.5.0"
+punfetch = { path = "../." }

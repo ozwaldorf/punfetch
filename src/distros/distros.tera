@@ -1,0 +1,88 @@
+use std::fmt;
+use num_enum::FromPrimitive;
+use owo_colors::{
+    AnsiColors,
+    DynColors::{self, Ansi, Rgb},
+};
+
+struct Colors {
+    basic_colors: Vec<DynColors>,
+    true_colors: Option<Vec<DynColors>>,
+}
+
+/// The big list of distros! Provides ascii art and colors for each, and a way to search for a match
+#[derive(Clone, Copy, PartialEq, Eq, Hash, Debug, FromPrimitive)]
+#[allow(clippy::upper_case_acronyms)]
+#[repr(usize)]
+pub enum Distro {
+    #[num_enum(default)]
+    {% for distro, attrs in distros -%}
+    {{ attrs.type_name }},
+    {% endfor %}
+}
+
+impl Distro {
+    fn colors(&self, color_mode: Option<bool>) -> Vec<DynColors> {
+        let colors = match self {
+            {% for distro, attrs in distros -%}
+                Distro::{{ attrs.type_name }} => Colors {
+                    basic_colors: vec![{%- for color in attrs.colors.ansi -%}Ansi(AnsiColors::{{ color | pascal_case | replace(from="White", to="Default") }}),{% endfor %}],
+                    true_colors: {% if attrs.colors.hex -%}
+                        Some(vec![
+                            {%- for hex in attrs.colors.hex -%}
+                                {% set rgb = hex | hex_to_rgb -%}
+                                Rgb({{ rgb.r }}, {{ rgb.g }}, {{ rgb.b }}),
+                            {% endfor %}
+                        ]),
+                    {% else -%}None,
+                    {% endif %}
+                },
+            {% endfor %}
+        };
+
+        match color_mode {
+            Some(true) => colors.true_colors.unwrap_or(colors.basic_colors),
+            Some(false) => colors.basic_colors,
+            None => vec![],
+        }
+    }
+
+    fn regex() -> regex::RegexSet {
+        regex::RegexSet::new([
+            {% for distro, attrs in distros -%}
+            r#"{{ attrs.regex }}"#,
+            {% endfor %}
+        ]).unwrap()
+    }
+
+    fn template(&self) -> &'static str {
+        match self {
+            {% for distro, attrs in distros -%}
+                Distro::{{ attrs.type_name }} => {
+"{{ attrs.ascii | addslashes }}"
+                },
+            {% endfor %}
+        }
+    }
+}
+
+impl fmt::Display for Distro {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            {% for distro, attrs in distros -%}
+                Self::{{ attrs.type_name }} => write!(f, "{{ distro }}"),
+            {% endfor %}
+        }
+    }
+}
+
+// Ensure there are equal number of basic and true colors
+{% for distro, attrs in distros -%}
+    {% if attrs.colors.rgb %}
+        {% set ansi_length = attrs.colors.ansi | length -%}
+        {% set rgb_length = attrs.colors.rgb | length %}
+        {% if ansi_length != rgb_length %}
+            compile_error!("{{ distro }}: ansi and rgb colors must be the same length");
+        {% endif %}
+    {% endif -%}
+{% endfor -%}

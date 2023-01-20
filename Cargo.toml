@@ -1,36 +1,57 @@
 [package]
 name = "punfetch"
-version = "0.2.0"
-edition = "2021"
+version = "0.3.0"
 description = "A blazingly fast system fetch designed to replicate the look of onefetch."
-license = "MIT"
-homepage = "https://github.com/ozwaldorf/punfetch"
-repository = "https://github.com/ozwaldorf/punfetch"
 readme = "README.md"
 authors = ["ossian <self@ossian.dev>"]
+license.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+documentation.workspace = true
+keywords.workspace = true
+
+[workspace]
+members = ["derive"]
+
+[workspace.package]
+license = "MIT"
+edition = "2021"
+homepage = "https://github.com/ozwaldorf/punfetch"
+repository = "https://github.com/ozwaldorf/punfetch"
+documentation = "https://docs.rs/punfetch"
+categories = ["command-line-utilities"]
+keywords = ["fetch", "system", "onefetch", "cli", "terminal"]
+
+[dependencies]
+byte-unit = "4.0.18"
+clap = { version = "4.0.32", features = ["cargo", "derive"], optional = true }
+humantime = "2.1.0"
+image = "0.24.5"
+num_enum = "0.5.7"
+onefetch-ascii = "2.15.1"
+onefetch-image = "2.15.1"
+owo-colors = "3.5.0"
+punfetch-derive = { path = "derive", version = "0.1.0" }
+regex = "1"
+sysinfo = { version = "0.27.2", optional = true }
+term_size = { version = "0.3.2", optional = true }
+
+[features]
+binary = ["clap", "term_size", "sysinfo"]
+default = ["binary"]
+
+[lib]
+name = "punfetch"
 
 [[bin]]
 name = "punfetch"
 path = "src/bin.rs"
-
-[lib]
-name = "libpunfetch"
-path = "src/lib.rs"
-
-[dependencies]
-byte-unit = "4.0.18"
-clap = { version = "4.0.32", features = ["cargo"] }
-colored = "2.0.0"
-humantime = "2.1.0"
-image = "0.24.5"
-onefetch-image = "2.14.2"
-sysinfo = "0.27.2"
-term_size = "0.3.2"
-num_enum = "0.5.7"
-regex = "1"
+required-features = ["binary"]
 
 [build-dependencies]
 lazy_static = "1"
+owo-colors = "3.5.0"
 regex = "1"
 serde_json = "1"
 serde_yaml = "0.9"

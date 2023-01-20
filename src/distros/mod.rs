@@ -1,8 +1,13 @@
+//! Supported distributions. Base enum is generated from the `distros.yaml` file
+
 use std::fmt::Display;
+
+use onefetch_ascii::AsciiArt;
 
 include!(concat!(env!("OUT_DIR"), "/distros.rs"));
 
 impl Distro {
+    /// Find a distro from a string
     pub fn search<S: Display>(str: S) -> Self {
         // strip special characters and 'linux' from input
         let reg = regex::Regex::new(r"[\s_\-\./!@]").unwrap();
@@ -14,11 +19,26 @@ impl Distro {
 
         // search for distro
         let m = Self::regex().matches(&str);
-        if let Some(m) = m.into_iter().next() {
+        if let Some(m) = m.into_iter().last() {
             m.into()
         } else {
             Distro::DEFAULT
         }
+    }
+
+    /// Build ascii art from the inner template and colors
+    pub fn ascii<'a>(&self, colors: Option<bool>) -> AsciiArt<'a> {
+        let colors = self.colors(colors);
+        let bold = !colors.is_empty();
+        AsciiArt::new(self.template(), colors.leak(), bold)
+    }
+
+    /// Get the primary color for the distro
+    pub fn color(&self, colors: Option<bool>) -> DynColors {
+        *self
+            .colors(colors)
+            .get(0)
+            .unwrap_or(&Ansi(AnsiColors::Default))
     }
 }
 
@@ -28,32 +48,32 @@ mod tests {
 
     /// Ensure some common distros with extra data in them will match correctly
     #[test]
-    fn search_multiple() {
-        let manjaro = Distro::search("Manjaro Linux");
-        assert_eq!(manjaro, Distro::MANJARO);
+    fn search() {
+        const DISTROS: [(Distro, &str); 10] = [
+            (Distro::MANJARO, "Manjaro Linux"),
+            (Distro::ARCH, "Arch Linux"),
+            (Distro::UBUNTU, "Ubuntu 20.04.1 LTS"),
+            (Distro::DEBIAN, "Debian GNU/Linux 10 (buster)"),
+            (Distro::GENTOO, "Gentoo Base System release 2.7"),
+            (Distro::FEDORA, "Fedora 33 (Thirty Three)"),
+            (Distro::CENTOS, "CentOS Linux 8 (Core)"),
+            (Distro::OPENSUSELEAP, "openSUSE Leap 15.2"),
+            (Distro::VOID, "Void 5.8.14_1 x86_64"),
+            (Distro::DEFAULT, "Unknown"),
+        ];
 
-        let arch = Distro::search("Arch Linux");
-        assert_eq!(arch, Distro::ARCH);
+        for (distro, name) in DISTROS.iter() {
+            assert_eq!(*distro, Distro::search(name));
+        }
+    }
 
-        let ubuntu = Distro::search("Ubuntu 20.04.1 LTS");
-        assert_eq!(ubuntu, Distro::UBUNTU);
-
-        let debian = Distro::search("Debian GNU/Linux 10 (buster)");
-        assert_eq!(debian, Distro::DEBIAN);
-
-        let fedora = Distro::search("Fedora 33 (Thirty Three)");
-        assert_eq!(fedora, Distro::FEDORA);
-
-        let centos = Distro::search("CentOS Linux 8 (Core)");
-        assert_eq!(centos, Distro::CENTOS);
-
-        let opensuse = Distro::search("openSUSE Leap 15.2");
-        assert_eq!(opensuse, Distro::OPENSUSE);
-
-        let gentoo = Distro::search("Gentoo Base System release 2.7");
-        assert_eq!(gentoo, Distro::GENTOO);
-
-        let void = Distro::search("Void 5.8.14_1 x86_64 MUSL");
-        assert_eq!(void, Distro::VOID);
+    #[test]
+    fn ascii() {
+        let distro = Distro::search("Arch Linux");
+        assert_ne!(distro, Distro::DEFAULT);
+        let ascii = distro.ascii(Some(true));
+        for line in ascii {
+            println!("{line}")
+        }
     }
 }
