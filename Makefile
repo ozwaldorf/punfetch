@@ -1,7 +1,21 @@
-.PHONY: clean build run format lint install remove
+.PHONY: clean build run format lint install remove init-docs save-docs patch-docs dev
 
 MAKEFLAGS += --no-print-directory
 IMAGE = ~/.config/term.png
+PATCH = $(shell readlink -f docs/patch.diff)
+
+init-docs:
+	git submodule update --init
+	cd docs/vercel && npm ci
+
+patch-docs:
+	cd docs/vercel && git apply $(PATCH)
+
+save-docs:
+	cd docs/vercel && git diff > $(PATCH)
+
+dev:
+	cd docs/vercel && npm run dev
 
 clean:
 	cargo clean

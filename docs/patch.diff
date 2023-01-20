@@ -1,0 +1,487 @@
+diff --git a/docs/vercel/index.html b/docs/vercel/index.html
+index 03860bc..98d34b9 100644
+--- a/docs/vercel/index.html
++++ b/docs/vercel/index.html
+@@ -5,7 +5,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" href="/onefetch.ico" />
+     <link rel="stylesheet" href="/sakura.css" type="text/css" />
+-    <title>Onefetch</title>
++    <title>Punfetch</title>
+   </head>
+ 
+   <body>
+diff --git a/docs/vercel/package-lock.json b/docs/vercel/package-lock.json
+index 2add992..b5bed26 100644
+--- a/docs/vercel/package-lock.json
++++ b/docs/vercel/package-lock.json
+@@ -1,11 +1,11 @@
+ {
+-  "name": "onefetch-web",
++  "name": "punfetch-web",
+   "version": "0.0.0",
+   "lockfileVersion": 2,
+   "requires": true,
+   "packages": {
+     "": {
+-      "name": "onefetch-web",
++      "name": "punfetch-web",
+       "version": "0.0.0",
+       "devDependencies": {
+         "@rollup/plugin-yaml": "^4.0.1",
+diff --git a/docs/vercel/package.json b/docs/vercel/package.json
+index c37225b..9b97ba8 100644
+--- a/docs/vercel/package.json
++++ b/docs/vercel/package.json
+@@ -1,5 +1,5 @@
+ {
+-  "name": "onefetch-web",
++  "name": "punfetch-web",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+diff --git a/docs/vercel/public/sakura.css b/docs/vercel/public/sakura.css
+index 3b6cc0f..2e27919 100644
+--- a/docs/vercel/public/sakura.css
++++ b/docs/vercel/public/sakura.css
+@@ -1,3 +1,4 @@
++/* $color-text: #dedce5; */
+ /* Sakura.css v1.4.1
+  * ================
+  * Minimal css theme.
+@@ -6,8 +7,7 @@
+ /* Body */
+ html {
+   font-size: 62.5%;
+-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
++  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+ }
+ 
+ body {
+@@ -15,8 +15,8 @@ body {
+   line-height: 1.618;
+   max-width: 38em;
+   margin: auto;
+-  color: #222222;
+-  background-color: #ffffff;
++  color: #c9c9c9;
++  background-color: #222222;
+   padding: 13px;
+ }
+ 
+@@ -30,15 +30,9 @@ body {
+     font-size: 1.35rem;
+   }
+ }
+-h1,
+-h2,
+-h3,
+-h4,
+-h5,
+-h6 {
++h1, h2, h3, h4, h5, h6 {
+   line-height: 1.1;
+-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
++  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+   font-weight: 700;
+   margin-top: 3rem;
+   margin-bottom: 1.5rem;
+@@ -77,26 +71,24 @@ p {
+   margin-bottom: 2.5rem;
+ }
+ 
+-small,
+-sub,
+-sup {
++small, sub, sup {
+   font-size: 75%;
+ }
+ 
+ hr {
+-  border-color: #007559;
++  border-color: #ffffff;
+ }
+ 
+ a {
+   text-decoration: none;
+-  color: #007559;
++  color: #ffffff;
+ }
+ a:visited {
+-  color: #004232;
++  color: #e6e6e6;
+ }
+ a:hover {
+-  color: #006994;
+-  border-bottom: 2px solid #222222;
++  color: #c9c9c9;
++  border-bottom: 2px solid #c9c9c9;
+ }
+ 
+ ul {
+@@ -116,17 +108,16 @@ blockquote {
+   padding-top: 0.8em;
+   padding-bottom: 0.8em;
+   padding-right: 0.8em;
+-  border-left: 5px solid #007559;
++  border-left: 5px solid #ffffff;
+   margin-bottom: 2.5rem;
+-  background-color: #f7f7f7;
++  background-color: #4a4a4a;
+ }
+ 
+ blockquote p {
+   margin-bottom: 0;
+ }
+ 
+-img,
+-video {
++img, video {
+   height: auto;
+   max-width: 100%;
+   margin-top: 0px;
+@@ -135,7 +126,7 @@ video {
+ 
+ /* Pre and Code */
+ pre {
+-  background-color: #f7f7f7;
++  background-color: #4a4a4a;
+   display: block;
+   padding: 1em;
+   overflow-x: auto;
+@@ -144,12 +135,10 @@ pre {
+   font-size: 0.9em;
+ }
+ 
+-code,
+-kbd,
+-samp {
++code, kbd, samp {
+   font-size: 0.9em;
+   padding: 0 0.5em;
+-  background-color: #f7f7f7;
++  background-color: #4a4a4a;
+   white-space: pre-wrap;
+ }
+ 
+@@ -167,93 +156,67 @@ table {
+   border-collapse: collapse;
+ }
+ 
+-td,
+-th {
++td, th {
+   padding: 0.5em;
+-  border-bottom: 1px solid #f7f7f7;
++  border-bottom: 1px solid #4a4a4a;
+ }
+ 
+ /* Buttons, forms and input */
+-input,
+-textarea {
+-  border: 1px solid #222222;
++input, textarea {
++  border: 1px solid #c9c9c9;
+ }
+-input:focus,
+-textarea:focus {
+-  border: 1px solid #007559;
++input:focus, textarea:focus {
++  border: 1px solid #ffffff;
+ }
+ 
+ textarea {
+   width: 100%;
+ }
+ 
+-.button,
+-button,
+-input[type='submit'],
+-input[type='reset'],
+-input[type='button'] {
++.button, button, input[type=submit], input[type=reset], input[type=button] {
+   display: inline-block;
+   padding: 5px 10px;
+   text-align: center;
+   text-decoration: none;
+   white-space: nowrap;
+-  background-color: #007559;
+-  color: #ffffff;
++  background-color: #ffffff;
++  color: #222222;
+   border-radius: 1px;
+-  border: 1px solid #007559;
++  border: 1px solid #ffffff;
+   cursor: pointer;
+   box-sizing: border-box;
+ }
+-.button[disabled],
+-button[disabled],
+-input[type='submit'][disabled],
+-input[type='reset'][disabled],
+-input[type='button'][disabled] {
++.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+   cursor: default;
+   opacity: 0.5;
+ }
+-.button:focus:enabled,
+-.button:hover:enabled,
+-button:focus:enabled,
+-button:hover:enabled,
+-input[type='submit']:focus:enabled,
+-input[type='submit']:hover:enabled,
+-input[type='reset']:focus:enabled,
+-input[type='reset']:hover:enabled,
+-input[type='button']:focus:enabled,
+-input[type='button']:hover:enabled {
+-  background-color: #006994;
+-  border-color: #006994;
+-  color: #ffffff;
++.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
++  background-color: #c9c9c9;
++  border-color: #c9c9c9;
++  color: #222222;
+   outline: 0;
+ }
+ 
+-textarea,
+-select,
+-input {
+-  color: #222222;
++textarea, select, input {
++  color: #c9c9c9;
+   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+   margin-bottom: 10px;
+-  background-color: #f7f7f7;
+-  border: 1px solid #f7f7f7;
++  background-color: #4a4a4a;
++  border: 1px solid #4a4a4a;
+   border-radius: 4px;
+   box-shadow: none;
+   box-sizing: border-box;
+ }
+-textarea:focus,
+-select:focus,
+-input:focus {
+-  border: 1px solid #007559;
++textarea:focus, select:focus, input:focus {
++  border: 1px solid #ffffff;
+   outline: 0;
+ }
+ 
+-input[type='checkbox']:focus {
+-  outline: 1px dotted #007559;
++input[type=checkbox]:focus {
++  outline: 1px dotted #ffffff;
+ }
+ 
+-label,
+-legend,
+-fieldset {
++label, legend, fieldset {
+   display: block;
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+diff --git a/docs/vercel/src/Index.svelte b/docs/vercel/src/Index.svelte
+index f49ad29..7f8d68c 100644
+--- a/docs/vercel/src/Index.svelte
++++ b/docs/vercel/src/Index.svelte
+@@ -1,9 +1,9 @@
+ <script lang="ts">
+   import AsciiPreview from './lib/AsciiPreview.svelte';
+-  import data from '../../../languages.yaml';
+-  import type { Languages } from '../../../languages.yaml';
++  import data from '../../../../../../distros.yaml';
++  import type { Distros } from '../distros.yaml';
+ 
+-  const languages = Object.entries(data as Languages).map(
++  const distros = Object.entries(data as Distros).map(
+     ([name, { ascii, colors }]) => ({
+       name,
+       ascii,
+@@ -14,49 +14,53 @@
+ 
+ <header>
+   <div class="banner">
+-    <small
+-      >Version 2.15 is available 🎉 Check the <a
+-        href="https://github.com/o2sh/onefetch/releases/tag/2.15.0"
+-        >release notes</a
+-      >!!</small>
++    <small>
++      Version 0.3.0 is available with color support, onefetch_ascii integration, and a generic library to implement your
++      own fetch binaries! 🎉 Check the
++      <a href="https://github.com/ozwaldorf/punfetch/releases/latest">latest release notes</a>
++    </small>
+   </div>
+-  <h1>Onefetch</h1>
++  <h1>Punfetch</h1>
+   <p>
+     <small>
+-      <a href="https://github.com/o2sh/onefetch/wiki">wiki</a> |
+-      <a href="https://github.com/o2sh/onefetch/tree/main/docs/vercel"
+-        >github</a>
+-      | Built with ❤ by
+-      <a href="https://github.com/spenserblack">@spenserblack</a> and
+-      <a href="https://github.com/o2sh">@o2sh</a></small>
++      <a href="https://github.com/ozwaldorf/punfetch">github</a>
++      | Binary built with ❤ by <a href="https://github.com/ozwaldorf">@ozwaldorf</a>
++      | Website patched from <a href="https://github.com/o2sh/onefetch/tree/main/docs/vercel">onefetch/docs/vercel</a>
++    </small>
+   </p>
+ </header>
+ <main>
+   <p>
+-    This page shows you an ASCII preview for all the programming languages
+-    supported by onefetch. Like the binary, the data is taken from the <a
+-      href="https://raw.githubusercontent.com/o2sh/onefetch/main/languages.yaml"
+-      ><code>Languages.yaml</code></a> file and the layout is meant to mimic the
+-    way the logo would look inside a terminal.
++    This page shows you an ASCII preview for all the distributions supported by
++    punfetch. Like the binary, the data is taken from the <a
++      href="https://raw.githubusercontent.com/ozwaldorf/punfetch/main/distros.yaml"
++      ><code>Distros.yaml</code></a> file and the layout is meant to mimic the way
++    the logo would look inside a terminal.
+   </p>
+   <p>
+     Suggestions and PRs are welcome at <a
+-      href="https://github.com/o2sh/onefetch">github.com/o2sh/onefetch</a>
++      href="https://github.com/ozwaldorf/punfetch"
++      >github.com/ozwaldorf/punfetch</a>
+   </p>
+-  <h3>Languages <small>({languages.length})</small></h3>
+-  {#each languages as language}
++  <h3>Distributions <small>({distros.length})</small></h3>
++  {#each distros as distro}
+     <AsciiPreview
+-      name={language.name}
+-      ansi={language.ansi}
+-      hex={language.hex}
+-      ascii={language.ascii}
+-      chip={language.chip} />
++      name={distro.name}
++      ansi={distro.ansi}
++      hex={distro.hex}
++      ascii={distro.ascii}
++      chip={distro.chip} />
+   {/each}
++  <div class="footer">
++    <p>
++
++    </p>
++  </div>
+ </main>
+ 
+ <style>
+   .banner {
+-    background-color: #e1f6e5;
++    background-color: #4c7e56;
+     position: absolute;
+     top: 0;
+     left: 0;
+diff --git a/docs/vercel/src/lib/AsciiPreview.svelte b/docs/vercel/src/lib/AsciiPreview.svelte
+index a477bdd..e75bc86 100644
+--- a/docs/vercel/src/lib/AsciiPreview.svelte
++++ b/docs/vercel/src/lib/AsciiPreview.svelte
+@@ -10,6 +10,7 @@
+ 
+   let dark = true;
+   let trueColor = hex != null;
++  let noColor = hex == null && ansi == null;
+ 
+   $: html = ascii
+     .split('\n')
+@@ -18,9 +19,8 @@
+       let spanCount = 0;
+       const htmlLine = line.replace(/\{(\d+)\}/g, (_match, index) => {
+         const i = Number.parseInt(index, 10);
+-        const spanText = `<span style="font-weight: bold; color: ${
+-          trueColor ? hex[i] : mapToDefaultTerminalFgColor(ansi[i], dark)
+-        }">`;
++        const color = noColor ? mapToDefaultTerminalFgColor("white", dark) : (trueColor ? hex![i] : ansi![i]);
++        const spanText = `<span style="font-weight: bold; color: ${color}">`;
+         spanCount++;
+         return spanText;
+       });
+@@ -34,7 +34,7 @@
+ </script>
+ 
+ <div class="title-row">
+-  <div class="language-name">
++  <div class="distro-name">
+     <Chip id={name} color={chip} width={24} height={24} />
+     <TitleLink {name} />
+   </div>
+@@ -74,16 +74,18 @@
+ 
+   pre {
+     line-height: 1.1;
++    color: black;
+     background-color: white;
+     display: inline-block;
+     margin-bottom: 0px;
+   }
+ 
+   pre.dark {
++    color: white;
+     background-color: black;
+   }
+ 
+-  .language-name {
++  .distro-name {
+     display: flex;
+     flex-direction: row;
+     align-items: baseline;
+diff --git a/docs/vercel/src/lib/Chip.svelte b/docs/vercel/src/lib/Chip.svelte
+index 5d4caf5..3d3af39 100644
+--- a/docs/vercel/src/lib/Chip.svelte
++++ b/docs/vercel/src/lib/Chip.svelte
+@@ -13,7 +13,7 @@
+   {width}
+   {height}
+   fill={color}
+-  stroke="black"
++  stroke="white"
+   stroke-width="5">
+   <circle cx="50" cy="50" r="45" />
+ </svg>
+diff --git a/docs/vercel/src/lib/TitleLink.svelte b/docs/vercel/src/lib/TitleLink.svelte
+index 5ca939e..72ca2ba 100644
+--- a/docs/vercel/src/lib/TitleLink.svelte
++++ b/docs/vercel/src/lib/TitleLink.svelte
+@@ -8,6 +8,6 @@
+   .title-link,
+   .title-link:hover,
+   .title-link:visited {
+-    color: #222;
++      color: #c9c9c9;
+   }
+ </style>
+diff --git a/docs/vercel/typings/yaml.d.ts b/docs/vercel/typings/yaml.d.ts
+index fc71246..6808ffd 100644
+--- a/docs/vercel/typings/yaml.d.ts
++++ b/docs/vercel/typings/yaml.d.ts
+@@ -1,15 +1,15 @@
+-declare module '*/languages.yaml' {
+-  export interface LanguageColors {
+-    ansi: string[];
++declare module '*/distros.yaml' {
++  export interface DistroColors {
++    ansi?: string[];
+     hex?: string[];
+     chip: string;
+   }
+ 
+-  export interface Language {
++  export interface Distro {
+     type: string;
+     ascii: string;
+-    colors: LanguageColors;
++    colors: DistroColors;
+   }
+ 
+-  export type Languages = Record<string, Language>;
++  export type Distros = Record<string, Distro>;
+ }
