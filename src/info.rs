@@ -257,9 +257,9 @@ mod tests {
 
     fn _render<R: Render>(i: R) {
         let lines = i.render(DynColors::Ansi(Default));
-        assert_eq!(lines.is_empty(), false);
+        assert!(!lines.is_empty());
         for line in lines {
-            println!("{}", line);
+            println!("{line}");
         }
     }
 

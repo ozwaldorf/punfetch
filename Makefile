@@ -23,7 +23,7 @@ format:
 
 lint:
 	cargo fmt -- --check
-	cargo clippy --all-features -- -Dwarnings
+	cargo clippy --all-targets --all-features -- -Dwarnings -Dclippy::all
 
 test:
 	cargo test --all --all-features
