@@ -1,0 +1,3 @@
+[submodule ".github/submodules/onefetch"]
+	path = .github/submodules/onefetch
+	url = https://github.com/o2sh/onefetch

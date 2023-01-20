@@ -39,9 +39,11 @@ make install
 
 # Usage
 
+## CLI
+
 ```man
 $ punfetch -h
-A blazingly fast system fetch designed to replicate the look of onefetch.
+A blazingly fast system fetch program to pair with onefetch.
 
 Usage: punfetch [OPTIONS]
 
@@ -55,9 +57,27 @@ Options:
   -V, --version            Print version
 ```
 
-# Library
+## Library
 
-Punfetch is also a library to implement custom system fetchers! See [the docs](https://docs.rs/punfetch) for more information and examples.
+Punfetch is also a library to implement your own custom system fetchers! See [the docs](https://docs.rs/punfetch) for more information and examples.
+
+## Makefile
+
+```
+make clean       # Clean the project
+make build       # Build the project
+make run         # Run the project
+make install     # Install the project
+make test        # Run tests
+make lint        # Run linter
+make fmt         # Run formatter
+make ci          # Precommit CI checks
+
+make init-docs   # Initialize docs
+make patch-docs  # Patch vercel docs 
+make save-docs   # Save the diff patch
+make dev         # Run the docs locally
+```
 
 # Contributing
 

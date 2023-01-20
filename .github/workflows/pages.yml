@@ -1,0 +1,81 @@
+name: Build & Deploy
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - "distros.yaml"
+      - ".github/workflows/pages.yml"
+    branches:
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: Patch
+        run: |
+          make patch-docs
+
+      - name: Install NPM packages
+        working-directory: docs/vercel
+        run: npm ci
+
+      - name: Build project
+        working-directory: docs/vercel
+        run: npm run build
+
+      - name: Upload to pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./docs/vercel/dist
+          name: github-pages
+          retention-days: 7
+
+  deploy:
+    name: Deploy
+    needs: build
+    environment:
+      name: github-pages
+      url: https://ozwaldorf.github.io/punfetch
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          timeout: 600000
+          error_count: 10
+          reporting_interval: 5000
+          artifact_name: github-pages
+          preview: false
