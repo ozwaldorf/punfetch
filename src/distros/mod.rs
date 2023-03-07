@@ -20,7 +20,7 @@ impl Distro {
         // search for distro
         let m = Self::regex().matches(&str);
         if let Some(m) = m.into_iter().last() {
-            m.into()
+            (m as u64).into()
         } else {
             Distro::DEFAULT
         }
