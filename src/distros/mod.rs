@@ -37,7 +37,7 @@ impl Distro {
     pub fn color(&self, colors: Option<bool>) -> DynColors {
         *self
             .colors(colors)
-            .get(0)
+            .first()
             .unwrap_or(&Ansi(AnsiColors::Default))
     }
 }

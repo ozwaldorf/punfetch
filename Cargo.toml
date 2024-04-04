@@ -72,5 +72,4 @@ harness = false
 
 [profile.release]
 lto = true
-opt-level = 'z'
 strip = 'debuginfo'
